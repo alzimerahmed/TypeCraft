@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2008 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+    <string name="use_contacts_dict">Kontakte nachschlagen</string>
+    <string name="vibrate_on_keypress">Vibration bei Tastendruck</string>
+    <string name="sound_on_keypress">"Ton bei Tastendruck"</string>
+    <string name="popup_on_keypress">Popup bei Tastendruck</string>
+    <string name="settings_screen_preferences">Optionen</string>
+    <string name="settings_screen_gesture">Gesten-Tippen</string>
+    <string name="settings_screen_correction">"Textkorrektur"</string>
+    <string name="settings_screen_advanced">"Erweitert"</string>
+    <string name="settings_screen_theme">"Design"</string>
+    <string name="enable_split_keyboard">"Geteilte Tastatur aktivieren"</string>
+    <string name="language_switch_key_switch_input_method">"Eingabemethoden wechseln"</string>
+    <string name="show_language_switch_key">Sprachwechseltaste</string>
+    <string name="abbreviation_unit_milliseconds">"%s ms"</string>
+    <string name="settings_system_default">Systemstandard</string>
+    <string name="use_contacts_dict_summary">Namen aus Kontakten für Vorschläge und Korrekturen verwenden</string>
+    <string name="use_personalized_dicts">"Personalisierte Vorschläge"</string>
+    <string name="use_double_space_period">"Punkt plus Leerzeichen"</string>
+    <string name="use_double_space_period_summary">"Doppeltippen auf Leertaste fügt Punkt und Leerzeichen ein"</string>
+    <string name="auto_cap">"Autom. Groß-/Kleinschreibung"</string>
+    <string name="auto_cap_summary">Erstes Wort jedes Satzes großschreiben</string>
+    <string name="edit_personal_dictionary">Persönliches Wörterbuch</string>
+    <string name="main_dictionary">Hauptwörterbuch</string>
+    <string name="prefs_show_suggestions">"Änderungsvorschläge"</string>
+    <string name="prefs_show_suggestions_summary">"Vorgeschlagene Wörter während des Tippens anzeigen"</string>
+    <string name="prefs_block_potentially_offensive_title">"Anstößige Wörter sperren"</string>
+    <string name="prefs_block_potentially_offensive_summary">Keine Vorschläge für potenziell anstößige Wörter anzeigen</string>
+    <string name="autocorrect">"Autokorrektur"</string>
+    <string name="auto_correction_summary">Leertaste und Satzzeichen korrigieren automatisch fehlerhafte Wörter</string>
+    <string name="auto_correction_threshold_mode_off">"Aus"</string>
+    <string name="auto_correction_threshold_mode_modest">"Mäßig"</string>
+    <string name="auto_correction_threshold_mode_aggressive">"Stark"</string>
+    <string name="auto_correction_threshold_mode_very_aggressive">"Sehr stark"</string>
+    <string name="bigram_prediction">"Vorschläge für nächstes Wort"</string>
+    <string name="bigram_prediction_summary">"Anhand des vorherigen Wortes Vorschläge machen"</string>
+    <string name="gesture_input">Gesten-Tippen aktivieren</string>
+    <string name="gesture_input_summary">Gib ein Wort ein, indem du durch die Buchstaben gleitest</string>
+    <string name="gesture_preview_trail">Gestenspur anzeigen</string>
+    <string name="gesture_floating_preview_text">Schwebender Echtzeit-Vorschlag</string>
+    <string name="gesture_space_aware">"Phrasengeste"</string>
+    <string name="gesture_space_aware_summary">"Leerzeichen durch Bewegung über die Leertaste einfügen"</string>
+    <string name="subtype_en_GB">"Englisch (UK)"</string>
+    <string name="subtype_en_US">"Englisch (USA)"</string>
+    <string name="subtype_es_US">"Spanisch (USA)"</string>
+    <string name="subtype_hi_Latn">Hinglisch</string>
+    <string name="subtype_sr_Latn">"Serbisch (Lateinisch)"</string>
+    <string name="subtype_generic_traditional">%s (Traditionell)</string>
+    <string name="subtype_generic_compact">%s (Kompakt)</string>
+    <string name="subtype_no_language">"Keine Sprache"</string>
+    <string name="subtype_emoji">"Emoji"</string>
+    <string name="add">"Hinzufügen"</string>
+    <string name="remove">"Entfernen"</string>
+    <string name="save">"Speichern"</string>
+    <string name="subtype_locale">"Sprache"</string>
+    <string name="keyboard_layout_set">"Layout"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Vibrationsdauer bei Tastendruck"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Tonlautstärke bei Tastendruck"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Dauer für langen Tastendruck"</string>
+    <string name="prefs_enable_emoji_alt_physical_key">"Emoji für physische Tastatur"</string>
+    <string name="prefs_enable_emoji_alt_physical_key_summary">"Emoji-Palette auf physischen Tastaturen über Alt-Taste aufrufen"</string>
+    <string name="button_default">"Standard"</string>
+    <string name="setup_welcome_title">Willkommen bei %s</string>
+    <string name="setup_welcome_additional_description">mit Gesten-Tippen</string>
+    <string name="setup_start_action">"Jetzt starten"</string>
+    <string name="setup_steps_title">%s einrichten</string>
+    <string name="setup_step1_title">%s aktivieren</string>
+    <string name="setup_step1_instruction">Bitte aktiviere %s\" unter der Systemeinstellung „Sprachen und Eingabe“.</string>
+    <string name="setup_step1_action">"In den Einstellungen aktivieren"</string>
+    <string name="setup_step2_title">Zu %s wechseln</string>
+    <string name="setup_step2_instruction">Wähle als nächstes %s\" als deine aktive Bildschirmtastatur.</string>
+    <string name="setup_step2_action">"Eingabemethode wechseln"</string>
+    <string name="setup_step3_title">Hurra, die Einrichtung ist abgeschlossen!</string>
+    <string name="setup_step3_instruction">Jetzt kannst du in all deinen Lieblingsapps mit %s schreiben.</string>
+    <string name="setup_finish_action">"Fertig"</string>
+    <string name="show_setup_wizard_icon">"App-Symbol anzeigen"</string>
+    <string name="show_setup_wizard_icon_summary">"App-Symbol in der Übersicht anzeigen"</string>
+    <string name="dictionary_category_title">"Erweiterte Wörterbücher"</string>
+    <string name="dictionary_available">"Wörterbuch verfügbar"</string>
+    <string name="settings">"Einstellungen"</string>
+    <string name="delete">"Löschen"</string>
+    <string name="version_text">Version %s</string>
+    <string name="user_dict_settings_add_shortcut_option_name">"Tastaturkürzel:"</string>
+    <string name="user_dict_settings_add_locale_option_name">"Sprache:"</string>
+    <string name="user_dict_settings_add_word_hint">"Wort eingeben"</string>
+    <string name="user_dict_settings_add_shortcut_hint">"Optionales Tastaturkürzel"</string>
+    <string name="user_dict_settings_edit_dialog_title">"Wort bearbeiten"</string>
+    <string name="user_dict_settings_all_languages">"Für alle Sprachen"</string>
+    <string name="user_dict_settings_more_languages">"Weitere Sprachen…"</string>
+    <string name="select_input_method">"Eingabemethode wählen"</string>
+    <string name="settings_category_clipboard_history">Zwischenablage-Verlauf</string>
+    <string name="settings_category_correction">Korrekturen</string>
+    <string name="settings_category_suggestions">Vorschläge</string>
+    <string name="android_spell_checker_settings">LeanType-Rechtschreibprüfungs-Einstellungen</string>
+    <string name="ime_settings">LeanType-Einstellungen</string>
+    <string name="settings_category_experimental">Experimentell</string>
+    <string name="settings_no_limit">Keine Begrenzung</string>
+    <string name="abbreviation_unit_minutes">%s Min.</string>
+    <string name="spell_checker_service_name">LeanType-Rechtschreibprüfung</string>
+    <string name="show_emoji_key">Emoji-Taste</string>
+    <string name="settings_category_input">Eingabe</string>
+    <string name="settings_category_additional_keys">Zusätzliche Tasten</string>
+    <string name="settings_category_miscellaneous">Sonstiges</string>
+    <string name="enable_clipboard_history">Zwischenablage-Verlauf aktivieren</string>
+    <string name="delete_swipe_summary">Wische über die Löschen-Taste, um mehr Text auf einmal auszuwählen und zu löschen</string>
+    <string name="clipboard_history_retention_time">Speicherdauer des Zwischenablage-Verlaufs</string>
+    <string name="delete_swipe">Löschen durch Wischen</string>
+    <string name="prefs_force_incognito_mode_summary">Deaktiviert das Lernen von neuen Wörtern</string>
+    <string name="more_keys_strip_description">Mehr Tasten</string>
+    <string name="number_row_summary">Zahlenzeile immer anzeigen</string>
+    <string name="number_row">Zahlenzeile</string>
+    <string name="show_hints">Tasten-Hinweise anzeigen</string>
+    <string name="incognito">Inkognito-Modus erzwingen</string>
+    <string name="enable_clipboard_history_summary">Wenn deaktiviert, fügt die Zwischenablage-Taste den Inhalt der Zwischenablage ein (falls vorhanden)</string>
+    <string name="autospace_after_punctuation_summary">Fügt automatisch ein Leerzeichen nach einem Punkt ein, sobald ein neues Wort eingegeben wird</string>
+    <string name="autospace_after_punctuation">Automatisches Leerzeichen nach Punkt</string>
+    <string name="show_hints_summary">Hinweise bei langem Halten anzeigen</string>
+    <string name="prefs_long_press_keyboard_to_change_lang">Eingabemethode mit der Leertaste ändern</string>
+    <string name="prefs_long_press_keyboard_to_change_lang_summary">Langes Halten der Leertaste öffnet das Eingabemethoden-Menü</string>
+    <string name="prefs_keyboard_height_scale">Tastaturgröße</string>
+    <string name="day_night_mode_summary">Aussehen (hell/dunkel) folgt der Systemeinstellung für den Tag-/Nachtmodus</string>
+    <string name="key_borders">Tastenränder</string>
+    <string name="day_night_mode">Automatischer Tag-/Nachtmodus</string>
+    <string name="subtype_akkhor_bn_BD">%s (Bengali)</string>
+    <string name="auto_correction_confidence">Vertrauen in die Autokorrektur</string>
+    <string name="undo">Rückgängig</string>
+    <string name="redo">"Wiederholen"</string>
+    <string name="use_personalized_dicts_summary">"Vorschläge anhand bisheriger Nachrichten und Eingaben verbessern"</string>
+    <string name="label_go_key">"Los"</string>
+    <string name="label_next_key">"Weiter"</string>
+    <string name="label_previous_key">"Zurück"</string>
+    <string name="label_done_key">"Fertig"</string>
+    <string name="label_send_key">"Senden"</string>
+    <string name="label_search_key">"Suchen"</string>
+    <string name="label_pause_key">"Pause"</string>
+    <string name="label_wait_key">"Warten"</string>
+    <string name="prefs_always_show_suggestions">Immer Vorschläge anzeigen</string>
+    <string name="internal_dictionary_summary">Internes Hauptwörterbuch</string>
+    <string name="theme_name_dark" tools:keep="@string/theme_name_dark">Dunkel</string>
+    <string name="main_colors">Nur Hauptfarben anzeigen</string>
+    <string name="up" tools:keep="@string/up">Hoch</string>
+    <string name="voice" tools:keep="@string/voice">Spracheingabe</string>
+    <string name="theme_name_dynamic" tools:keep="@string/theme_name_dynamic">Dynamische Farben</string>
+    <string name="settings_screen_appearance">Aussehen</string>
+    <string name="show_popup_hints">Funktionale Hinweise anzeigen</string>
+    <string name="message_add_custom_layout">Datei in einem kompatiblen Format auswählen. Information zu den Formaten ist %s verfügbar.</string>
+    <string name="select_color_key_background">Tastenhintergrund</string>
+    <string name="restore_error">Fehler beim Wiederherstellen der Sicherung: %s</string>
+    <string name="theme_colors">Farben</string>
+    <string name="select_color_functional_key_background">Funktionstastenhintergrund</string>
+    <string name="subtype_generic_sebeolsik_390">%s (Sebeolsik 390)</string>
+    <string name="add_to_personal_dictionary_summary">Persönliches Wörterbuch des Gerätes verwenden, um gelernte Wörter zu speichern</string>
+    <string name="user_dict_word_already_present">Dieses Wort ist bereits im Benutzer-Wörterbuch %s vorhanden. Bitte gib ein anderes Wort ein.</string>
+    <string name="style_name_Rounded" tools:keep="@string/style_name_Rounded">Abgerundet</string>
+    <string name="button_backup">Sicherung</string>
+    <string name="theme_name_black" tools:keep="@string/theme_name_black">Schwarz</string>
+    <string name="subtype_generic_sebeolsik_final">%s (Sebeolsik Final)</string>
+    <string name="theme_name_chocolate" tools:keep="@string/theme_name_chocolate">Schokolade</string>
+    <string name="remove_dictionary_message">Soll das vom Benutzer hinzugefügte Wörterbuch \"%s\" wirklich entfernt werden?</string>
+    <string name="theme_name_cloudy" tools:keep="@string/theme_name_cloudy">Wolkig</string>
+    <string name="gnu_gpl">GNU General Public License v3.0</string>
+    <string name="day_or_night_day">Tag</string>
+    <string name="dictionary_file_wrong_script">Fehler: Skript ist nicht kompatibel mit dieser Tastatur</string>
+    <string name="hidden_features_title">Beschreibung der versteckten Features</string>
+    <string name="popup_keys_language_priority" tools:keep="@string/popup_keys_language_priority">Sprache (Priorität)</string>
+    <string name="add_to_personal_dictionary">Wörter zum persönlichen Wörterbuch hinzufügen</string>
+    <string name="customize_background_image">Hintergrundbild festlegen</string>
+    <string name="edit_layout">Tippen, um das Rohlayout zu bearbeiten</string>
+    <string name="theme_name_pink" tools:keep="@string/theme_name_pink">Pink</string>
+    <string name="language_and_layouts_title">Sprachen &amp; Layouts</string>
+    <string name="file_read_error">Datei kann nicht gelesen werden</string>
+    <string name="dictionary_link_text">hier</string>
+    <string name="dictionary_file_error">Fehler: Ausgewählte Datei ist keine gültige Wörterbuchdatei</string>
+    <string name="hidden_features_text">gerätegeschützter Speicher</string>
+    <string name="theme_navbar">Navigationsleiste einfärben</string>
+    <string name="theme_name_forest" tools:keep="@string/theme_name_forest">Wald</string>
+    <string name="load_gesture_library_message">Du benötigst die Bibliothek für „%s“. Inkompatible Bibliotheken können zu Abstürzen beim Gesten-Tippen führen. \n \nWarnung: Das Laden von externem Code kann ein Sicherheitsrisiko darstellen. Verwende nur Bibliotheken aus Quellen, denen du vertraust.</string>
+    <string name="add_dictionary">Wörterbuch zum Hinzufügen auswählen. Wörterbücher im .dict-Format können %s heruntergeladen werden.</string>
+    <string name="load_gesture_library_button_delete">Bibliothek löschen</string>
+    <string name="right" tools:keep="@string/right">Rechts</string>
+    <string name="dictionary_load_error">Fehler beim Laden der Wörterbuchdatei</string>
+    <string name="localized_number_row_summary">Lokalisierte Zahlen gegenüber lateinischen bevorzugen</string>
+    <string name="checksum_mismatch_message">Unbekannte Bibliotheksdatei. Bist du sicher, dass du sie von einer vertrauenswürdigen Quelle erhalten hast und sie für „%s“ ist?</string>
+    <string name="theme_name_blue_gray" tools:keep="@string/theme_name_blue_gray">Blau-Grau</string>
+    <string name="select_color_spacebar_text">Leertastenbeschriftung</string>
+    <string name="theme_name_light" tools:keep="@string/theme_name_light">Hell</string>
+    <string name="user_dict_add_word_button">Wort hinzufügen</string>
+    <string name="select_color_suggestion">Textfarbe Wortvorschlag</string>
+    <string name="show_popup_keys_normal">In den Tastatursprachen definierte Varianten anzeigen</string>
+    <string name="show_popup_keys_more">Gemeinsame Varianten hinzufügen</string>
+    <string name="theme_name_user" tools:keep="@string/theme_name_user">Benutzerdefiniert</string>
+    <string name="replace_dictionary">Wörterbuch ersetzen</string>
+    <string name="select_color_background">Tastaturhintergrund</string>
+    <string name="clipboard" tools:keep="@string/clipboard">Zwischenablage</string>
+    <string name="theme_name_indigo" tools:keep="@string/theme_name_indigo">Indigo</string>
+    <string name="select_color_accent">Akzent</string>
+    <string name="about_github_link">Auf GitHub ansehen</string>
+    <string name="popup_keys_number" tools:keep="@string/popup_keys_number">Zahlenzeile</string>
+    <string name="button_restore">Wiederherstellen</string>
+    <string name="popup_order">Popup-Tastenreihenfolge wählen</string>
+    <string name="version">Version</string>
+    <string name="hint_source">Hinweis-Quelle wählen</string>
+    <string name="load_gesture_library_summary">Native Bibliothek bereitstellen, um Gesten-Tippen zu aktivieren</string>
+    <string name="layout_symbols_shifted">Mehr Symbole</string>
+    <string name="url_detection_summary">Versuche URLs und Ähnliches als einzelnes Wort zu erkennen</string>
+    <string name="button_select_language">Sprache auswählen</string>
+    <string name="select_color_key">Tastenbeschriftung</string>
+    <string name="load_gesture_library">Gesten-Tippen-Bibliothek laden</string>
+    <string name="select_color_spacebar_background">Leertastenhintergrund</string>
+    <string name="theme_name_darker" tools:keep="@string/theme_name_darker">Dunkler</string>
+    <string name="day_or_night_image">Bild für den Tag- oder Nachtmodus festlegen?</string>
+    <string name="auto_user_color">Farbe automatisch wählen</string>
+    <string name="settings_screen_about">Über</string>
+    <string name="down" tools:keep="@string/down">Runter</string>
+    <string name="toolbar_keys">Symbolleistentasten wählen</string>
+    <string name="license">Open-Source-Lizenz</string>
+    <string name="backup_error">Sicherungsfehler: %s</string>
+    <string name="show_popup_hints_summary">Hinweise anzeigen, wenn langes Drücken einer Taste zusätzliche Funktionen auslöst</string>
+    <string name="theme_name_sand" tools:keep="@string/theme_name_sand">Sand</string>
+    <string name="backup_restore_title">Sichern und Wiederherstellen</string>
+    <string name="full_left" tools:keep="@string/full_left">Ganz links</string>
+    <string name="theme_style">Stil</string>
+    <string name="select_word" tools:keep="@string/select_word">Wort auswählen</string>
+    <string name="hidden_features_summary">Funktionen anzeigen, die möglicherweise unbemerkt bleiben</string>
+    <string name="theme_colors_night">Farben (Nacht)</string>
+    <string name="left" tools:keep="@string/left">Links</string>
+    <string name="all_colors">Alle Farben zeigen</string>
+    <string name="delete_layout">Benutzerdefiniertes Layout %s wirklich löschen?</string>
+    <string name="dictionary_settings_category">Wörterbücher</string>
+    <string name="button_title_add_custom_layout">Benutzerdefiniertes Layout hinzufügen</string>
+    <string name="select_color_key_hint">Tasten-Hinweistext</string>
+    <string name="setup_step3_action">Tastatur konfigurieren</string>
+    <string name="popup_keys_symbols" tools:keep="@string/popup_keys_symbols">Symbole</string>
+    <string name="add_new_dictionary_title">Wörterbuch aus Datei hinzufügen</string>
+    <string name="theme_name_brown" tools:keep="@string/theme_name_brown">Braun</string>
+    <string name="replace_dictionary_message">Soll das vom Benutzer hinzugefügte Wörterbuch „%1$s“ wirklich ersetzt werden? \n \nAktuelles Wörterbuch: \n%2$s \n \nNeues Wörterbuch: \n%3$s</string>
+    <string name="url_detection_title">URL-Erkennung</string>
+    <string name="theme_name_violette" tools:keep="@string/theme_name_violette">Violett</string>
+    <string name="full_right" tools:keep="@string/full_right">Ganz rechts</string>
+    <string name="localized_number_row">Zahlenzeile lokalisieren</string>
+    <string name="show_popup_keys_all">Alle verfügbaren Varianten hinzufügen</string>
+    <string name="more_autocorrect">Mehr Autokorrektur</string>
+    <string name="split_spacer_scale">Teilungsabstand</string>
+    <string name="user_dict_settings_add_weight_value">Gewichtung:</string>
+    <string name="prefs_always_show_suggestions_summary">Ignoriere Anfragen anderer Apps, Vorschläge zu deaktivieren (kann Probleme verursachen)</string>
+    <string name="switch_language">Sprache wechseln</string>
+    <string name="clear_clipboard" tools:keep="@string/clear_clipboard">Zwischenablage löschen</string>
+    <string name="day_or_night_night">Nacht</string>
+    <string name="prefs_narrow_key_gaps">Enge Tastenlücken</string>
+    <string name="no_dictionary_dont_show_again_button">Nicht noch einmal zeigen</string>
+    <string name="disable_personalized_dicts_message">Warnung: Deaktivieren dieser Einstellung löscht gelernte Daten</string>
+    <string name="load_gesture_library_button_load">Bibliothek laden</string>
+    <string name="button_load_custom">Datei laden</string>
+    <string name="dialog_close">Schließen</string>
+    <string name="prefs_bottom_padding_scale">Randabstand unten</string>
+    <string name="select_color_gesture">Gesteneingabe</string>
+    <string name="text_tap_languages">Sprache antippen, um Einstellungen zu öffnen</string>
+    <string name="show_popup_keys_title">Mehr Buchstaben mit diakritischen Zeichen im Popup anzeigen</string>
+    <string name="one_handed" tools:keep="@string/one_handed">Einhandmodus</string>
+    <string name="layout_error">Layoutfehler: %s</string>
+    <string name="secondary_locale">Mehrsprachiges Tippen</string>
+    <string name="backup_restore_message">Speichern oder Laden aus Datei. Warnung: Die Wiederherstellung überschreibt vorhandene Daten</string>
+    <string name="save_log">Protokoll speichern</string>
+    <string name="popup_keys_layout" tools:keep="@string/popup_keys_layout">Layout</string>
+    <string name="more_autocorrect_summary">Autokorrektur, auch wenn dies vom Eingabefeld nicht explizit angefordert wird</string>
+    <string name="theme_name_holo_white" tools:keep="@string/theme_name_holo_white">Holo-Weiß</string>
+    <string name="language_switch_key_switch_both">Beides wechseln</string>
+    <string name="hidden_features_message">► Durch langes Drücken der angehefteten Tasten in der Symbolleiste erhält du zusätzliche Funktionen: &lt;br&gt; \n\t•Zwischenablage &amp;#65515; einfügen &lt;br&gt; \n\t• nach links/rechts bewegen &amp;#65515; Wort links/rechts &lt;br&gt; \n\t• aufwärts/abwärts bewegen &amp;#65515; Seite auf/ab &lt;br&gt; \n\t• Wort links/rechts &amp;#65515; Zeilenanfang/-ende &lt;br&gt; \n\t• Seite auf/ab &amp;#65515; Seite Anfang/Ende &lt;br&gt; \n\t• kopieren. &amp;#65515; ausschneiden &lt;br&gt; \n\t•Wort wählen &amp;#8596; alle auswählen &lt;br&gt; \n\t• rückgängig &amp;#8596; wiederherstellen. &lt;br&gt; &lt;br&gt; \n► Durch langes Drücken von Tasten in der Symbolleiste der Vorschlagsleiste werden diese an die Vorschlagsleiste angeheftet. &lt;br&gt; &lt;br&gt; \n► Drücke lange auf die Komma-Taste, um die Zwischenablage-Ansicht, die Emoji-Ansicht, den Einhandmodus, die Einstellungen oder die Sprache zu wechseln.: &lt;br&gt; \n\t• Die Emoji-Ansicht und die Sprachumschaltung werden ausgeblendet, wenn du die entsprechende Taste aktiviert hast.; &lt;br&gt; \n\t• Bei einigen Layouts ist es nicht die Komma-Taste, sondern die Taste an der gleichen Position (z.B. \'q\' beim Dvorak-Layout). &lt;br&gt; &lt;br&gt; \n► Wenn der Inkognito-Modus aktiviert ist, werden keine Wörter gelernt und keine Emojis zu den Notizen hinzugefügt. &lt;br&gt; &lt;br&gt; \n► Drücke auf das Symbol Inkognito, um die Symbolleiste aufzurufen. &lt;br&gt; &lt;br&gt; \n► Gleitende Tasteneingabe: Streiche von der Umschalttaste zu einer anderen Taste, um einen einzelnen Großbuchstaben einzugeben: &lt;br&gt; \n\t• Dies funktioniert auch für die Taste \'?123\', um ein einzelnes Symbol von der Symboltastatur einzugeben, und für verwandte Tasten. &lt;br&gt; &lt;br&gt; \n► Halte die Umschalt- oder Symboltaste gedrückt, drücke eine oder mehrere Tasten, und lasse dann die Umschalt- oder Symboltaste los, um zur vorherigen Tastatur zurückzukehren.. &lt;br&gt; &lt;br&gt; \n► Drücke lange auf einen Vorschlag in der Vorschlagsleiste, um weitere Vorschläge anzuzeigen, und eine Löschtaste, um diesen Vorschlag zu entfernen. &lt;br&gt; &lt;br&gt; \n► Wische von einem Vorschlag nach oben, um weitere Vorschläge zu öffnen, und lasse den Vorschlag los, um ihn auszuwählen. &lt;br&gt; &lt;br&gt; \n► Drücke lange auf einen Eintrag in der Zwischenablage, um ihn anzuheften (er bleibt in der Zwischenablage, bis du die Anheftung aufhebst). &lt;br&gt; &lt;br&gt; \n► Wische in der Zwischenablageansicht nach links, um einen Eintrag zu entfernen (außer wenn er angeheftet ist) &lt;br&gt; &lt;br&gt; \n► Markiere den Text und drücke die Umschalttaste, um zwischen Groß- und Kleinschreibung sowie Großschreibung zu wechseln. &lt;br&gt; &lt;br&gt; \n► Du kannst Wörterbücher hinzufügen, indem du sie in einem Datei-Explorer öffnest: &lt;br&gt; \n\t• Dies funktioniert nur mit &lt;i&gt;content-uris&lt;/i&gt; und nicht mit &lt;i&gt;file-uris&lt;/i&gt;, was bedeutet, dass es mit einigen Datei-Explorern möglicherweise nicht funktioniert. &lt;br&gt; &lt;br&gt; \n► Für Benutzer, die manuelle Backups mit Root-Zugriff durchführen: &lt;br&gt; \n\t• Ab Android 7 befindet sich die gemeinsam genutzte Einstellungsdatei nicht am Standardspeicherort, da die App %s verwendet. Dies ist notwendig, damit die Einstellungen gelesen werden können, bevor das Gerät entsperrt wird, z. B. beim Booten; &lt;br&gt; \n\t• Die Datei befindet sich in /data/user_de/0/package_id/shared_prefs/, wobei dies vom jeweiligen Gerät und der Android-Version abhängen kann. &lt;br&gt; &lt;br&gt; \n&lt;i&gt;&lt;b&gt;Debug-Modus / Debug-APK&lt;/b&gt;&lt;/i&gt; &lt;br&gt; &lt;br&gt; \n► Drücke lange auf einen Vorschlag, um das Quellwörterbuch anzuzeigen. &lt;br&gt; &lt;br&gt; \n► Wenn du die Debug-APK verwendest, kannst du die Debug-Einstellungen in den erweiterten Einstellungen finden, obwohl die Nützlichkeit begrenzt ist, außer für die Ausgabe von Wörterbüchern in das Protokoll. &lt;br&gt; \n\t• Für eine Release-APK musst du die Version in &lt;i&gt;About&lt;/i&gt; mehrmals antippen, dann findest du Debug-Einstellungen in &lt;i&gt;Erweiterte Einstellungen&lt;/i&gt;. &lt;br&gt; \n\t• Wenn du die Option &lt;i&gt;Informationen zu Vorschlägen anzeigen&lt;/i&gt; aktivierst, werden die Vorschläge mit kleinen Zahlen versehen, die die interne Bewertung und das Quellenwörterbuch anzeigen. &lt;br&gt; &lt;br&gt; \n► Im Falle eines Anwendungsabsturzes wirst du beim Öffnen der Einstellungen gefragt, ob du die Absturzprotokolle erhalten möchtest. &lt;br&gt; &lt;br&gt; \n► Bei mehrsprachiger Eingabe zeigt die Leertaste einen Vertrauenswert an, der zur Bestimmung der aktuell verwendeten Sprache verwendet wird. &lt;br&gt; &lt;br&gt; \n► Bei den Vorschlägen werden oben einige kleine Zahlen angezeigt, die den internen Punktestand und das Quellenwörterbuch anzeigen (kann deaktiviert werden).</string>
+    <string name="no_dictionary_message">"Ohne Wörterbuch erhältst du nur Vorschläge für Text, den du zuvor eingegeben hast.&lt;br&gt;\n                  Du kannst Wörterbücher %1$s herunterladen oder %3$s überprüfen, ob ein Wörterbuch für \"%2$s\" direkt heruntergeladen werden kann."</string>
+    <string name="available_dictionary_experimental">%s (experimentell)</string>
+    <string name="layout_symbols" tools:keep="@string/layout_symbols">Symbole</string>
+    <string name="layout_symbols_arabic" tools:keep="@string/layout_symbols_arabic">Symbole (arabisch)</string>
+    <string name="layout_phone" tools:keep="@string/layout_phone">Telefon</string>
+    <string name="layout_phone_symbols" tools:keep="@string/layout_phone_symbols">Telefonsymbole</string>
+    <string name="layout_number" tools:keep="@string/layout_number">Zahlen</string>
+    <string name="layout_numpad" tools:keep="@string/layout_numpad">Ziffernblock</string>
+    <string name="layout_numpad_landscape" tools:keep="@string/layout_numpad_landscape">Ziffernblock (Querformat)</string>
+    <string name="subtype_xdq">Kaitakisch</string>
+    <string name="show_vertical_space_swipe">Vertikale Wischgeste der Leertaste</string>
+    <string name="action_none">Nichts</string>
+    <string name="space_swipe_move_cursor_entry">Cursor bewegen</string>
+    <string name="show_horizontal_space_swipe">Horizontale Wischgeste der Leertaste</string>
+    <string name="prefs_long_press_symbol_for_numpad">Symbole-Taste für Ziffernblock gedrückt halten</string>
+    <string name="var_toolbar_direction">Variable Symbolleisten-Richtung</string>
+    <string name="var_toolbar_direction_summary">Richtung umkehren, wenn die Tastatur einer Rechts-nach-Links-Sprache ausgewählt ist</string>
+    <string name="subtype_generic_student">%s (Student)</string>
+    <string name="subtype_probhat_bn_BD">%s (Probhat)</string>
+    <string name="center_suggestion_text_to_enter_summary">Bei Eingabe eines Leerzeichens oder eines Punktes wird der mittlere Vorschlag gewählt</string>
+    <string name="close_history" tools:keep="@string/close_history">Zwischenablage-Verlauf schließen</string>
+    <string name="center_suggestion_text_to_enter">Immer mittleren Vorschlag verwenden</string>
+    <string name="clipboard_toolbar_keys">Tasten der Symbolleiste für die Zwischenablage auswählen</string>
+    <string name="subtype_generic_extended">%s (Erweitert)</string>
+    <string name="pinned_toolbar_keys">Angeheftete Tasten der Symbolleiste auswählen</string>
+    <string name="quick_pin_toolbar_keys_summary">Dadurch werden andere Langdruck-Aktionen für Tasten der Symbolleiste, die nicht angeheftet sind, deaktiviert</string>
+    <string name="toast_msg_clipboard_copy">Inhalt kopiert</string>
+    <string name="auto_show_toolbar">Symbolleiste automatisch anzeigen</string>
+    <string name="auto_show_toolbar_summary">Symbolleiste anzeigen, wenn die Eingabe beginnt oder Text ausgewählt ist</string>
+    <string name="auto_hide_toolbar">Symbolleiste automatisch ausblenden</string>
+    <string name="auto_hide_toolbar_summary">Ausblenden der Symbolleiste, wenn Vorschläge verfügbar sind</string>
+    <string name="language_switch_key_behavior">Verhalten der Sprachwechseltaste</string>
+    <string name="quick_pin_toolbar_keys">Symbolleisten-Taste bei langem Drücken anheften</string>
+    <string name="settings_screen_toolbar">Symbolleiste</string>
+    <string name="emoji" tools:keep="@string/emoji">Emoji</string>
+    <string name="subtype_mns">Mansi</string>
+    <string name="more_colors">Mehr Farben anzeigen</string>
+    <string name="all_colors_warning">Diese Einstellung legt alle intern verwendeten Farben offen. Die Liste der Farben kann sich jederzeit ändern. Der Standard ist von den normalen Farben abgeleitet und die Namen werden nicht übersetzt.</string>
+    <string name="layout_functional_keys" tools:keep="@string/layout_functional_keys">Funktionstasten</string>
+    <string name="layout_functional_keys_symbols" tools:keep="@string/layout_functional_keys_symbols">Funktionstasten (Symbole)</string>
+    <string name="layout_functional_keys_symbols_shifted" tools:keep="@string/layout_functional_keys_symbols_shifted">Funktionstasten (Mehr Symbole)</string>
+    <string name="gesture_fast_typing_cooldown">­Abkühlzeit für schnelles Tippen</string>
+    <string name="gesture_fast_typing_cooldown_instant">Immer direkt starten</string>
+    <string name="customize_currencies">Währungen anpassen</string>
+    <string name="customize_currencies_detail">Standard- und bis zu 6 zusätzliche Währungssymbole, separiert durch ein Leerzeichen, festlegen</string>
+    <string name="load">Laden</string>
+    <string name="button_save_file">In Datei speichern</string>
+    <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
+    <string name="page_end" tools:keep="@string/page_end">Seitenende</string>
+    <string name="word_left" tools:keep="@string/word_left">Linkes Wort</string>
+    <string name="word_right" tools:keep="@string/word_right">Rechtes Wort</string>
+    <string name="page_up" tools:keep="@string/page_up">Seite hoch</string>
+    <string name="page_down" tools:keep="@string/page_down">Seite runter</string>
+    <string name="page_start" tools:keep="@string/page_start">Seitenanfang</string>
+    <string name="suggest_clipboard_content_summary">Zuletzt kopierte Inhalte der Zwischenablage als Vorschlag anzeigen</string>
+    <string name="suggest_clipboard_content">Zwischenablagen-Inhalt vorschlagen</string>
+    <string name="after_symbol_and_space">Drücken der Eingabetaste oder der Leertaste nach anderen Tasten in der Symbolansicht</string>
+    <string name="after_clip">Auswählen eines Eintrags des Zwischenablagenverlaufs</string>
+    <string name="after_emoji">Auswählen eines Emojis in der Emojiansicht</string>
+    <string name="switch_keyboard_after">Zur Haupttastatur zurückkehren nach …</string>
+    <string name="space_swipe_toggle_numpad_entry">Ziffernblock umschalten</string>
+    <string name="show_popup_keys_main">Sehr häufige Varianten hinzufügen (Standard)</string>
+    <string name="remove_redundant_popups">Redundante Popups entfernen</string>
+    <string name="remove_redundant_popups_summary">Popup-Tasten unterdrücken, die bereits im Basislayout vorhanden sind</string>
+    <string name="gesture_floating_preview_static">Schwebende Vorschau</string>
+    <string name="gesture_floating_preview_static_summary">Das vorgeschlagene Wort während der Geste anzeigen</string>
+    <string name="gesture_floating_preview_dynamic_summary">Die Vorschau während einer Geste mitbewegen</string>
+    <string name="gesture_trail_fadeout_duration">Anzeigedauer der Gestenspur</string>
+    <string name="prefs_space_bar_text">Benutzerdefinierter Text auf der Leertaste</string>
+    <string name="layout_number_row" tools:keep="@string/layout_number_row">Zahlenzeile</string>
+    <string name="layout_emoji_bottom_row" tools:keep="@string/layout_emoji_bottom_row">Emoji untere Zeile</string>
+    <string name="layout_clip_bottom_row" tools:keep="@string/layout_clip_bottom_row">Zwischenablage untere Zeile</string>
+    <string name="icon_style">Symbolstil</string>
+    <string name="label_enter_key" tools:keep="@string/label_enter_key">Eingabe</string>
+    <string name="label_tab_key" tools:keep="@string/label_tab_key">Tabulator</string>
+    <string name="label_shift_key" tools:keep="@string/label_shift_key">Umschalttaste</string>
+    <string name="label_shift_key_shifted" tools:keep="@string/label_shift_key_shifted">Umschalttaste (umgeschalten)</string>
+    <string name="label_shift_key_locked" tools:keep="@string/label_shift_key_locked">Feststell</string>
+    <string name="label_space_key_for_number_layout" tools:keep="@string/label_space_key_for_number_layout">Leertaste (Nummern Layout)</string>
+    <string name="label_stop_onehanded_mode_key" tools:keep="@string/label_stop_onehanded_mode_key">Einhand Modus beenden</string>
+    <string name="label_switch_onehanded_key" tools:keep="@string/label_switch_onehanded_key">Tausche Einhand Modus seite</string>
+    <string name="label_shortcut_key_disabled" tools:keep="@string/label_shortcut_key_disabled">Spracheingabe deaktiviert</string>
+    <string name="label_toolbar_key" tools:keep="@string/label_toolbar_key">Zeigen/verstecken Symbolleiste</string>
+    <string name="label_resize_onehanded_key" tools:keep="@string/label_resize_onehanded_key">Einhand Modus Größe anpassen</string>
+    <string name="customize_toolbar_key_codes">Anpassen der Symbolleiste Keycodes</string>
+    <string name="label_zwj_key" tools:keep="@string/label_zwj_key">Beeitenloser Verbinder</string>
+    <string name="label_zwnj_key" tools:keep="@string/label_zwnj_key">Bindehemmer</string>
+    <string name="key_code">Keycode</string>
+    <string name="long_press_code">Langes Drücken Code</string>
+    <string name="customize_icons">Symbole Anpassen</string>
+    <string name="label_delete_key" tools:keep="@string/label_delete_key">Entfernen</string>
+    <string name="label_bin" tools:keep="@string/label_bin">Papierkorb</string>
+    <string name="customize_icons_reset_message">Wirklich alle benutzerdefinierten Symbole zurücksetzen?</string>
+    <string name="vibrate_in_dnd_mode">Vibrieren im Bitte nicht stören Modus</string>
+    <string name="prefs_key_emoji_max_sdk">Emoji Version überschreiben</string>
+    <string name="auto_correct_shortcuts">Abkürzungen automatisch korrigieren</string>
+    <string name="auto_correct_shortcuts_summary">Wenn aktiviert, können Abkürzungen von der Autokorrektur erweitert werden</string>
+    <string name="custom_font">Benutzerdefinierte Schriftart aus Datei festlegen</string>
+    <string name="summary_customize_background_image_landscape">Wenn nicht gesetzt, wird das Hochformat-Bild genutzt</string>
+    <string name="customize_background_image_landscape">Hintergrundbild setzen (Querformat)</string>
+    <string name="customize_toolbar_key_code_reset_message">Wirklich alle benutzerdefinierten Tastencodes zurücksetzen?</string>
+    <string name="enable_split_keyboard_landscape">Geteilte Tastatur aktivieren (Querformat)</string>
+    <string name="number_row_hints">Hinweise auf der Zahlenzeile zeigen</string>
+    <string name="split" tools:keep="@string/split">Getrennte Tastatur</string>
+    <string name="prefs_font_scale">Tastatur-Schriftgrad</string>
+    <string name="prefs_emoji_font_scale">Emoji-Ansicht Schriftgrad</string>
+    <string name="prefs_language_swipe_distance">Sprache wechseln Wischabstand</string>
+    <string name="locales_with_dict">Sprachen mit Wörterbüchern</string>
+    <string name="get_colors_message">Du kannst Farben im %s finden und teilen.</string>
+    <string name="subtype_dru">Dargwa (Urakhi)</string>
+    <string name="settings_screen_secondary_layouts">Sekundäre Layouts</string>
+    <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">Funktionstasten (großer Bildschirm)</string>
+    <string name="prefs_side_padding_scale">Seitenabstand</string>
+    <string name="subtype_generic_phonetic">%s (Phonetisch)</string>
+    <string name="layout_in_use">Warnung: Das Layout wird derzeit verwendet</string>
+    <string name="get_layouts_message">Du kannst Layouts im %s finden und freigeben.</string>
+    <string name="discussion_section_link">Diskussionsbereich</string>
+    <string name="delete_confirmation">%s wirklich löschen?</string>
+    <string name="name_invalid">Ungültiger Name</string>
+    <string name="custom_subtype">Benutzerdefinierter Subtyp</string>
+    <string name="subtype_baishakhi_bn_IN">%s (Baisakhi)</string>
+    <string name="show_tld_popup_keys">Zeige TLD-Popup-Tasten</string>
+    <string name="show_tld_popup_keys_summary">Ersetze Punkt-Tastenpopups mit Top-Level-Domains wenn URLs und Mailadressen eingegeben werden</string>
+    <string name="prefs_always_show_suggestions_except_web_text">Nicht immer Vorschläge für Web-Editierfelder anzeigen</string>
+    <string name="layout_number_row_basic" tools:keep="@string/layout_number_row_basic">Zahlenreihe (Basis)</string>
+    <string name="prefs_always_show_suggestions_except_web_text_summary">Web-Eingabefelder (meist in Browsern) sind eine häufige Ursache für Probleme mit der Einstellung \"Immer Vorschläge anzeigen\"</string>
+    <string name="after_numpad_and_space">Drücken der Eingabetaste oder der Leertaste nach anderen Tasten im Ziffernblock</string>
+    <string name="settings_category_space">Leertaste</string>
+    <string name="shift_removes_autospace_summary">Shift entfernt anstehende automatische Leerzeichen</string>
+    <string name="autospace_after_gesture_typing">Leerzeichen nach Wörtern bei Gesten-Tippen</string>
+    <string name="shift_removes_autospace">Kein automatisches Leerzeichen beim drücken von Shift</string>
+    <string name="autospace_before_gesture_typing">Leerzeichen vor Wörtern bei Gesten-Tippen</string>
+    <string name="timestamp_format_title">Format der Timestamp-Taste</string>
+    <string name="subtype_dag">Dagbani</string>
+    <string name="subtype_st">Sesotho</string>
+    <string name="backspace_reverts_autocorrect">Rücktaste macht Autokorrektur rückgängig</string>
+    <string name="autospace_after_suggestion">Automatische Leerzeichen nach Auswählen eines Vorschlags</string>
+    <string name="prefs_emoji_key_fit">Skaliere den Emoji-Knopf mit der Schriftgröße</string>
+    <string name="backup_restored">Backup wiederhergestellt</string>
+    <string name="use_apps_dict">App-Namen nachschlagen</string>
+    <string name="use_apps_dict_summary">Namen der installierten Apps für Vorschläge und Korrekturen verwenden</string>
+    <string name="prefs_emoji_skin_tone">Standard-Emoji-Hautton</string>
+    <string name="prefs_emoji_skin_tone_neutral">Neutral</string>
+    <string name="toolbar_mode_expandable">Symbolleiste Tasten und Vorschläge</string>
+    <string name="toolbar_mode_toolbar_keys">Symbolleiste nur Tasten</string>
+    <string name="popup_order_and_hint_source">Popup Tasten Reihenfolge und Vorschlag Quelle</string>
+    <string name="toolbar_mode_hidden">Versteckt</string>
+    <string name="toolbar_hiding_global">Auch Zwischenablage und Emoji Symbolleisten verstecken</string>
+    <string name="subtype_with_layout_generic">%1$s (%2$s)</string>
+    <string name="landscape">Querformat</string>
+    <string name="toolbar_mode_suggestion_strip">Nur Vorschläge</string>
+    <string name="toolbar_mode">Symbolleiste Modus</string>
+    <string name="show_emoji_descriptions">Zeige Emoji-Beschreibung bei langem gedrückt halten</string>
+    <string name="suggest_emojis">Emojis vorschlagen</string>
+    <string name="suggest_emojis_summary">Emoji Wörterbuch in normalen Vorschlägen verwenden</string>
+    <string name="space_swipe_hide_keyboard_entry">Tastatur verstecken</string>
+    <string name="suggest_punctuation">Satzzeichen Vorschläge</string>
+    <string name="suggest_punctuation_summary">Zeige Satzzeichen wenn keine anderen Vorschläge verfügbar sind</string>
+    <string name="about_wiki_link_description">Das Wiki kann von jedem Github Nutzer verbessert werden!</string>
+    <string name="about_wiki_link">Zum Wiki gehen</string>
+    <string name="inline_emoji_search">Inline Emoji-Suche</string>
+    <string name="inline_emoji_search_summary">Emojis werden nur vorgeschlagen, wenn ein Wort direkt auf einen Doppelpunkt folgt</string>
+    <string name="emoji_dictionary_required">Ein Emoji-Wörterbuch wird für diese Funktion benötigt. Wörterbücher im .dict-Format können %s heruntergeladen werden.</string>
+    <string name="save_subtype_per_app">Sprache pro App merken</string>
+    <string name="layout_emoji_bottom_row_with_action" tools:keep="@string/layout_emoji_bottom_row_with_action">Emoji untere Zeile mit Aktions-Taste</string>
+    <string name="layout_clip_bottom_row_with_action" tools:keep="@string/layout_clip_bottom_row_with_action">Zwischenablage untere Zeile mit Aktions-Taste</string>
+    <string name="custom_emoji_font">Benutzerdefinierte Emoji-Schriftart aus Datei festlegen</string>
+    <string name="number_row_in_symbols">Zeilenzeile in Symbol-Ansicht anzeigen</string>
+    <string name="clipboard_history_pinned_first">Angeheftete Elemente zuerst anzeigen</string>
+    <string name="subtype_mhr">Ostmari</string>
+    <string name="subtype_khipro_bn">%s (Khipro)</string>
+    <string name="layout_functional_keys_khipro" tools:keep="@string/layout_functional_keys">Funktionale Tasten (Khipro)</string>
+
+    <string name="ime_name">LeanType</string>
+    <string name="settings_category_configuration">Konfiguration</string>
+    <string name="settings_category_visuals">Optik &amp; Vorschau</string>
+    <string name="settings_category_behavior">Verhalten</string>
+    <string name="settings_category_gestures_advanced">Erweiterte Gesten</string>
+    <string name="settings_category_touchpad">Touchpad</string>
+    <string name="edit_blocked_words">Blockierte Wörter</string>
+    <string name="blocked_words_summary">Wörter verwalten, die von Vorschlägen blockiert sind</string>
+    <string name="add_blocked_word">Ein Wort blockieren</string>
+    <string name="blocked_word_already_present">Wort ist bereits blockiert</string>
+    <string name="clear_all_blocked_words_confirmation">Möchten Sie wirklich alle Wörter entsperren?</string>
+    <string name="auto_correction_trigger">Auto-Korrektur bei</string>
+    <string name="auto_correction_trigger_both">Leertaste und Satzzeichen</string>
+    <string name="auto_correction_trigger_space">Nur Leertaste</string>
+    <string name="auto_correction_trigger_punctuation">Nur Satzzeichen</string>
+    <string name="prefs_physical_keyboard_suggestion_shortcuts">Vorschlags-Shortcuts für physische Tastatur</string>
+    <string name="prefs_physical_keyboard_suggestion_shortcuts_summary">Wählen Sie Vorschlagskandidaten mit Tastaturkürzeln und zeigen Sie Nummern-Badges an</string>
+    <string name="physical_keyboard_shortcut_disabled">Deaktiviert</string>
+    <string name="physical_keyboard_shortcut_alt">Alt + Zahl (Alt+1, Alt+2, Alt+3)</string>
+    <string name="physical_keyboard_shortcut_ctrl">Strg + Zahl (Strg+1, Strg+2, Strg+3)</string>
+    <string name="physical_keyboard_shortcut_number">Zahlentaste (1, 2, 3 beim Verfassen)</string>
+    <string name="large_screen_layout_note">Einstellungen auf diesem Bildschirm gelten für das Großbild-Layout</string>
+    <string name="prioritize_personal_suggestions">Persönliche und gelernte Wörter priorisieren</string>
+    <string name="prioritize_personal_suggestions_summary">Bei der Vorhersage des nächsten Wortes dem persönlichen Wörterbuch und gelernten Wörtern eine höhere Punktzahlpriorität geben</string>
+    <string name="next_word_boost_level">Steigerungsstufe für gelernte Wörter</string>
+    <string name="next_word_boost_level_summary">Stärke der Punktzahlpriorität für gelernte und persönliche Wörterbucheinträge einstellen</string>
+    <string name="next_word_strict_ngram">Kontextübereinstimmung für gelernte Wörter erforderlich</string>
+    <string name="next_word_strict_ngram_summary">Nur gelernte Wörter vorschlagen, wenn der vorhergehende Wortkontext übereinstimmt</string>
+    <string name="immediate_auto_space">Sofortiges automatisches Leerzeichen</string>
+    <string name="immediate_auto_space_summary">Bei Auswahl eines Vorschlags sofort ein Leerzeichen einfügen, um Verzögerung beim nächsten getippten Buchstaben zu vermeiden</string>
+    <string name="first_word_prediction">Erstwort-Vorschläge</string>
+    <string name="first_word_prediction_summary">Vorschläge anzeigen, wenn am Satzanfang keine Eingabe vorhanden ist</string>
+    <string name="suggest_screenshots">Aktuelle Screenshots vorschlagen</string>
+    <string name="suggest_screenshots_summary">Kürzlich aufgenommene Screenshots als Vorschlag anzeigen</string>
+    <string name="auto_read_otp">OTP automatisch aus SMS lesen</string>
+    <string name="auto_read_otp_summary">Den Code aus einer eingehenden SMS als Vorschlag anzeigen, den Sie zum Einfügen antippen können</string>
+    <string name="spoken_otp_suggestion">OTP-Vorschlag verwerfen</string>
+    <string name="compress_screenshots">Screenshot-Vorschläge komprimieren</string>
+    <string name="compress_screenshots_summary">Qualität und Größe der Screenshot-Vorschläge reduzieren, um Speicherplatz zu sparen</string>
+    <string name="clipboard_fold_pinned">Angeheftete Einträge standardmäßig einklappen</string>
+    <string name="clear_clipboard_icon">Zwischenablage leeren Symbol</string>
+    <string name="clear_clipboard_icon_summary">Stil des Symbols für die Schaltfläche „Zwischenablage leeren“ wählen</string>
+    <string name="clear_clipboard_icon_bin">Mülleimer</string>
+    <string name="clear_clipboard_icon_sweep">Fegen / Alle löschen</string>
+    <string name="clear_clipboard_icon_sweep_slanted">Schräge Linien</string>
+    <string name="clear_clipboard_icon_clipboard_slash">Umriss Zwischenablage mit Schrägstrich</string>
+    <string name="clear_clipboard_icon_legacy">Klassische Zwischenablage</string>
+    <string name="clipboard_pinned">Angeheftet</string>
+    <string name="clipboard_search_hint">Clips durchsuchen...</string>
+    <string name="clipboard_empty_text">Keine Einträge gefunden</string>
+    <string name="clipboard_item_deleted">Eintrag gelöscht</string>
+    <string name="clipboard_no_search_results">Keine Ergebnisse gefunden</string>
+    <string name="clipboard_clear_all_confirmation">Möchten Sie wirklich den gesamten Verlauf löschen?</string>
+    <string name="clear_all">Alle löschen</string>
+    <string name="gesture_method">Methode für Gesteneingabe</string>
+    <string name="gesture_method_summary">Algorithmus für Wischeingabe wählen</string>
+    <string name="gesture_method_native">Native Bibliothek (erfordert swypelib)</string>
+    <string name="gesture_method_fallback">Fallback-Engine (reines Java)</string>
+    <string name="load_gesture_library_button_download">Bibliothek herunterladen</string>
+    <string name="load_gesture_library_downloading">Gesture-Bibliothek wird heruntergeladen…</string>
+    <string name="load_gesture_library_download_success">Download abgeschlossen! Neustart…</string>
+    <string name="load_gesture_library_download_failed">Download fehlgeschlagen: %s</string>
+    <string name="load_handwriting_plugin">Handschrift-Plugin laden</string>
+    <string name="load_handwriting_plugin_summary">Ein APK-Plugin bereitstellen, um Handschrifteingabe zu aktivieren</string>
+    <string name="load_handwriting_plugin_message">Stellen Sie ein Handschrift-Plugin-APK bereit.\n\nWarnung: Das Laden von externem Code kann ein Sicherheitsrisiko darstellen. Verwenden Sie nur ein Plugin aus einer vertrauenswürdigen Quelle.</string>
+    <string name="load_handwriting_plugin_button_load">Plugin-APK laden</string>
+    <string name="load_handwriting_plugin_button_delete">Plugin löschen</string>
+    <string name="load_handwriting_plugin_success">Handschrift-Plugin erfolgreich importiert</string>
+    <string name="load_handwriting_plugin_failed">Fehler beim Laden des Handschrift-Plugin-APKs</string>
+    <string name="load_translation_plugin">Übersetzungs-Plugin laden</string>
+    <string name="load_translation_plugin_summary">Ein APK-Plugin bereitstellen, um Übersetzungs-Engine zu aktivieren</string>
+    <string name="load_translation_plugin_button_delete">Plugin löschen</string>
+    <string name="load_translation_plugin_success">Übersetzungs-Plugin erfolgreich importiert</string>
+    <string name="load_translation_plugin_failed">Fehler beim Laden des Übersetzungs-Plugin-APKs</string>
+    <string name="handwriting">Handschrift</string>
+    <string name="delete_handwriting_model">Heruntergeladenes Modell löschen</string>
+    <string name="handwriting_model_deleted">Handschriftmodell gelöscht</string>
+    <string name="handwriting_plugin_required">Handschrift-Plugin erforderlich</string>
+    <string name="handwriting_plugin_summary_text">Bitte laden Sie die Handschrift-Plugin-Bibliothek, um Zeichnungserkennung zu aktivieren.</string>
+    <string name="handwriting_plugin_load_button">Plugin laden</string>
+    <string name="autospace_after_emoji">Automatisches Leerzeichen nach Emoji</string>
+    <string name="autospace_after_emoji_summary">Beim Tippen eines neuen Wortes automatisch ein Leerzeichen nach einem Emoji einfügen</string>
+    <string name="preserve_space_before_punctuation">Leerzeichen vor Satzzeichen beibehalten</string>
+    <string name="preserve_space_before_punctuation_summary">Leerzeichen vor Satzzeichen nicht automatisch löschen: ]}):;!?,.</string>
+    <string name="touchpad">Touchpad</string>
+    <string name="text_edit">Textbearbeitung</string>
+    <string name="select_mode">Auswahlmodus</string>
+    <string name="touchpad_fullscreen">Vollbild-Touchpad</string>
+    <string name="touchpad_fullscreen_summary">Vorschlagsleiste und Werkzeugleiste ausblenden, wenn der Touchpad-Modus aktiv ist</string>
+    <string name="languages_title">Sprachen</string>
+    <string name="compact_number_row_in_symbols">Kompakte Zahlenreihe in Symbolen</string>
+    <string name="compact_number_row_in_symbols_summary">Ersetzt die erste Symbolreihe, anstatt eine separate Zeile hinzuzufügen</string>
+    <string name="popup_keys_language">@string/subtype_locale</string>
+    <string name="paste">@android:string/paste</string>
+    <string name="copy">@android:string/copy</string>
+    <string name="cut">@android:string/cut</string>
+    <string name="clipboard_search">Zwischenablage durchsuchen</string>
+    <string name="download">Herunterladen</string>
+    <string name="downloading">Herunterladen…</string>
+    <string name="download_failed">Download fehlgeschlagen</string>
+    <string name="installed">Installiert</string>
+    <string name="numpad">@string/layout_numpad</string>
+    <string name="select_all">@android:string/selectAll</string>
+    <string name="floating">Schwebend</string>
+    <string name="proofread">Korrekturlesen</string>
+    <string name="proofread_loading">Korrekturlesen…</string>
+    <string name="proofread_success">Text korrekturgelesen</string>
+    <string name="proofread_error">Korrekturlesen fehlgeschlagen: %s</string>
+    <string name="proofread_no_text">Kein Text zum Korrekturlesen</string>
+    <string name="proofread_no_api_key">Gemini API-Schlüssel nicht festgelegt. Gehen Sie zu Einstellungen → AI-Integration.</string>
+    <string name="gemini_api_key_title">Gemini API-Schlüssel</string>
+    <string name="gemini_api_key_summary">Geben Sie Ihren Google Gemini API-Schlüssel zum Korrekturlesen ein</string>
+    <string name="gemini_api_key_hint">API-Schlüssel eingeben</string>
+    <string name="get_api_key">API-Schlüssel erhalten</string>
+    <string name="gemini_model_title">Gemini-Modell</string>
+    <string name="gemini_model_summary">Wählen Sie das AI-Modell zum Korrekturlesen aus</string>
+    <string name="gemini_test_api_key">API-Schlüssel testen</string>
+    <string name="gemini_api_key_valid">API-Schlüssel ist gültig!</string>
+    <string name="gemini_api_key_invalid">API-Schlüssel-Test fehlgeschlagen: %s</string>
+    <string name="gemini_testing_api_key">API-Schlüssel wird getestet…</string>
+    <string name="disable_network_title">Gesamten Netzwerkzugriff deaktivieren</string>
+    <string name="disable_network_summary">Interne Sperre: Blockiert alle Netzwerkanfragen dieser App. Um die Berechtigung vollständig zu entziehen, nutzen Sie die System-App-Info-Einstellungen.</string>
+    <string name="open_app_info">System-App-Info öffnen</string>
+    <string name="open_app_info_summary">Berechtigungen und Akkunutzung in den Android-Einstellungen verwalten</string>
+    <string name="gemini_network_disabled">Netzwerkzugriff ist in den LeanType-Einstellungen deaktiviert</string>
+    <string name="ai_provider_title">AI-Anbieter</string>
+    <string name="ai_provider_summary">Wählen Sie den AI-Dienst zum Korrekturlesen</string>
+    <string name="ai_provider_gemini">Google Gemini</string>
+    <string name="split_toolbar">Geteilte Werkzeugleiste</string>
+    <string name="split_toolbar_summary">Vorschläge von der Werkzeugleiste trennen</string>
+    <string name="auto_span_toolbar_keys">Automatisches Spannen der Werkzeugleisten-Tasten</string>
+    <string name="auto_span_toolbar_keys_summary">Werkzeugleisten-Tasten erweitern, um verfügbaren freien Platz zu füllen</string>
+    <string name="show_download_button_in_toolbar">Download-Schaltfläche in Werkzeugleiste anzeigen</string>
+    <string name="show_download_button_in_toolbar_summary">Wörterbuch-Download-Symbol in der Vorschlagsleiste anzeigen, wenn das Hauptwörterbuch fehlt</string>
+    <string name="ai_provider_huggingface">Groq</string>
+    <string name="ai_provider_openai">HF/OpenAI-kompatibel</string>
+    <string name="huggingface_token_title">API-Token</string>
+    <string name="huggingface_token_summary">Geben Sie Ihren HuggingFace- oder OpenAI-kompatiblen API-Schlüssel ein</string>
+    <string name="groq_token_title">API-Token</string>
+    <string name="groq_token_summary">Geben Sie Ihren Groq API-Schlüssel ein</string>
+    <string name="groq_token_hint">API-Schlüssel eingeben</string>
+    <string name="huggingface_token_hint">API-Schlüssel eingeben</string>
+    <string name="get_groq_key">Groq-Schlüssel erhalten</string>
+    <string name="get_huggingface_key">API-Token erhalten</string>
+    <string name="huggingface_no_token">API-Token nicht festgelegt. Gehen Sie zu Einstellungen → AI-Integration.</string>
+    <string name="huggingface_model_title">Modell</string>
+    <string name="huggingface_model_summary">Groq-Modell auswählen</string>
+    <string name="huggingface_model_hint">Modellname</string>
+    <string name="huggingface_no_model">Kein Modell konfiguriert. Gehen Sie zu Einstellungen → AI-Integration.</string>
+    <string name="huggingface_endpoint_title">API-Endpunkt</string>
+    <string name="huggingface_endpoint_summary">API-Endpunkt-URL</string>
+    <string name="huggingface_endpoint_hint">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="insecure_connection_blocked">Unsichere HTTP-Verbindung blockiert. Aktivieren Sie \'Unsichere Verbindungen erlauben\' in den AI-Einstellungen.</string>
+    <string name="ai_allow_insecure_connections_title">Unsichere Verbindungen erlauben</string>
+    <string name="ai_allow_insecure_connections_summary">HTTP-Verbindungen erlauben und SSL-Zertifikatsfehler ignorieren. Warnung: Setzt die Eingabe lokalem Netzwerk-Mithören aus.</string>
+    <string name="backup_category_layouts">Layouts</string>
+    <string name="backup_category_theme">Design &amp; benutzerdefinierte Hintergründe</string>
+    <string name="backup_category_dictionary">Wörterbücher &amp; Tippverlauf</string>
+    <string name="backup_category_clipboard">Zwischenablage-Verlauf</string>
+    <string name="backup_category_general">Allgemeine Einstellungen</string>
+    <string name="backup_select_items">Einzuschließende Elemente auswählen:</string>
+    <string name="config_gemini_models_endpoint">https://generativelanguage.googleapis.com/v1beta/models?key=%1$s</string>
+    <string name="config_groq_models_endpoint">https://api.groq.com/openai/v1/models</string>
+    <string name="config_default_hf_endpoint">https://api.openai.com/v1/chat/completions</string>
+    <string name="config_groq_chat_endpoint">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="offline_keep_model_loaded_title">Modell geladen halten</string>
+    <string name="offline_keep_model_loaded_summary">Das Offline-AI-Modell im Speicher behalten, um Nachladeverzögerung zu vermeiden (verbraucht mehr RAM)</string>
+    <string name="translate">Übersetzen</string>
+    <string name="translate_loading">Übersetzung…</string>
+    <string name="translate_success">Text übersetzt</string>
+    <string name="translate_error">Übersetzung fehlgeschlagen: %s</string>
+    <string name="translate_no_text">Kein Text zum Übersetzen</string>
+    <string name="translate_target_language_title">Zielsprache der Übersetzung</string>
+    <string name="translate_target_language_summary">Sprache wählen, in die übersetzt werden soll</string>
+    <string name="translate_model_title">Übersetzungsmodell</string>
+    <string name="translate_model_summary">Wählen Sie das AI-Modell für die Übersetzung. Leer lassen, um das Korrekturlese-Modell zu verwenden.</string>
+    <string name="translation_engine_title">Übersetzungs-Engine</string>
+    <string name="translation_engine_summary">Backend für die Übersetzung wählen (Plugin oder AI)</string>
+    <string-array name="translate_language_names">
+  <item>Englisch</item>
+  <item>Spanisch</item>
+  <item>Französisch</item>
+  <item>Deutsch</item>
+  <item>Italienisch</item>
+  <item>Portugiesisch</item>
+  <item>Chinesisch (Vereinfacht)</item>
+  <item>Chinesisch (Traditionell)</item>
+  <item>Japanisch</item>
+  <item>Koreanisch</item>
+  <item>Arabisch</item>
+  <item>Russisch</item>
+  <item>Hindi</item>
+  <item>Bengali</item>
+  <item>Indonesisch</item>
+  <item>Niederländisch</item>
+  <item>Türkisch</item>
+  <item>Polnisch</item>
+  <item>Ukrainisch</item>
+  <item>Schwedisch</item>
+  <item>Dänisch</item>
+  <item>Norwegisch</item>
+  <item>Finnisch</item>
+  <item>Griechisch</item>
+  <item>Hebräisch</item>
+  <item>Thailändisch</item>
+  <item>Vietnamesisch</item>
+  <item>Tamil</item>
+  <item>Telugu</item>
+  <item>Marathi</item>
+  <item>Gujarati</item>
+  <item>Kannada</item>
+  <item>Malayalam</item>
+  <item>Urdu</item>
+  <item>Persisch (Farsi)</item>
+  <item>Suaheli</item>
+  <item>Rumänisch</item>
+  <item>Tschechisch</item>
+  <item>Ungarisch</item>
+  <item>Filipino (Tagalog)</item>
+  <item>Malaiisch</item>
+  <item>Serbisch</item>
+  <item>Kroatisch</item>
+  <item>Bulgarisch</item>
+  <item>Slowakisch</item>
+  <item>Slowenisch</item>
+  <item>Litauisch</item>
+  <item>Lettisch</item>
+  <item>Estnisch</item>
+  <item>Katalanisch</item>
+  <item>Baskisch</item>
+</string-array>
+    <string name="toolbar_long_press_hint">Punkte für Langdruck-Hinweis anzeigen</string>
+    <string name="toolbar_long_press_hint_summary">Punkte auf Werkzeugleisten-Schaltflächen mit Langdruck-Aktion anzeigen</string>
+    <string name="prefs_narrow_key_gaps_level">Stärke der Tastenabstände</string>
+    <string name="narrowness_level_low">Kleinst</string>
+    <string name="narrowness_level_medium_low">Klein</string>
+    <string name="narrowness_level_medium">Mittel</string>
+    <string name="narrowness_level_medium_high">Groß</string>
+    <string name="narrowness_level_high">Größt</string>
+    <string name="prefs_use_system_emoji">System-Emoji-Schriftart verwenden</string>
+    <string name="prefs_use_system_emoji_summary">System-Emoji-Schriftart in Einstellungen und Suche verwenden (startet die App neu)</string>
+    <string name="add_custom_layout">Benutzerdefiniertes Layout hinzufügen</string>
+    <string name="layout_custom1">Benutzerdefiniertes Layout 1</string>
+    <string name="layout_custom2">Benutzerdefiniertes Layout 2</string>
+    <string name="layout_custom3">Benutzerdefiniertes Layout 3</string>
+    <string name="layout_custom4">Benutzerdefiniertes Layout 4</string>
+    <string name="layout_custom5">Benutzerdefiniertes Layout 5</string>
+    <string name="prefs_keypress_vibration_amplitude_settings">Vibrationsstärke bei Tastendruck</string>
+    <string name="user_dict_clear_all_confirmation">Möchten Sie wirklich alle Wörter aus diesem Wörterbuch löschen?</string>
+    <string name="theme_name_mint_and_pink">Minze und Pink</string>
+    <string name="theme_name_leanbitlab_light">LeanBitLab Hell</string>
+    <string name="theme_name_leanbitlab_dark">LeanBitLab Dunkel</string>
+    <string name="about_sponsor_link">Projekt sponsern</string>
+    <string name="about_sponsor_link_description">Unterstützen Sie die Entwicklung von LeanType</string>
+    <string name="sponsor_dialog_title">Dieses Projekt sponsern</string>
+    <string name="sponsor_dialog_message">Dieses Projekt ist vollständig community-getrieben und auf Spenden angewiesen, um die Entwicklung am Leben zu erhalten. Wenn Sie diese Tastatur nützlich finden, denken Sie bitte über eine Unterstützung nach!</string>
+    <string name="sponsor_dialog_never_show_again">Nicht mehr anzeigen</string>
+    <string name="sponsor_dialog_sponsor">Sponsern</string>
+    <string name="sponsor_dialog_not_now">Jetzt nicht</string>
+    <string name="about_features_link">Zu FEATURES.md</string>
+    <string name="about_features_link_description">Liste der Hauptfunktionen und Tastaturhandbuch</string>
+    <string name="libraries_hub_title">Bibliotheken</string>
+    <string name="libraries_hub_summary">Gesture-Bibliothek, Wörterbücher und Emoji-Bibliotheken verwalten.</string>
+    <string name="libraries_hub_gesture_title">Gesture Typing Bibliothek</string>
+    <string name="libraries_hub_dictionary_title">Haupt-Wörterbücher</string>
+    <string name="libraries_hub_emoji_title">Emoji-Bibliotheken</string>
+    <string name="libraries_hub_handwriting_title">Handschrifteingabe-Plugin</string>
+    <string name="libraries_hub_dict_guide_title">Anleitung zum Laden von Wörterbüchern</string>
+    <string name="libraries_hub_dict_guide_text">Um ein neues Wörterbuch hinzuzufügen:\n1. Besorgen Sie eine .dict-Datei für Ihre Sprache.\n2. Tippen Sie auf „Wörterbücher verwalten“.\n3. Verwenden Sie die Plus-Schaltfläche (+), um die Datei zu importieren.</string>
+    <string name="libraries_status_active">Aktiv</string>
+    <string name="libraries_status_not_installed">Nicht installiert</string>
+    <string name="log_options_title">Protokolloptionen</string>
+    <string name="save_log_to_file">In Datei speichern</string>
+    <string name="clear_log">Protokoll löschen</string>
+    <string name="share_log">Protokoll teilen</string>
+    <string name="log_cleared">Protokoll gelöscht</string>
+    <string name="direct_ime_switch_title">Direkter Wechsel zu Ziel-IME</string>
+    <string name="direct_ime_switch_summary">Eingabemethode, zu der direkt gewechselt werden soll, wenn die benutzerdefinierte Tastencode-Option verwendet wird</string>
+    <string name="direct_ime_switch_none">Keine</string>
+    <string name="app_language_title">App-Sprache</string>
+    <string name="app_language_summary">Ändern Sie die Sprache des Einstellungsbildschirms und der Tastaturoberfläche</string>
+    <string name="app_language_system">Systemstandard</string>
+    <string name="settings_screen_ai_integration">AI-Integration</string>
+    <string name="custom_ai_keys_title">Benutzerdefinierte AI-Tasten</string>
+    <string name="custom_ai_keys_summary">Nummerierte Werkzeugleisten-Tasten mit eigenen Prompts anpassen</string>
+    <string name="label_language_switch_key">@string/show_language_switch_key</string>
+    <string name="space_swipe_touchpad_mode_entry">Touchpad-Modus</string>
+    <string name="touchpad_sensitivity">Touchpad-Empfindlichkeit</string>
+    <string name="force_auto_caps_title">Automatische Großschreibung erzwingen</string>
+    <string name="force_auto_caps_summary">Erzwingt Satzanfangs-Großschreibung in allen Textfeldern außer Passwörtern</string>
+    <string name="toolbar_only_with_hw_keyboard">Nur Werkzeugleiste mit physischer Tastatur anzeigen</string>
+    <string name="toolbar_only_with_hw_keyboard_summary">Sie müssen das Anzeigen der virtuellen Tastatur noch in den Systemeinstellungen aktivieren</string>
+    <string name="auto_show_toolbar_open">Werkzeugleiste beim Öffnen automatisch anzeigen</string>
+    <string name="auto_show_toolbar_select">Werkzeugleiste bei Auswahl automatisch anzeigen</string>
+    <string name="auto_show_toolbar_select_summary">Die Werkzeugleiste beim Auswählen von Text anzeigen</string>
+    <string name="toolbar_swipe_down_dismiss">Zum Schließen nach unten wischen</string>
+    <string name="toolbar_swipe_down_dismiss_summary">Auf der Werkzeugleiste nach unten wischen, um die Tastatur auszublenden</string>
+    <string name="auto_hide_pinned_keys">Angeheftete Tasten automatisch ausblenden</string>
+    <string name="auto_hide_pinned_keys_summary">Angeheftete Tasten ausblenden, wenn die Werkzeugleiste erweitert ist</string>
+    <string name="remember_toolbar_state">Werkzeugleisten-Zustand merken</string>
+    <string name="remember_toolbar_state_summary">Den erweiterten oder reduzierten Zustand der Werkzeugleiste zwischen Sitzungen und beim Tippen beibehalten</string>
+    <string name="close_translate_language_selector">Sprachauswahl schließen</string>
+    <string name="offline_model_title">Offline-Modell</string>
+    <string name="offline_model_summary">Lokales LLM verwalten</string>
+    <string name="offline_max_tokens_title">Maximale Tokens für Offline-AI</string>
+    <string name="offline_max_tokens_summary">Maximale Länge der generierten Korrektur</string>
+    <string name="offline_max_tokens_custom_option">Benutzerdefiniert…</string>
+    <string name="offline_max_tokens_custom_desc">Benutzerdefiniert (%1$d Tokens)</string>
+    <string name="offline_temp_title">Temperatur</string>
+    <string name="offline_temp_summary">Steuert die Zufälligkeit: niedriger ist fokussierter und deterministischer</string>
+    <string name="offline_top_p_title">Top-P (Nucleus Sampling)</string>
+    <string name="offline_top_p_summary">Steuert die Vokabularvielfalt: niedriger schneidet weniger wahrscheinliche Optionen ab</string>
+    <string name="offline_top_k_title">Top-K</string>
+    <string name="offline_top_k_summary">Beschränkt die Auswahl auf die K wahrscheinlichsten Tokens</string>
+    <string name="offline_min_p_title">Min-P</string>
+    <string name="offline_min_p_summary">Minimale Wahrscheinlichkeitsschwelle relativ zum wahrscheinlichsten Token</string>
+    <string name="offline_show_thinking_title">Denken anzeigen</string>
+    <string name="offline_show_thinking_summary">Denkprozess und interne Denk-Tokens anzeigen, wenn das Modell sie generiert</string>
+    <string-array name="offline_max_tokens_entries">
+  <item>Ultra schnell (12 Tokens)</item>
+  <item>Schnell (20 Tokens)</item>
+  <item>Ausgewogen (32 Tokens)</item>
+  <item>Genau (64 Tokens)</item>
+  <item>Tiefgehend (128 Tokens)</item>
+</string-array>
+    <string-array name="offline_max_tokens_values">
+  <item>12</item>
+  <item>20</item>
+  <item>32</item>
+  <item>64</item>
+  <item>128</item>
+</string-array>
+    <string name="image_pasting_not_supported">Diese App unterstützt kein Einfügen von Bildern</string>
+    <string name="clear_emoji_history_title">Emoji-Verlauf löschen</string>
+    <string name="clear_emoji_history_message">Möchten Sie wirklich Ihre zuletzt verwendeten Emojis löschen?</string>
+    <string name="floating_keyboard_drag_handle">Ziehen, um die Tastatur zu verschieben</string>
+    <string name="floating_keyboard_resize_handle">Ziehen, um die Tastaturgröße zu ändern</string>
+    <string name="persist_floating_keyboard_title">Schwebende Tastatur beibehalten</string>
+    <string name="persist_floating_keyboard_summary">Schwebende Tastatur nicht ausblenden, wenn die Eingabe beendet wird</string>
+    <string name="persist_text_edit_mode_title">Textbearbeitungsmodus beibehalten</string>
+    <string name="persist_text_edit_mode_summary">Textbearbeitungsmodus nicht verlassen, wenn die Eingabe beendet wird</string>
+    <string name="disable_multi_word_suggestions_title">Mehrwort-Vorschläge deaktivieren</string>
+    <string name="disable_multi_word_suggestions_summary">Vorschläge verhindern, die aus mehreren kombinierten Wörtern bestehen (für Türkisch empfohlen)</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="dictionary_update_available">Update verfügbar</string>
+    <string name="dictionary_source_title">Wörterbuch-Repository</string>
+    <string name="dictionary_source_summary">Wörterbücher direkt in Ihrem Browser durchsuchen oder herunterladen</string>
+    <string name="text_expander_title">Textbausteine</string>
+    <string name="text_expander_enable_title">Textbausteine aktivieren</string>
+    <string name="text_expander_enable_summary">Kürzel bei Leerzeichen oder Satzzeichen nativ und sicher automatisch erweitern.</string>
+    <string name="text_expander_immediate_title">Sofort erweitern</string>
+    <string name="text_expander_immediate_summary">Kürzel sofort ohne Drücken der Leertaste erweitern.</string>
+    <string name="text_expander_backspace_undo_title">Rücktaste macht Erweiterung rückgängig</string>
+    <string name="text_expander_backspace_undo_summary">Erweiterten Text bei Rücktaste wieder auf das Kürzel zurücksetzen.</string>
+    <string name="text_expander_custom_shortcuts_title">Benutzerdefinierte Kürzel</string>
+    <string name="text_expander_add_shortcut">Kürzel hinzufügen</string>
+    <string name="text_expander_edit_shortcut">Kürzel bearbeiten</string>
+    <string name="text_expander_quick_guide">💡 Schnellhilfe</string>
+    <string name="text_expander_template_placeholders_title">Unterstützte Vorlagen-Platzhalter:</string>
+    <string name="text_expander_prefix_title">Präfix (optional)</string>
+    <string name="text_expander_shortcut_title">Kürzel (z. B. \'brb\')</string>
+    <string name="text_expander_regex_pattern_title">Regex-Muster</string>
+    <string name="text_expander_regex_title">Regulärer Ausdruck</string>
+    <string name="text_expander_regex_invalid">⚠️ Ungültiges reguläres Ausdrucksmuster</string>
+    <string name="text_expander_template_title">Vorlagenerweiterung</string>
+    <string name="text_expander_template_hint">Be right back! oder Meine E-Mail ist %clipboard%</string>
+    <string name="text_expander_quick_placeholders_title">Schnelle Platzhalter (zum Einfügen am Cursor tippen):</string>
+    <string name="text_expander_save">Speichern</string>
+    <string name="text_expander_add">Hinzufügen</string>
+    <string name="text_expander_delete">Löschen</string>
+    <string name="custom_ai_keys_what_are_keywords">Was sind Schlüsselwörter?</string>
+    <string name="custom_ai_keys_keywords_description">Schlüsselwörter (wie #proofread oder #summarize) dienen als schnelle Anweisungen für die AI. Wählen Sie sie beim Konfigurieren einer Taste aus, um deren Verhalten zu definieren. Sie müssen auch Ihren eigenen benutzerdefinierten Prompt hinzufügen, um die Taste zu erstellen.</string>
+    <string name="custom_ai_keys_show_tags_title">Tags auf der Tastatur anzeigen</string>
+    <string name="custom_ai_keys_show_tags_summary">Wenn aktiviert, werden benutzerdefinierte Tags als thematische Kapseln in der Tastatur-Werkzeugleiste anstelle des standardmäßigen AI-Symbols angezeigt.</string>
+    <string name="custom_ai_keys_not_configured">Nicht konfiguriert</string>
+    <string name="custom_ai_keys_configure_title">Taste %1$d konfigurieren</string>
+    <string name="custom_ai_keys_config_instruction">Wählen Sie Schlüsselwörter, um das Verhalten zu definieren, und kombinieren Sie diese mit Ihren benutzerdefinierten Anweisungen.\n\nBeispiel: Wählen Sie #editor und geben Sie „Übersetzen ins Französische“ ein, um eine spezielle Übersetzungstaste zu erstellen.\n\nHinweis: Sie müssen sowohl einen benutzerdefinierten Prompt angeben als auch mindestens ein Schlüsselwort auswählen, um zu speichern.</string>
+    <string name="custom_ai_keys_prompt_label">Benutzerdefinierter Prompt für Taste %1$d</string>
+    <string name="custom_ai_keys_tag_label">Tag / Bezeichnung (z. B. \'Französisch\', \'Grammatik\', \'Umschreiben\')</string>
+    <string name="custom_ai_keys_selected_functions">Ausgewählte Schlüsselwort-Funktionen:</string>
+</resources>
