@@ -7,11 +7,11 @@
 package com.android.inputmethod.keyboard
 
 import android.graphics.Rect
-import helium314.keyboard.keyboard.Key
-import helium314.keyboard.keyboard.internal.TouchPositionCorrection
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.utils.JniUtils
-import helium314.keyboard.latin.utils.Log
+import alzimerahmed84.keyboard.keyboard.Key
+import alzimerahmed84.keyboard.keyboard.internal.TouchPositionCorrection
+import alzimerahmed84.keyboard.latin.common.Constants
+import alzimerahmed84.keyboard.latin.utils.JniUtils
+import alzimerahmed84.keyboard.latin.utils.Log
 import java.util.Collections
 
 class ProximityInfo(

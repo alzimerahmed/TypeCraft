@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<helium314.keyboard.latin.handwriting.HandwritingView
+<alzimerahmed84.keyboard.latin.handwriting.HandwritingView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <helium314.keyboard.latin.handwriting.HandwritingCanvas
+            <alzimerahmed84.keyboard.latin.handwriting.HandwritingCanvas
                 android:id="@+id/handwriting_canvas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -121,9 +121,9 @@
 
     </LinearLayout>
 
-    <helium314.keyboard.keyboard.MainKeyboardView
+    <alzimerahmed84.keyboard.keyboard.MainKeyboardView
         android:id="@+id/handwriting_bottom_row_keyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</helium314.keyboard.latin.handwriting.HandwritingView>
+</alzimerahmed84.keyboard.latin.handwriting.HandwritingView>

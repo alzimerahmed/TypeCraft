@@ -1,10 +1,10 @@
-package com.leanbitlab.leantype.voice;
+package com.Alzimer Ahmed.TypeCraft.voice;
 
-import com.leanbitlab.leantype.voice.IVoiceCallback;
-import com.leanbitlab.leantype.voice.VoiceEngineInfo;
-import com.leanbitlab.leantype.voice.ModelState;
-import com.leanbitlab.leantype.voice.ModelImportRequest;
-import com.leanbitlab.leantype.voice.VoiceSessionConfig;
+import com.Alzimer Ahmed.TypeCraft.voice.IVoiceCallback;
+import com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo;
+import com.Alzimer Ahmed.TypeCraft.voice.ModelState;
+import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest;
+import com.Alzimer Ahmed.TypeCraft.voice.VoiceSessionConfig;
 import android.os.ParcelFileDescriptor;
 
 interface IVoiceEngine {

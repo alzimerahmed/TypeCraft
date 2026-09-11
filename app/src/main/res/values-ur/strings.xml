@@ -104,10 +104,10 @@
     <string name="label_pause_key">"موقوف"</string>
     <string name="label_wait_key">"انتظار"</string>
 
-    <string name="spell_checker_service_name">LeanType اسپیل چیکر</string>
-    <string name="ime_name">LeanType</string>
-    <string name="ime_settings">LeanType ترتیبات</string>
-    <string name="android_spell_checker_settings">LeanType اسپیل چیکر کی ترتیبات</string>
+    <string name="spell_checker_service_name">TypeCraft اسپیل چیکر</string>
+    <string name="ime_name">TypeCraft</string>
+    <string name="ime_settings">TypeCraft ترتیبات</string>
+    <string name="android_spell_checker_settings">TypeCraft اسپیل چیکر کی ترتیبات</string>
     <string name="vibrate_in_dnd_mode">پریشان نہ کریں موڈ میں وائبریٹ کریں</string>
     <string name="suggest_emojis">ایموجیز تجویز کریں</string>
     <string name="suggest_emojis_summary">عام تجاویز میں ایموجی لغت استعمال کریں</string>
@@ -367,7 +367,7 @@
     <string name="disable_network_summary">اندرونی تالا: اس ایپ سے نیٹ ورک کی تمام درخواستوں کو روکتا ہے۔ اجازت مکمل طور پر منسوخ کرنے کے لیے، سسٹم ایپ کی معلومات کی ترتیبات استعمال کریں۔</string>
     <string name="open_app_info">سسٹم ایپ کی معلومات کھولیں</string>
     <string name="open_app_info_summary">Android ترتیبات میں اجازتوں اور بیٹری کے استعمال کا نظم کریں</string>
-    <string name="gemini_network_disabled">LeanType ترتیبات میں نیٹ ورک رسائی غیر فعال ہے</string>
+    <string name="gemini_network_disabled">TypeCraft ترتیبات میں نیٹ ورک رسائی غیر فعال ہے</string>
     <string name="ai_provider_title">AI فراہم کنندہ</string>
     <string name="ai_provider_summary">پروف ریڈنگ کے لیے AI سروس منتخب کریں</string>
     <string name="ai_provider_gemini">Google Gemini</string>
@@ -626,8 +626,8 @@
     <string name="theme_name_sand">ریت</string>
     <string name="theme_name_violette">بنفشی</string>
     <string name="theme_name_user">صارف-وضاحت کردہ</string>
-    <string name="theme_name_leanbitlab_light">LeanBitLab روشن</string>
-    <string name="theme_name_leanbitlab_dark">LeanBitLab گہرا</string>
+    <string name="theme_name_typecraft_light">Alzimer Ahmed روشن</string>
+    <string name="theme_name_typecraft_dark">Alzimer Ahmed گہرا</string>
     <string name="auto_user_color">خود بخود رنگ منتخب کریں</string>
     <string name="main_colors">صرف مرکزی رنگ دکھائیں</string>
     <string name="more_colors">مزید رنگ دکھائیں</string>
@@ -650,7 +650,7 @@
     <string name="version">ورژن</string>
     <string name="about_github_link">GitHub پر دیکھیں</string>
     <string name="about_sponsor_link">منصوبے کو سپانسر کریں</string>
-    <string name="about_sponsor_link_description">LeanType کی ترقی کی حمایت کریں</string>
+    <string name="about_sponsor_link_description">TypeCraft کی ترقی کی حمایت کریں</string>
     <string name="sponsor_dialog_title">اس منصوبے کو سپانسر کریں</string>
     <string name="sponsor_dialog_message">یہ منصوبہ مکمل طور پر کمیونٹی پر مبنی ہے اور ترقی کو جاری رکھنے کے لیے عطیات پر انحصار کرتا ہے۔ اگر آپ کو یہ کی بورڈ مفید لگتا ہے تو براہ کرم سپانسر کرنے پر غور کریں!</string>
     <string name="sponsor_dialog_never_show_again">دوبارہ کبھی نہ دکھائیں</string>

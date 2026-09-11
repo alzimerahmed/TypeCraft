@@ -17,7 +17,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Which version of LeanType are you using?
+      description: Which version of TypeCraft are you using?
       placeholder: v3.7.2
     validations:
       required: true

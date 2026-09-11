@@ -20,7 +20,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.leanbitlab.leantype"
+        applicationId = "com.alzimerahmed84.typecraft"
         minSdk = 21
         targetSdk = 35
         // ponytail: release version 4.2.2
@@ -101,7 +101,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             applicationIdSuffix = ".debug"
         }
-        // base.archivesBaseName = "HeliboardL_" + defaultConfig.versionName // replaced by dynamic naming below
+        // base.archivesBaseName = "TypeCraftL_" + defaultConfig.versionName // replaced by dynamic naming below
         applicationVariants.all {
             val flavor = productFlavors.firstOrNull()?.name ?: ""
             val number = when(flavor) {
@@ -113,7 +113,7 @@ android {
             if (number.isNotEmpty()) {
                 outputs.all {
                     val output = this as? com.android.build.gradle.api.ApkVariantOutput
-                    output?.outputFileName = "$number-LeanType_${defaultConfig.versionName}-${flavor}-${buildType.name}.apk"
+                    output?.outputFileName = "$number-TypeCraft_${defaultConfig.versionName}-${flavor}-${buildType.name}.apk"
                 }
             }
 
@@ -196,16 +196,16 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
-    // see https://github.com/Helium314/HeliBoard/issues/477
+    // see https://github.com/alzimerahmed84/TypeCraft/issues/477
     dependenciesInfo {
         includeInApk = false
         includeInBundle = false
     }
 
-    namespace = "helium314.keyboard.latin"
+    namespace = "alzimerahmed84.keyboard.latin"
     lint {
         abortOnError = true
-        // Upstream Heliboard translations reference strings not in LeanType's base strings.xml;
+        // Upstream TypeCraft translations reference strings not in TypeCraft's base strings.xml;
         // these orphaned strings are harmlessly stripped by R8 during minification.
         disable += "ExtraTranslation"
     }
@@ -246,7 +246,7 @@ dependencies {
     "standardfullImplementation"("com.google.ai.client.generativeai:generativeai:0.9.0")
     "standardfullImplementation"("androidx.security:security-crypto:1.1.0-alpha06")
 
-    // local llm proofreading is now dynamically provided by LeanType-Offline-AI-Plugin
+    // local llm proofreading is now dynamically provided by TypeCraft-Offline-AI-Plugin
 
     // Force 16 KB page-aligned version of graphics-path
     implementation("androidx.graphics:graphics-path:1.1.0")

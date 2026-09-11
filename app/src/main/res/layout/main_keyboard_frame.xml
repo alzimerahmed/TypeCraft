@@ -18,13 +18,13 @@
 
     <!-- To ensure that key preview popup is correctly placed when the current system locale is
          one of RTL locales, layoutDirection="ltr" is needed in the SDK version 17+. -->
-    <helium314.keyboard.latin.KeyboardWrapperView
+    <alzimerahmed84.keyboard.latin.KeyboardWrapperView
         android:id="@+id/keyboard_view_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="ltr" >
 
-        <helium314.keyboard.keyboard.MainKeyboardView
+        <alzimerahmed84.keyboard.keyboard.MainKeyboardView
             android:id="@+id/keyboard_view"
             android:layoutDirection="ltr"
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         <include
             android:id="@+id/ocr_result_view"
             layout="@layout/ocr_result_view" />
-        <helium314.keyboard.keyboard.TouchpadView
+        <alzimerahmed84.keyboard.keyboard.TouchpadView
             android:id="@+id/touchpad_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -78,6 +78,6 @@
             android:scaleType="fitCenter"
             style="?attr/suggestionWordStyle" />
 
-    </helium314.keyboard.latin.KeyboardWrapperView>
+    </alzimerahmed84.keyboard.latin.KeyboardWrapperView>
 
 </LinearLayout>

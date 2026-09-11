@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- SPDX-License-Identifier: GPL-3.0-only -->
-<helium314.keyboard.latin.ocr.OcrCameraView
+<alzimerahmed84.keyboard.latin.ocr.OcrCameraView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ocr_camera_view"
@@ -162,4 +162,4 @@
             android:text="@string/ocr_plugin_open_settings" />
     </LinearLayout>
 
-</helium314.keyboard.latin.ocr.OcrCameraView>
+</alzimerahmed84.keyboard.latin.ocr.OcrCameraView>

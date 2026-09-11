@@ -1,5 +1,5 @@
 # ============================================================
-# JNI / Native Code Protection — LeanType Keyboard
+# JNI / Native Code Protection — TypeCraft Keyboard
 # ============================================================
 
 # 1. Keep ALL native method declarations globally
@@ -24,13 +24,13 @@
 }
 
 # 4. JNI library loader
--keep class helium314.keyboard.latin.utils.JniUtils { *; }
+-keep class alzimerahmed84.keyboard.latin.utils.JniUtils { *; }
 
 # 5. Native method parameter types to preserve method signatures
--keep class helium314.keyboard.latin.dictionary.Dictionary { *; }
--keep class helium314.keyboard.latin.NgramContext { *; }
--keep class helium314.keyboard.latin.NgramContext$WordInfo { *; }
--keep class helium314.keyboard.latin.makedict.ProbabilityInfo { *; }
+-keep class alzimerahmed84.keyboard.latin.dictionary.Dictionary { *; }
+-keep class alzimerahmed84.keyboard.latin.NgramContext { *; }
+-keep class alzimerahmed84.keyboard.latin.NgramContext$WordInfo { *; }
+-keep class alzimerahmed84.keyboard.latin.makedict.ProbabilityInfo { *; }
 
 # 6. Enum methods values() and valueOf()
 -keepclassmembers enum * {
@@ -74,8 +74,8 @@
 # Keep Gemini API classes
 -keep class com.google.ai.client.generativeai.** { *; }
 
--keep class helium314.keyboard.latin.utils.ProofreadHelper { *; }
--keep class helium314.keyboard.latin.utils.ProofreadHelper$* { *; }
+-keep class alzimerahmed84.keyboard.latin.utils.ProofreadHelper { *; }
+-keep class alzimerahmed84.keyboard.latin.utils.ProofreadHelper$* { *; }
 
 # Keep java-llama.cpp classes
 -keep class de.kherud.llama.** { *; }
@@ -84,7 +84,7 @@
 
 
 # Fix correct service name
--keep class helium314.keyboard.latin.utils.ProofreadService { *; }
+-keep class alzimerahmed84.keyboard.latin.utils.ProofreadService { *; }
 
 # Suppress warnings for missing library dependencies in R8 Full Mode
 -dontwarn com.google.api.client.**
@@ -95,47 +95,47 @@
 -dontwarn org.nehuatl.llamacpp.**
 
 # Keep offline voice plugin AIDL interface, parcelables, and host managers
--keep class com.leanbitlab.leantype.voice.** { *; }
--keep interface com.leanbitlab.leantype.voice.** { *; }
--keep class helium314.keyboard.latin.voice.** { *; }
+-keep class com.Alzimer Ahmed.TypeCraft.voice.** { *; }
+-keep interface com.Alzimer Ahmed.TypeCraft.voice.** { *; }
+-keep class alzimerahmed84.keyboard.latin.voice.** { *; }
 
 # Keep handwriting plugin interface and classes to prevent signature optimization or inlining
--keep interface helium314.keyboard.latin.handwriting.HandwritingRecognizer {
+-keep interface alzimerahmed84.keyboard.latin.handwriting.HandwritingRecognizer {
     <methods>;
 }
--keep interface helium314.keyboard.latin.handwriting.ModelDownloadListener {
+-keep interface alzimerahmed84.keyboard.latin.handwriting.ModelDownloadListener {
     <methods>;
 }
--keep class helium314.keyboard.latin.handwriting.** { *; }
--keep interface helium314.keyboard.latin.handwriting.** { *; }
+-keep class alzimerahmed84.keyboard.latin.handwriting.** { *; }
+-keep interface alzimerahmed84.keyboard.latin.handwriting.** { *; }
 
 # Keep translation plugin interface to prevent parameter removal/signature optimization
--keep interface helium314.keyboard.latin.translation.ITranslationProvider {
+-keep interface alzimerahmed84.keyboard.latin.translation.ITranslationProvider {
     <methods>;
 }
--keep interface helium314.keyboard.latin.translation.TranslationModelDownloadListener {
+-keep interface alzimerahmed84.keyboard.latin.translation.TranslationModelDownloadListener {
     <methods>;
 }
--keep class helium314.keyboard.latin.translation.** { *; }
--keep interface helium314.keyboard.latin.translation.** { *; }
+-keep class alzimerahmed84.keyboard.latin.translation.** { *; }
+-keep interface alzimerahmed84.keyboard.latin.translation.** { *; }
 
 # Keep offline AI plugin interface to prevent parameter removal/signature optimization
--keep interface helium314.keyboard.latin.ai.IOfflineAiProvider {
+-keep interface alzimerahmed84.keyboard.latin.ai.IOfflineAiProvider {
     <methods>;
 }
--keep class helium314.keyboard.latin.ai.** { *; }
--keep interface helium314.keyboard.latin.ai.** { *; }
+-keep class alzimerahmed84.keyboard.latin.ai.** { *; }
+-keep interface alzimerahmed84.keyboard.latin.ai.** { *; }
 
 # Keep OCR plugin interface and classes to prevent parameter removal or signature optimization
--keep interface helium314.keyboard.latin.ocr.ITextRecognizer {
+-keep interface alzimerahmed84.keyboard.latin.ocr.ITextRecognizer {
     <methods>;
 }
--keep class helium314.keyboard.latin.ocr.** { *; }
--keep interface helium314.keyboard.latin.ocr.** { *; }
+-keep class alzimerahmed84.keyboard.latin.ocr.** { *; }
+-keep interface alzimerahmed84.keyboard.latin.ocr.** { *; }
 
 # Keep WorkManager plugin factory & runtime for dynamically loaded plugins
--keep class helium314.keyboard.latin.work.** { *; }
--keep interface helium314.keyboard.latin.work.** { *; }
+-keep class alzimerahmed84.keyboard.latin.work.** { *; }
+-keep interface alzimerahmed84.keyboard.latin.work.** { *; }
 -keep class androidx.work.** { *; }
 -keep interface androidx.work.** { *; }
 -keep class * extends androidx.work.ListenableWorker {

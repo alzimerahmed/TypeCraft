@@ -12,7 +12,7 @@
     android:orientation="vertical">
     <!-- To ensure that key preview popup is correctly placed when the current system locale is
          one of RTL locales, layoutDirection="ltr" is needed in the SDK version 17+. -->
-    <helium314.keyboard.latin.suggestions.SuggestionStripView
+    <alzimerahmed84.keyboard.latin.suggestions.SuggestionStripView
         android:id="@+id/suggestion_strip_view"
         android:layoutDirection="ltr"
         android:layout_width="match_parent"

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package com.leanbitlab.leantype.voice
+package com.Alzimer Ahmed.TypeCraft.voice
 
 import android.os.ParcelFileDescriptor
 import android.os.Parcelable
@@ -88,5 +88,5 @@ object VoiceConstants {
     const val PREF_VOICE_MIC_SENSITIVITY = "voice_mic_sensitivity"
     const val PREF_VOICE_MAX_DURATION_SECONDS = "voice_max_duration_seconds"
     const val PREF_USE_DEBUG_VOICE_STUB = "use_debug_voice_stub"
-    const val VOICE_PLUGIN_PACKAGE = "com.leanbitlab.leantype.voice.offline"
+    const val VOICE_PLUGIN_PACKAGE = "com.Alzimer Ahmed.TypeCraft.voice.offline"
 }

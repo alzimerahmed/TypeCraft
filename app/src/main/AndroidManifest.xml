@@ -25,7 +25,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
     <uses-feature android:name="android.hardware.camera.any" android:required="false" />
 
     <queries>
-        <package android:name="com.leanbitlab.leantype.voice.offline" />
+        <package android:name="com.Alzimer Ahmed.TypeCraft.voice.offline" />
         <intent>
             <action android:name="android.intent.action.SENDTO" />
             <data android:scheme="sms" />
@@ -37,7 +37,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
     </queries>
 
     <application android:label="@string/english_ime_name"
-            android:name="helium314.keyboard.latin.App"
+            android:name="alzimerahmed84.keyboard.latin.App"
             android:icon="@mipmap/ic_launcher"
             android:largeHeap="true"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -84,7 +84,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
         </service>
 
         <!-- Activities -->
-        <activity android:name="helium314.keyboard.settings.SettingsActivity"
+        <activity android:name="alzimerahmed84.keyboard.settings.SettingsActivity"
                 android:theme="@style/platformActivityTheme"
                 android:icon="@mipmap/ic_launcher"
                 android:windowSoftInputMode="adjustResize"
@@ -96,7 +96,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
         </activity>
 
         <!-- separate activity that's used internally, only necessary in case the launcher icon is disabled on Android < 10 -->
-        <activity android:name="helium314.keyboard.settings.SettingsActivity2"
+        <activity android:name="alzimerahmed84.keyboard.settings.SettingsActivity2"
             android:theme="@style/platformActivityTheme"
             android:icon="@mipmap/ic_launcher"
             android:windowSoftInputMode="adjustResize"
@@ -132,7 +132,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
 
         <receiver android:name="DictionaryPackInstallBroadcastReceiver" android:exported="false">
             <intent-filter>
-                <action android:name="helium314.keyboard.dictionarypack.aosp.UNKNOWN_CLIENT" />
+                <action android:name="alzimerahmed84.keyboard.dictionarypack.aosp.UNKNOWN_CLIENT" />
             </intent-filter>
         </receiver>
 
@@ -147,7 +147,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
         </provider>
 
         <receiver
-            android:name="helium314.keyboard.latin.voice.DownloadCompleteReceiver"
+            android:name="alzimerahmed84.keyboard.latin.voice.DownloadCompleteReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
@@ -176,7 +176,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
     <queries>
         <!-- To detect other IMEs -->
         <intent>
-            <!-- changed to * as it's supposed to help with finding other keyboard apps, see https://github.com/Helium314/HeliBoard/issues/1340 -->
+            <!-- changed to * as it's supposed to help with finding other keyboard apps, see https://github.com/alzimerahmed84/TypeCraft/issues/1340 -->
             <!--<action android:name="android.view.InputMethod" />-->
             <action android:name="*" />
         </intent>

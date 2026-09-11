@@ -139,7 +139,7 @@
     <string name="label_pause_key">"താൽക്കാലികമായി നിർത്തുക"</string>
     <string name="label_wait_key">"കാത്തിരിക്കുക"</string>
 
-    <string name="ime_name">LeanType</string>
+    <string name="ime_name">TypeCraft</string>
     <string name="vibrate_in_dnd_mode">ശല്യം ചെയ്യാതിരിക്കുക മോഡിൽ വൈബ്രേറ്റ് ചെയ്യുക</string>
     <string name="suggest_emojis">ഇമോജികൾ നിർദ്ദേശിക്കുക</string>
     <string name="suggest_emojis_summary">സാധാരണ നിർദ്ദേശങ്ങളിൽ ഇമോജി നിഘണ്ടു ഉപയോഗിക്കുക</string>
@@ -374,7 +374,7 @@
     <string name="disable_network_summary">ആന്തരിക ലോക്ക്: ഈ ആപ്പിൽ നിന്നുള്ള എല്ലാ നെറ്റ്വർക്ക് അഭ്യർത്ഥനകളും തടയുന്നു. അനുമതി പൂർണ്ണമായും റദ്ദാക്കാൻ, സിസ്റ്റം ആപ്പ് വിവര ക്രമീകരണങ്ങൾ ഉപയോഗിക്കുക.</string>
     <string name="open_app_info">സിസ്റ്റം ആപ്പ് വിവരം തുറക്കുക</string>
     <string name="open_app_info_summary">Android ക്രമീകരണങ്ങളിൽ അനുമതികളും ബാറ്ററി ഉപയോഗവും നിയന്ത്രിക്കുക</string>
-    <string name="gemini_network_disabled">LeanType ക്രമീകരണങ്ങളിൽ നെറ്റ്വർക്ക് ആക്സസ് പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു</string>
+    <string name="gemini_network_disabled">TypeCraft ക്രമീകരണങ്ങളിൽ നെറ്റ്വർക്ക് ആക്സസ് പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു</string>
     <string name="ai_provider_title">AI ദാതാവ്</string>
     <string name="ai_provider_summary">പ്രൂഫ് റീഡിംഗിനായി AI സേവനം തിരഞ്ഞെടുക്കുക</string>
     <string name="ai_provider_gemini">Google Gemini</string>
@@ -626,8 +626,8 @@
     <string name="theme_name_sand">സാൻഡ്</string>
     <string name="theme_name_violette">വയലെറ്റ്</string>
     <string name="theme_name_user">ഉപയോക്തൃ-നിർവചിതം</string>
-    <string name="theme_name_leanbitlab_light">LeanBitLab Light</string>
-    <string name="theme_name_leanbitlab_dark">LeanBitLab Dark</string>
+    <string name="theme_name_typecraft_light">TypeCraft Light</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Dark</string>
     <string name="auto_user_color">നിറം സ്വയമേവ തിരഞ്ഞെടുക്കുക</string>
     <string name="main_colors">പ്രധാന നിറങ്ങൾ മാത്രം കാണിക്കുക</string>
     <string name="more_colors">കൂടുതൽ നിറങ്ങൾ കാണിക്കുക</string>
@@ -650,7 +650,7 @@
     <string name="version">പതിപ്പ്</string>
     <string name="about_github_link">GitHub-ൽ കാണുക</string>
     <string name="about_sponsor_link">പദ്ധതി സ്പോൺസർ ചെയ്യുക</string>
-    <string name="about_sponsor_link_description">LeanType-ന്റെ വികസനത്തെ പിന്തുണയ്ക്കുക</string>
+    <string name="about_sponsor_link_description">TypeCraft-ന്റെ വികസനത്തെ പിന്തുണയ്ക്കുക</string>
     <string name="sponsor_dialog_title">ഈ പദ്ധതി സ്പോൺസർ ചെയ്യുക</string>
     <string name="sponsor_dialog_message">ഈ പദ്ധതി പൂർണ്ണമായും കമ്മ്യൂണിറ്റി നയിക്കുന്നതും വികസനം നിലനിർത്താൻ സംഭാവനകളെ ആശ്രയിക്കുന്നതുമാണ്. ഈ കീബോർഡ് ഉപയോഗപ്രദമാണെന്ന് തോന്നിയാൽ, ദയവായി സ്പോൺസർ ചെയ്യുന്നത് പരിഗണിക്കുക!</string>
     <string name="sponsor_dialog_never_show_again">ഇനി ഒരിക്കലും കാണിക്കരുത്</string>

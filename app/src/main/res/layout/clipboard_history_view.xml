@@ -2,7 +2,7 @@
 <!--
     SPDX-License-Identifier: GPL-3.0-only
 -->
-<helium314.keyboard.keyboard.clipboard.ClipboardHistoryView
+<alzimerahmed84.keyboard.keyboard.clipboard.ClipboardHistoryView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                     tools:ignore="HardcodedText" />
             </LinearLayout>
 
-            <helium314.keyboard.keyboard.clipboard.ClipboardHistoryRecyclerView
+            <alzimerahmed84.keyboard.keyboard.clipboard.ClipboardHistoryRecyclerView
                 android:id="@+id/clipboard_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -171,9 +171,9 @@
         </FrameLayout>
     </LinearLayout>
 
-    <helium314.keyboard.keyboard.MainKeyboardView
+    <alzimerahmed84.keyboard.keyboard.MainKeyboardView
         android:id="@+id/bottom_row_keyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</helium314.keyboard.keyboard.clipboard.ClipboardHistoryView>
+</alzimerahmed84.keyboard.keyboard.clipboard.ClipboardHistoryView>

@@ -1,6 +1,6 @@
 # Getting Started
 
-HeliBoard project is based on Gradle and Android Gradle Plugin. To get started, you can install [Android Studio](https://developer.android.com/studio), and import project 'from Version Control / Git / Github' by providing this git repository [URL](https://github.com/LeanBitLab/HeliboardL) (or git SSH [URL](git@github.com:LeanBitLab/HeliboardL.git)).
+TypeCraft project is based on Gradle and Android Gradle Plugin. To get started, you can install [Android Studio](https://developer.android.com/studio), and import project 'from Version Control / Git / Github' by providing this git repository [URL](https://github.com/alzimerahmed84/TypeCraft) (or git SSH [URL](git@github.com:alzimerahmed84/TypeCraft.git)).
 Of course you can also use any other compatible IDE, or work with text editor and command line.
 Once everything is up correctly, you're ready to go!
 
@@ -8,7 +8,7 @@ If you have difficulties implementing some functionality, you're welcome to ask 
 
 # About the Code
 
-HeliBoard is based on AOSP keyboard, and in many places still contains mostly the original code. There are some extensions, and some parts have been replaced completely.
+TypeCraft is based on AOSP keyboard, and in many places still contains mostly the original code. There are some extensions, and some parts have been replaced completely.
 When working on this app, you will likely notice its rather large size, and quite different code styles and often ancient comments and _TODO_s, where the latter are typically untouched since AOSP times.
 Unfortunately a lot of the old code is hard to read or to fully understand with all of its intended (and unintended) consequences.
 
@@ -26,11 +26,11 @@ Some hints for finding what you're looking for:
 
 ## Recommended
 
-If you want to contribute, it's a good idea to make sure your idea is actually wanted in HeliBoard.
-Best check related issues before you start working on a PR. If the issue has the [labels](https://github.com/LeanBitLab/HeliboardL/labels) [_PR_](https://github.com/LeanBitLab/HeliboardL/labels/PR) or [_contributor needed_](https://github.com/LeanBitLab/HeliboardL/issues?q=label%3A%22contributor%20needed%22) (even closed ones), contributions are wanted. If you don't find a related issue, it's recommended to open one, but ultimately it's your choice.
+If you want to contribute, it's a good idea to make sure your idea is actually wanted in TypeCraft.
+Best check related issues before you start working on a PR. If the issue has the [labels](https://github.com/alzimerahmed84/TypeCraft/labels) [_PR_](https://github.com/alzimerahmed84/TypeCraft/labels/PR) or [_contributor needed_](https://github.com/alzimerahmed84/TypeCraft/issues?q=label%3A%22contributor%20needed%22) (even closed ones), contributions are wanted. If you don't find a related issue, it's recommended to open one, but ultimately it's your choice.
 Asking before starting a PR may help you for getting pointers to potentially relevant code, and deciding how to implement your desired changes.
 
-HeliBoard is a complex application and used by users with a large variety of opinions on how things should be.
+TypeCraft is a complex application and used by users with a large variety of opinions on how things should be.
 When contributing to the app, please:
 * Be careful when modifying core components, as it's easy to trigger unintended consequences
 * When introducing a feature or change that might not be wanted by everyone, make it optional
@@ -47,7 +47,7 @@ Further things to consider (though irrelevant for most PRs):
 * Do not add proprietary code or binary blobs. If it turns out to be necessary for a feature you want to add, it might be acceptable when the user opts in and imports those parts, like it's done for glide typing.
 * Privacy: Only relevant when adding some form of communication with other apps. Internet permission will not be added.
 * If your contribution contains code that is not your own, provide a link to the source
-  * This is especially relevant to be sure the code's license is compatible to HeliBoard's GPL3
+  * This is especially relevant to be sure the code's license is compatible to TypeCraft's GPL3
 
 ## Necessary
 
@@ -55,7 +55,7 @@ Some parts of the guidelines are necessary to fulfill for facilitating code revi
 Your PR should:
 - **Be only about a single thing**. Mixing unrelated or semi-related contributions into a single PR is hard to review and can get messy. As a general rule: if one part doesn't need the other one(s), it should be separate PRs. If one feature builds on top of another one, but the base is usable on its own, do a PR for the base and then a follow-up once it's merged.
 - **Have a proper description**. A good description helps _a lot_ for understanding what you intend to achieve with the changes, and for understanding the code. This is relevant for separating wanted from unintended changes in behavior during review.
-- **No translations**. Translations should be done using [Weblate](https://translate.codeberg.org/projects/heliboard/). Exception is when you add new resource strings, those can be added right away.
+- **No translations**. Translations should be done using [Weblate](https://translate.codeberg.org/projects/TypeCraft/). Exception is when you add new resource strings, those can be added right away.
 
 Please leave dependency upgrades to the maintainers, unless you state a good reason why they should be done now.
 
@@ -71,8 +71,8 @@ When editing existing layouts, please consider that people should should still g
 See make-emoji-keys tool [README](tools/make-emoji-keys/README.md).
 
 # Translations
-Translations can be added using [Weblate](https://translate.codeberg.org/projects/heliboard/). You will need an account to update translations and add languages. Add the language you want to translate to in Languages -> Manage translated languages in the top menu bar.
+Translations can be added using [Weblate](https://translate.codeberg.org/projects/TypeCraft/). You will need an account to update translations and add languages. Add the language you want to translate to in Languages -> Manage translated languages in the top menu bar.
 Updating translations in a PR will not be accepted, as it may cause conflicts with Weblate translations.
 
 # Dictionaries
-No new dictionaries will be added to this app. Please submit dictionaries and the wordlist to the [dictionaries repository](https://codeberg.org/Helium314/aosp-dictionaries)
+No new dictionaries will be added to this app. Please submit dictionaries and the wordlist to the [dictionaries repository](https://codeberg.org/alzimerahmed84/aosp-dictionaries)

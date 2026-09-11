@@ -6,9 +6,9 @@
 
 package com.android.inputmethod.latin
 
-import helium314.keyboard.latin.common.NativeSuggestOptions
-import helium314.keyboard.latin.define.DecoderSpecificConstants
-import helium314.keyboard.latin.utils.JniUtils
+import alzimerahmed84.keyboard.latin.common.NativeSuggestOptions
+import alzimerahmed84.keyboard.latin.define.DecoderSpecificConstants
+import alzimerahmed84.keyboard.latin.utils.JniUtils
 import java.util.Locale
 
 class DicTraverseSession(locale: Locale?, dictionary: Long, dictSize: Long) {

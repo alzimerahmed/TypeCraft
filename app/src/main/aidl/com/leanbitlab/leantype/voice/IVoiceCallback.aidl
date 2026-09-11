@@ -1,4 +1,4 @@
-package com.leanbitlab.leantype.voice;
+package com.Alzimer Ahmed.TypeCraft.voice;
 
 oneway interface IVoiceCallback {
     void onSessionStarted();

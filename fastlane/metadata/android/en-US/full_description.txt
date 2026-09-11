@@ -1,5 +1,5 @@
-LeanType is a privacy-conscious, customizable open-source Android keyboard. Based on the robust foundations of AOSP and HeliBoard.
-LeanType (Standard) offers a hybrid experience: a private, secure offline core for everyday typing, with powerful AI capabilities available whenever you choose to enable them.
+TypeCraft is a privacy-conscious, customizable open-source Android keyboard. Based on the robust foundations of AOSP and TypeCraft.
+TypeCraft (Standard) offers a hybrid experience: a private, secure offline core for everyday typing, with powerful AI capabilities available whenever you choose to enable them.
 
 Key Features:
 <ul>
@@ -24,6 +24,6 @@ Standard Features:
 </ul>
 
 Privacy Policy:
-We believe your keyboard shouldn't spy on you. LeanType is fully open-source and respects your data. While this version includes Internet permission to support AI features, network access is only ever used if you explicitly provide an API key and actively trigger an AI request. Your keystrokes are never logged or sent anywhere without your direct action.
+We believe your keyboard shouldn't spy on you. TypeCraft is fully open-source and respects your data. While this version includes Internet permission to support AI features, network access is only ever used if you explicitly provide an API key and actively trigger an AI request. Your keystrokes are never logged or sent anywhere without your direct action.
 
-Built with ❤️ by LeanBitLab.
+Built with ❤️ by Alzimer Ahmed.

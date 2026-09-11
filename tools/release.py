@@ -19,28 +19,28 @@ def check_git():
 # download and update translations
 def update_translations():
     import urllib.request
-    url = "https://translate.codeberg.org/download/heliboard/?format=zip"
+    url = "https://translate.codeberg.org/download/typecraft/?format=zip"
     zip_file_name = "translations.zip"
     req = urllib.request.Request(url, headers={'Cookie': 'x-robot-challenge-2=passed'})
     with urllib.request.urlopen(req) as response, open(zip_file_name, 'wb') as out_file:
         out_file.write(response.read())
-    # extract all in heliboard/heliboard/app/src/main/res and heliboard/heliboard/fastlane/metadata
+    # extract all in typecraft/typecraft/app/src/main/res and typecraft/typecraft/fastlane/metadata
     with zipfile.ZipFile(zip_file_name, "r") as f:
         for file in f.filelist:
-            # We ONLY want the app/src/main/res translations, NOT fastlane/metadata (which contains Heliboard's titles & descriptions)
-            if not file.filename.startswith("heliboard/heliboard/app/src/main/res"):
+            # We ONLY want the app/src/main/res translations, NOT fastlane/metadata (which contains typecraft's titles & descriptions)
+            if not file.filename.startswith("typecraft/typecraft/app/src/main/res"):
                 continue
-            # Block extracting Heliboard's base string files, which would overwrite LeanType's English variants
-            if file.filename.startswith("heliboard/heliboard/app/src/main/res/values/"):
+            # Block extracting typecraft's base string files, which would overwrite TypeCraft's English variants
+            if file.filename.startswith("typecraft/typecraft/app/src/main/res/values/"):
                 continue
-            # Block extracting upstream release changelogs since LeanType tracks its own release cycle
+            # Block extracting upstream release changelogs since TypeCraft tracks its own release cycle
             if "/changelogs/" in file.filename:
                 continue
-            file.filename = file.filename.replace("heliboard/heliboard/", "")
+            file.filename = file.filename.replace("typecraft/typecraft/", "")
             f.extract(file)
     os.remove(zip_file_name)
     
-    # Replace "HeliBoard" with "LeanType" in all extracted translation files
+    # Replace "typecraft" with "TypeCraft" in all extracted translation files
     # This ensures brand name consistency across all languages
     import re
     for root, dirs, files in os.walk("app/src/main/res"):
@@ -49,9 +49,9 @@ def update_translations():
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
-                # Replace HeliBoard with LeanType (preserving case variations)
-                content = re.sub(r'HeliBoard', 'LeanType', content)
-                content = re.sub(r'Heliboard', 'LeanType', content)
+                # Replace typecraft with TypeCraft (preserving case variations)
+                content = re.sub(r'typecraft', 'TypeCraft', content)
+                content = re.sub(r'typecraft', 'TypeCraft', content)
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(content)
 
@@ -70,7 +70,7 @@ def read_dicts_readme() -> list[str]:
         lines = f.readlines()
         f.close()
         return lines
-    readme_url = "https://codeberg.org/Helium314/aosp-dictionaries/raw/branch/main/README.md"
+    readme_url = "https://codeberg.org/alzimerahmed84/aosp-dictionaries/raw/branch/main/README.md"
     tmp_readme = "dicts_readme_tmp.md"
     urlretrieve(readme_url, tmp_readme)
     f = open(tmp_readme)
@@ -80,8 +80,8 @@ def read_dicts_readme() -> list[str]:
     return lines
 
 
-# generate a list of dictionaries available in the dictionaries repository at (https://codeberg.org/Helium314/aosp-dictionaries
-# for convenient linking when adding dictionaries in HeliBoard.
+# generate a list of dictionaries available in the dictionaries repository at (https://codeberg.org/alzimerahmed84/aosp-dictionaries
+# for convenient linking when adding dictionaries in typecraft.
 def update_dict_list():
     lines = read_dicts_readme()
     mode = 0
@@ -136,7 +136,7 @@ def check_changelog():
         print("changelog for", version, "does not exist")
 
 
-# update khipro mapping json, see discussion at the bottom of https://github.com/Helium314/HeliBoard/pull/2134
+# update khipro mapping json, see discussion at the bottom of https://github.com/alzimerahmed84/typecraft/pull/2134
 def update_khipro_mappings():
     source = "https://raw.githubusercontent.com/KhiproTeam/Khipro-Mappings/refs/heads/main/output/touchscreen.json"
     target = "app/src/main/assets/khipro-mappings.json"

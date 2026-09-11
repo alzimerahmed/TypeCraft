@@ -29,10 +29,10 @@ jobs:
           RELEASE_KEYSTORE: ${{ secrets.RELEASE_KEYSTORE }}
         if: ${{ env.RELEASE_KEYSTORE != '' }}
         run: |
-          echo "${{ secrets.RELEASE_KEYSTORE }}" | base64 -d > leantype-release.jks
+          echo "${{ secrets.RELEASE_KEYSTORE }}" | base64 -d > TypeCraft-release.jks
           echo "keyAlias=${{ secrets.RELEASE_KEY_ALIAS }}" > keystore.properties
           echo "keyPassword=${{ secrets.RELEASE_KEY_PASSWORD }}" >> keystore.properties
-          echo "storeFile=leantype-release.jks" >> keystore.properties
+          echo "storeFile=TypeCraft-release.jks" >> keystore.properties
           echo "storePassword=${{ secrets.RELEASE_STORE_PASSWORD }}" >> keystore.properties
 
       - name: Grant execute permission for gradlew
@@ -48,21 +48,21 @@ jobs:
 
       - name: Generate Release Notes
         # ponytail: generate release notes from changelog during build
-        run: python3 docs/scripts/generate_release_notes.py
+        run: python3 tools/scripts/generate_release_notes.py
 
       - name: Upload APKs and Release Notes
         uses: actions/upload-artifact@v4
         with:
-          name: LeanType-Release-APKs
+          name: TypeCraft-Release-APKs
           path: |
             app/build/outputs/apk/**/*.apk
-            docs/releasenote/release_notes_v*.md
+            tools/releasenote/release_notes_v*.md
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/v') || startsWith(github.ref, 'refs/tags/beta-')
         with:
           prerelease: ${{ contains(github.ref_name, 'beta') || contains(github.ref_name, 'alpha') || contains(github.ref_name, 'rc') }}
-          body_path: docs/releasenote/release_notes_temp.md
+          body_path: tools/releasenote/release_notes_temp.md
           files: |
             app/build/outputs/apk/**/release/*.apk
