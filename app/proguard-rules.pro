@@ -95,8 +95,8 @@
 -dontwarn org.nehuatl.llamacpp.**
 
 # Keep offline voice plugin AIDL interface, parcelables, and host managers
--keep class com.Alzimer Ahmed.TypeCraft.voice.** { *; }
--keep interface com.Alzimer Ahmed.TypeCraft.voice.** { *; }
+-keep class com.alzimerahmed84.typecraft.voice.** { *; }
+-keep interface com.alzimerahmed84.typecraft.voice.** { *; }
 -keep class alzimerahmed84.keyboard.latin.voice.** { *; }
 
 # Keep handwriting plugin interface and classes to prevent signature optimization or inlining
