@@ -17,6 +17,7 @@ import java.io.File
 @SuppressLint("PrivateApi")
 object JniUtils {
     private const val TAG = "JniUtils"
+    private const val NS_PER_MS = 1_000_000.0
     const val JNI_LIB_NAME = "jni_latinime"
     const val JNI_LIB_NAME_GOOGLE = "jni_latinimegoogle"
     const val JNI_LIB_IMPORT_FILE_NAME = "libjni_latinime.so"
@@ -41,6 +42,7 @@ object JniUtils {
     var sHaveNativeGestureLib: Boolean = false
 
     init {
+        val initStartNs = System.nanoTime()
         @SuppressLint("SdCardPath")
         var filesDir = "/data/data/${BuildConfig.APPLICATION_ID}/files"
         val app = App.getApp()
@@ -96,6 +98,15 @@ object JniUtils {
                 Log.w(TAG, "Could not load native library $JNI_LIB_NAME", ul)
             }
         }
+
+        // Cold-start profiling: report which tier loaded and how long static init took
+        val tier = when {
+            sHaveNativeGestureLib && sHaveGestureLib && userSuppliedLibrary != null -> "user-supplied"
+            sHaveNativeGestureLib -> JNI_LIB_NAME_GOOGLE
+            sHaveGestureLib -> JNI_LIB_NAME
+            else -> "none"
+        }
+        Log.i("startup", "JniUtils static init loaded $tier in ${(System.nanoTime() - initStartNs) / NS_PER_MS} ms")
     }
 
     fun loadNativeLibrary() {
