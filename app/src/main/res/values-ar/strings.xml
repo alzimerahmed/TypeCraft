@@ -912,7 +912,6 @@
     <string name="setup_step_height_title">ارتفاع لوحة المفاتيح</string>
     <string name="setup_step_height_instruction" formatted="false">اضبط ارتفاع لوحة المفاتيح. يُنصح بـ 77% لمفاتيح أكثر تربيعًا و100% لمفاتيح أعلى.</string>
     <string name="clipboard_cd_back">رجوع</string>
-    <string name="clipboard_cd_empty">لا عناصر في الحافظة</string>
     <string name="handwriting_cd_clear">مسح</string>
     <string name="touchpad_cd_close">إغلاق وضع لوحة اللمس</string>
 </resources>

@@ -1173,7 +1173,6 @@ language, hence "No language". -->
     <!-- Content description of the clipboard search back button. -->
     <string name="clipboard_cd_back">Back</string>
     <!-- Content description of the empty clipboard history icon. -->
-    <string name="clipboard_cd_empty">No clipboard items</string>
     <!-- Content description of the clear button in the handwriting input view. -->
     <string name="handwriting_cd_clear">Clear</string>
     <!-- Content description of the button that closes touchpad mode. -->

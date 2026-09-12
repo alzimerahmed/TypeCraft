@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import alzimerahmed84.keyboard.latin.R
 
 // Full pre-S fallback palette, seeded from the brand blue (#1A73E8) that
 // R.color.accent resolves to. Used on Android 11 and older where dynamic

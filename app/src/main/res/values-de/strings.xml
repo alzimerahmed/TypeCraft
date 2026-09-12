@@ -858,7 +858,6 @@
     <string name="setup_step_height_title">Tastaturhöhe</string>
     <string name="setup_step_height_instruction" formatted="false">Passe die Höhe der Tastatur an. Empfohlen: 77% für eckigere Tasten, 100% für höhere Tasten.</string>
     <string name="clipboard_cd_back">Zurück</string>
-    <string name="clipboard_cd_empty">Keine Zwischenablage-Einträge</string>
     <string name="handwriting_cd_clear">Löschen</string>
     <string name="touchpad_cd_close">Touchpad-Modus schließen</string>
 </resources>

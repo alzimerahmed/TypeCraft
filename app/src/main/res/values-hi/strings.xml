@@ -138,7 +138,6 @@
     <string name="setup_step_height_title">कीबोर्ड ऊँचाई</string>
     <string name="setup_step_height_instruction" formatted="false">कीबोर्ड की ऊँचाई समायोजित करें। अनुशंसित: अधिक वर्गाकार कुंजियों के लिए 77%, लंबी कुंजियों के लिए 100%।</string>
     <string name="clipboard_cd_back">वापस</string>
-    <string name="clipboard_cd_empty">क्लिपबोर्ड में कोई आइटम नहीं</string>
     <string name="handwriting_cd_clear">साफ़ करें</string>
     <string name="touchpad_cd_close">टचपैड मोड बंद करें</string>
 </resources>

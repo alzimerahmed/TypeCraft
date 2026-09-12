@@ -905,7 +905,6 @@
     <string name="setup_step_height_title">Высота клавиатуры</string>
     <string name="setup_step_height_instruction" formatted="false">Настройте высоту клавиатуры. Рекомендуется: 77% для более квадратных клавиш, 100% для более высоких.</string>
     <string name="clipboard_cd_back">Назад</string>
-    <string name="clipboard_cd_empty">Нет элементов в буфере обмена</string>
     <string name="handwriting_cd_clear">Очистить</string>
     <string name="touchpad_cd_close">Закрыть режим тачпада</string>
 </resources>

@@ -910,7 +910,6 @@ Nouveau dictionnaire:
     <string name="setup_step_height_title">Hauteur du clavier</string>
     <string name="setup_step_height_instruction" formatted="false">Ajustez la hauteur du clavier. Recommandé : 77% pour des touches plus carrées, 100% pour des touches plus hautes.</string>
     <string name="clipboard_cd_back">Retour</string>
-    <string name="clipboard_cd_empty">Aucun élément dans le presse-papiers</string>
     <string name="handwriting_cd_clear">Effacer</string>
     <string name="touchpad_cd_close">Fermer le mode pavé tactile</string>
 </resources>

@@ -912,7 +912,6 @@
     <string name="setup_step_height_title">Altezza tastiera</string>
     <string name="setup_step_height_instruction" formatted="false">Regola l\'altezza della tastiera. Consigliato: 77% per tasti più squadrati, 100% per tasti più alti.</string>
     <string name="clipboard_cd_back">Indietro</string>
-    <string name="clipboard_cd_empty">Nessun elemento negli appunti</string>
     <string name="handwriting_cd_clear">Cancella</string>
     <string name="touchpad_cd_close">Chiudi la modalità touchpad</string>
 </resources>

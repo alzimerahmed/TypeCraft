@@ -528,7 +528,6 @@
     <string name="setup_step_height_title">Altura do teclado</string>
     <string name="setup_step_height_instruction" formatted="false">Ajuste a altura do teclado. Recomendado: 77% para teclas mais quadradas, 100% para teclas mais altas.</string>
     <string name="clipboard_cd_back">Voltar</string>
-    <string name="clipboard_cd_empty">Nenhum item na área de transferência</string>
     <string name="handwriting_cd_clear">Limpar</string>
     <string name="touchpad_cd_close">Fechar o modo touchpad</string>
 </resources>

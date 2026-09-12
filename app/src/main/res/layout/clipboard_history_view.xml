@@ -37,7 +37,7 @@
                     android:layout_height="64dp"
                     android:src="@drawable/sym_keyboard_paste_rounded"
                     android:alpha="0.5"
-                    android:contentDescription="@string/clipboard_cd_empty" />
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/clipboard_empty_text"
