@@ -46,10 +46,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest
-import com.Alzimer Ahmed.TypeCraft.voice.ModelState
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo
+import com.alzimerahmed84.typecraft.voice.ModelImportRequest
+import com.alzimerahmed84.typecraft.voice.ModelState
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceEngineInfo
 import alzimerahmed84.keyboard.latin.BuildConfig
 import alzimerahmed84.keyboard.latin.R
 import alzimerahmed84.keyboard.latin.common.Links
@@ -632,7 +632,7 @@ fun VoiceSettingsScreen(
                 isPluginConnected -> "Voice plugin is active (version ${pluginVersion ?: "v1.0.0"}).\n\nTypeCraft Voice Plugin handles high-performance on-device Whisper speech-to-text inference."
                 isPluginInstalled -> "Voice plugin is installed on this device, but currently disconnected.\n\nTap Connect to establish connection."
                 remoteVersion != null -> "Download the latest voice plugin (version $remoteVersion) to enable private, fast offline voice typing."
-                else -> "Offline voice input requires the TypeCraft Voice Plugin (com.Alzimer Ahmed.TypeCraft.voice.offline).\n\nDownload and install the voice plugin to enable private, fast offline voice typing."
+                else -> "Offline voice input requires the TypeCraft Voice Plugin (com.alzimerahmed84.typecraft.voice.offline).\n\nDownload and install the voice plugin to enable private, fast offline voice typing."
             }
             Text(message)
         }

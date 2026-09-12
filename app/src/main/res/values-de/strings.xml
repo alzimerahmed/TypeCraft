@@ -693,8 +693,8 @@
     <string name="prefs_keypress_vibration_amplitude_settings">Vibrationsstärke bei Tastendruck</string>
     <string name="user_dict_clear_all_confirmation">Möchten Sie wirklich alle Wörter aus diesem Wörterbuch löschen?</string>
     <string name="theme_name_mint_and_pink">Minze und Pink</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed Hell</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed Dunkel</string>
+    <string name="theme_name_typecraft_light">TypeCraft Hell</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Dunkel</string>
     <string name="about_sponsor_link">Projekt sponsern</string>
     <string name="about_sponsor_link_description">Unterstützen Sie die Entwicklung von TypeCraft</string>
     <string name="sponsor_dialog_title">Dieses Projekt sponsern</string>

@@ -31,9 +31,9 @@ object OfflineAiLoader {
         val abi = getTargetAbi()
         val filename = "ai_plugin-$abi.apk"
         return if (tag == null || tag == "latest") {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases/latest/download/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases/latest/download/$filename"
         } else {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases/download/$tag/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases/download/$tag/$filename"
         }
     }
 
@@ -41,9 +41,9 @@ object OfflineAiLoader {
         val urlsToTry = listOf(
             getPluginDownloadUrl(tag),
             if (tag == null || tag == "latest") {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases/latest/download/ai_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases/latest/download/ai_plugin.apk"
             } else {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases/download/$tag/ai_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases/download/$tag/ai_plugin.apk"
             }
         ).distinct()
 

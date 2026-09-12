@@ -10,7 +10,7 @@ import android.os.ParcelFileDescriptor
 import android.widget.Toast
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
-import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest
+import com.alzimerahmed84.typecraft.voice.ModelImportRequest
 import alzimerahmed84.keyboard.latin.utils.Log
 import alzimerahmed84.keyboard.latin.utils.prefs
 import kotlinx.coroutines.Dispatchers

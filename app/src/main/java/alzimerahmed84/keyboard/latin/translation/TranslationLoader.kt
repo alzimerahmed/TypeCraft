@@ -36,9 +36,9 @@ object TranslationLoader {
         val abi = getTargetAbi()
         val filename = "translation_plugin-$abi.apk"
         return if (tag == null || tag == "latest") {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Translation-Plugin/releases/latest/download/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/latest/download/$filename"
         } else {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Translation-Plugin/releases/download/$tag/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/download/$tag/$filename"
         }
     }
 
@@ -46,9 +46,9 @@ object TranslationLoader {
         val urlsToTry = listOf(
             getPluginDownloadUrl(tag),
             if (tag == null || tag == "latest") {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Translation-Plugin/releases/latest/download/translation_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/latest/download/translation_plugin.apk"
             } else {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Translation-Plugin/releases/download/$tag/translation_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/download/$tag/translation_plugin.apk"
             }
         ).distinct()
 

@@ -747,8 +747,8 @@
     <string name="prefs_keypress_vibration_amplitude_settings">قوة اهتزاز ضغط المفاتيح</string>
     <string name="user_dict_clear_all_confirmation">هل أنت متأكد أنك تريد مسح جميع الكلمات من هذا القاموس؟</string>
     <string name="theme_name_mint_and_pink">نعناع وزهري</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed فاتح</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed داكن</string>
+    <string name="theme_name_typecraft_light">TypeCraft فاتح</string>
+    <string name="theme_name_typecraft_dark">TypeCraft داكن</string>
     <string name="about_sponsor_link">رعاية المشروع</string>
     <string name="about_sponsor_link_description">دعم تطوير TypeCraft</string>
     <string name="sponsor_dialog_title">رعاية هذا المشروع</string>

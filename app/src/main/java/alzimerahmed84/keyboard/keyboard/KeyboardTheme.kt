@@ -50,8 +50,8 @@ private constructor(val themeId: Int, val mStyleId: Int) {
 
         // new themes that are just colors
         const val THEME_LIGHT = "light"
-        const val THEME_Alzimer Ahmed_LIGHT = "Alzimer Ahmed_light"
-        const val THEME_Alzimer Ahmed_DARK = "Alzimer Ahmed_dark"
+        const val THEME_TYPECRAFT_LIGHT = "typecraft_light"
+        const val THEME_TYPECRAFT_DARK = "typecraft_dark"
         const val THEME_HOLO_WHITE = "holo_white"
         const val THEME_DARK = "dark"
         const val THEME_DARKER = "darker"
@@ -69,8 +69,8 @@ private constructor(val themeId: Int, val mStyleId: Int) {
         const val THEME_VIOLETTE = "violette"
         fun getAvailableDefaultColors(prefs: SharedPreferences, isNight: Boolean) = listOfNotNull(
             if (!isNight) THEME_LIGHT else null,
-            if (!isNight) THEME_Alzimer Ahmed_LIGHT else null,
-            THEME_Alzimer Ahmed_DARK,
+            if (!isNight) THEME_TYPECRAFT_LIGHT else null,
+            THEME_TYPECRAFT_DARK,
             THEME_DARK,
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) THEME_DYNAMIC else null,
             if (prefs.getString(Settings.PREF_THEME_STYLE, Defaults.PREF_THEME_STYLE) == STYLE_HOLO) THEME_HOLO_WHITE else null,
@@ -157,7 +157,7 @@ private constructor(val themeId: Int, val mStyleId: Int) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) DynamicColors(context, themeStyle, hasBorders, backgroundImage)
                     else getThemeColors(THEME_LIGHT, themeStyle, context, prefs, isNight)
                 }
-                THEME_Alzimer Ahmed_LIGHT -> DefaultColors(
+                THEME_TYPECRAFT_LIGHT -> DefaultColors(
                     themeStyle,
                     hasBorders,
                     "#9AA0A6".toColorInt(), // Accent (Google Grey 500) - Darker than functional (#DADCE0)
@@ -169,7 +169,7 @@ private constructor(val themeId: Int, val mStyleId: Int) {
                     "#B3000000".toColorInt(), // Hint
                     keyboardBackground = backgroundImage
                 )
-                THEME_Alzimer Ahmed_DARK -> DefaultColors(
+                THEME_TYPECRAFT_DARK -> DefaultColors(
                     themeStyle,
                     hasBorders,
                     "#5F6368".toColorInt(), // Accent (Google Grey 700) - Lighter than functional (#3C4043)

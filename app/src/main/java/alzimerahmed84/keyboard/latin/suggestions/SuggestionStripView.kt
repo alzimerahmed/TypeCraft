@@ -33,7 +33,7 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
 import alzimerahmed84.keyboard.compat.isDeviceLocked
 import alzimerahmed84.keyboard.event.HapticEvent
 import alzimerahmed84.keyboard.keyboard.KeyboardSwitcher

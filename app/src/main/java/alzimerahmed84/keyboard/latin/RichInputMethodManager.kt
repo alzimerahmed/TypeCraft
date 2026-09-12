@@ -11,7 +11,7 @@ import android.os.Build
 import android.view.inputmethod.InputMethodInfo
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodSubtype
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
 import alzimerahmed84.keyboard.compat.locale
 import alzimerahmed84.keyboard.latin.common.Constants
 import alzimerahmed84.keyboard.latin.common.LocaleUtils.getBestMatch

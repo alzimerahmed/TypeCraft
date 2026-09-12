@@ -78,7 +78,7 @@ fun LoadOfflineAiPluginPreference(
         isCheckingUpdate = true
         scope.launch(Dispatchers.IO) {
             try {
-                val url = URL("https://api.github.com/repos/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases/latest")
+                val url = URL("https://api.github.com/repos/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases/latest")
                 val conn = url.openConnection() as HttpURLConnection
                 conn.setRequestProperty("User-Agent", "TypeCraftL")
                 conn.connect()
@@ -123,7 +123,7 @@ fun LoadOfflineAiPluginPreference(
     fun startDownload() {
         if (!hasInternet) {
             showDialog = false
-            val url = "https://github.com/Alzimer Ahmed/TypeCraft-Offline-AI-Plugin/releases"
+            val url = "https://github.com/alzimerahmed84/TypeCraft-Offline-AI-Plugin/releases"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url)).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK
             }

@@ -6,13 +6,13 @@ import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.IBinder
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceCallback
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceEngine
-import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest
-import com.Alzimer Ahmed.TypeCraft.voice.ModelState
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceSessionConfig
+import com.alzimerahmed84.typecraft.voice.IVoiceCallback
+import com.alzimerahmed84.typecraft.voice.IVoiceEngine
+import com.alzimerahmed84.typecraft.voice.ModelImportRequest
+import com.alzimerahmed84.typecraft.voice.ModelState
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceEngineInfo
+import com.alzimerahmed84.typecraft.voice.VoiceSessionConfig
 import alzimerahmed84.keyboard.latin.BuildConfig
 import alzimerahmed84.keyboard.latin.utils.Log
 import alzimerahmed84.keyboard.latin.utils.prefs
@@ -132,8 +132,8 @@ class VoicePluginManager(private val context: Context) : IBinder.DeathRecipient 
             )
         } else {
             ComponentName(
-                "com.Alzimer Ahmed.TypeCraft.voice.offline",
-                "com.Alzimer Ahmed.TypeCraft.voice.offline.VoiceEngineService"
+                "com.alzimerahmed84.typecraft.voice.offline",
+                "com.alzimerahmed84.typecraft.voice.offline.VoiceEngineService"
             )
         }
     }

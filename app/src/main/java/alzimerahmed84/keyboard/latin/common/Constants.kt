@@ -11,12 +11,12 @@ object Links {
     const val DICTIONARY_EXPERIMENTAL_SUFFIX = "dictionaries_experimental/"
     const val DICTIONARY_EMOJI_CLDR_SUFFIX = "emoji_cldr_signal_dictionaries/"
     // LeanBitBoard fork repo
-    const val GITHUB = "https://github.com/Alzimer Ahmed/TypeCraftL"
+    const val GITHUB = "https://github.com/alzimerahmed84/TypeCraftL"
     const val LICENSE = "$GITHUB/blob/main/LICENSE"
-    const val SPONSOR = "https://github.com/sponsors/Alzimer Ahmed"
-    const val OPEN_COLLECTIVE = "https://opencollective.com/Alzimer Ahmed-org"
-    const val GITHUB_RELEASES_API = "https://api.github.com/repos/Alzimer Ahmed/TypeCraftL/releases/latest"
-    const val GITHUB_RELEASES_PAGE = "https://github.com/Alzimer Ahmed/TypeCraftL/releases"
+    const val SPONSOR = "https://github.com/sponsors/alzimerahmed84"
+    const val OPEN_COLLECTIVE = "https://opencollective.com/alzimerahmed84"
+    const val GITHUB_RELEASES_API = "https://api.github.com/repos/alzimerahmed84/TypeCraftL/releases/latest"
+    const val GITHUB_RELEASES_PAGE = "https://github.com/alzimerahmed84/TypeCraftL/releases"
     const val FEATURES_URL = "$GITHUB/blob/main/docs/FEATURES.md"
     // Original TypeCraft wiki and community links
     const val ORIGINAL_GITHUB = "https://github.com/alzimerahmed84/TypeCraft"
@@ -25,14 +25,14 @@ object Links {
     const val CUSTOM_LAYOUTS = "$GITHUB/discussions/categories/custom-layout"
     const val CUSTOM_COLORS = "$GITHUB/discussions/categories/custom-colors"
     // Voice Plugin Links
-    const val VOICE_PLUGIN_REPO = "https://github.com/Alzimer Ahmed/TypeCraft-Voice-Plugin"
-    const val VOICE_PLUGIN_RELEASES_API = "https://api.github.com/repos/Alzimer Ahmed/TypeCraft-Voice-Plugin/releases/latest"
+    const val VOICE_PLUGIN_REPO = "https://github.com/alzimerahmed84/TypeCraft-Voice-Plugin"
+    const val VOICE_PLUGIN_RELEASES_API = "https://api.github.com/repos/alzimerahmed84/TypeCraft-Voice-Plugin/releases/latest"
     // Social & Official Links
-    const val OFFICIAL_SITE = "https://Alzimer Ahmed.github.io/Alzimer Ahmed/"
-    const val TELEGRAM = "https://t.me/Alzimer Ahmed"
-    const val REDDIT = "https://www.reddit.com/r/Alzimer Ahmed_/"
-    const val X_TWITTER = "https://x.com/Alzimer Ahmed"
-    const val YOUTUBE = "https://www.youtube.com/@Alzimer Ahmed"
+    const val OFFICIAL_SITE = "https://alzimerahmed84.github.io/"
+    const val TELEGRAM = "https://t.me/alzimerahmed84"
+    const val REDDIT = "https://www.reddit.com/r/typecraft/"
+    const val X_TWITTER = "https://x.com/alzimerahmed84"
+    const val YOUTUBE = "https://www.youtube.com/@alzimerahmed84"
 }
 
 val combiningRange = 0x300..0x35b

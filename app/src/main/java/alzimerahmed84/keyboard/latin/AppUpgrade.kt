@@ -89,7 +89,7 @@ object AppUpgrade {
                     }
                     if (bestAsset != null) {
                         runCatching {
-                            context.assets.open(DictionaryInfoUtils.ASSETS_DICTIONARY_FOLDER + File.separator + bestAsset).use { input ->
+                            context.assets.open(DictionaryInfoUtils.ASSETS_DICTIONARY_FOLDER + "/" + bestAsset).use { input ->
                                 if (file.length() == input.available().toLong()) {
                                     isExtractedAsset = true
                                     prefs.edit().putBoolean("pref_extracted_asset_${type}_${locale.toLanguageTag()}", true).apply()

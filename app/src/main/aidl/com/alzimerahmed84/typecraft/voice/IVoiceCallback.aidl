@@ -1,4 +1,4 @@
-package com.Alzimer Ahmed.TypeCraft.voice;
+package com.alzimerahmed84.typecraft.voice;
 
 oneway interface IVoiceCallback {
     void onSessionStarted();

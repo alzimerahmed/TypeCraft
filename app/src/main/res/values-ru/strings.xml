@@ -770,8 +770,8 @@
     <string name="prefs_keypress_vibration_amplitude_settings">Сила вибрации при нажатии</string>
     <string name="user_dict_clear_all_confirmation">Вы уверены, что хотите удалить все слова из этого словаря?</string>
     <string name="theme_name_mint_and_pink">Мятный и розовый</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed Светлая</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed Темная</string>
+    <string name="theme_name_typecraft_light">TypeCraft Светлая</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Темная</string>
     <string name="about_features_link">Перейти к FEATURES.md</string>
     <string name="about_features_link_description">Список основных функций и руководство по клавиатуре</string>
     <string name="libraries_hub_summary">Управление библиотекой ввода жестами, словарями и библиотеками эмодзи.</string>

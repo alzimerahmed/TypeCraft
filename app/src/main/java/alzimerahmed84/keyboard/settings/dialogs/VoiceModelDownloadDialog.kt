@@ -25,8 +25,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.Alzimer Ahmed.TypeCraft.voice.ModelState
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.ModelState
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
 import alzimerahmed84.keyboard.latin.utils.prefs
 import alzimerahmed84.keyboard.latin.voice.VoiceDownloadDispatcher
 import alzimerahmed84.keyboard.latin.voice.VoiceModelItem

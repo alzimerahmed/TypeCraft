@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 package alzimerahmed84.keyboard.latin.voice
 
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
 
 data class VoiceModelItem(
     val id: String,

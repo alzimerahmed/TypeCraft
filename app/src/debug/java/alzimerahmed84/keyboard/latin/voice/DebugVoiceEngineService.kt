@@ -5,13 +5,13 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.os.ParcelFileDescriptor
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceCallback
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceEngine
-import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest
-import com.Alzimer Ahmed.TypeCraft.voice.ModelState
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceSessionConfig
+import com.alzimerahmed84.typecraft.voice.IVoiceCallback
+import com.alzimerahmed84.typecraft.voice.IVoiceEngine
+import com.alzimerahmed84.typecraft.voice.ModelImportRequest
+import com.alzimerahmed84.typecraft.voice.ModelState
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceEngineInfo
+import com.alzimerahmed84.typecraft.voice.VoiceSessionConfig
 import alzimerahmed84.keyboard.latin.utils.Log
 import java.io.FileInputStream
 import java.util.concurrent.Executors

@@ -686,8 +686,8 @@
     <string name="prefs_key_emoji_max_sdk">Anular versión de Emoji</string>
     <string name="user_dict_clear_all_confirmation">¿Estás seguro de que quieres borrar todas las palabras de este diccionario?</string>
     <string name="theme_name_mint_and_pink">Menta y rosa</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed Claro</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed Oscuro</string>
+    <string name="theme_name_typecraft_light">TypeCraft Claro</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Oscuro</string>
     <string name="get_colors_message">Puedes encontrar y compartir colores en la %s.</string>
     <string name="get_layouts_message">Puedes encontrar y compartir diseños en la %s.</string>
     <string name="discussion_section_link">sección de discusión</string>

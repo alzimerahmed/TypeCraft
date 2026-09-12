@@ -114,9 +114,9 @@ object HandwritingLoader {
         val abi = getTargetAbi()
         val filename = "handwriting_plugin-$abi.apk"
         return if (tag == null || tag == "latest") {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Handwriting-Plugin/releases/latest/download/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/latest/download/$filename"
         } else {
-            "https://github.com/Alzimer Ahmed/TypeCraft-Handwriting-Plugin/releases/download/$tag/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/download/$tag/$filename"
         }
     }
 
@@ -124,9 +124,9 @@ object HandwritingLoader {
         val urlsToTry = listOf(
             getPluginDownloadUrl(tag),
             if (tag == null || tag == "latest") {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Handwriting-Plugin/releases/latest/download/handwriting_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/latest/download/handwriting_plugin.apk"
             } else {
-                "https://github.com/Alzimer Ahmed/TypeCraft-Handwriting-Plugin/releases/download/$tag/handwriting_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/download/$tag/handwriting_plugin.apk"
             }
         ).distinct()
 

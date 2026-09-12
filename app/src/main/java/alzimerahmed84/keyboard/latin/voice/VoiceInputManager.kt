@@ -16,9 +16,9 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceCallback
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceSessionConfig
+import com.alzimerahmed84.typecraft.voice.IVoiceCallback
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceSessionConfig
 import alzimerahmed84.keyboard.latin.LatinIME
 import alzimerahmed84.keyboard.latin.R
 import alzimerahmed84.keyboard.latin.RichInputMethodManager
@@ -127,7 +127,7 @@ class VoiceInputManager(
         if (!isConnected) {
             updateState(VoiceState.CONNECTING_PLUGIN)
             pluginManager.setConnectionListener(object : VoicePluginManager.PluginConnectionListener {
-                override fun onPluginConnected(info: com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo?) {
+                override fun onPluginConnected(info: com.alzimerahmed84.typecraft.voice.VoiceEngineInfo?) {
                     mainHandler.post {
                         if (activeSessionId == sessionId && state == VoiceState.CONNECTING_PLUGIN) {
                             initiateSessionHandshake(sessionId)

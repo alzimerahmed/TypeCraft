@@ -38,7 +38,7 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.inputmethod.InputConnectionCompat
 import androidx.core.view.inputmethod.InputContentInfoCompat
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceConstants
+import com.alzimerahmed84.typecraft.voice.VoiceConstants
 import alzimerahmed84.keyboard.accessibility.AccessibilityUtils
 import alzimerahmed84.keyboard.compat.EditorInfoCompatUtils
 import alzimerahmed84.keyboard.compat.ImeCompat.shouldSwitchToOtherInputMethods

@@ -60,9 +60,9 @@ object OcrPluginLoader {
         val abi = getTargetAbi()
         val filename = "ocr_plugin-$abi.apk"
         return if (tag == null || tag == "latest") {
-            "https://github.com/Alzimer Ahmed/TypeCraft-OCR-Plugin/releases/latest/download/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/latest/download/$filename"
         } else {
-            "https://github.com/Alzimer Ahmed/TypeCraft-OCR-Plugin/releases/download/$tag/$filename"
+            "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/download/$tag/$filename"
         }
     }
 
@@ -70,9 +70,9 @@ object OcrPluginLoader {
         val urlsToTry = listOf(
             getPluginDownloadUrl(tag),
             if (tag == null || tag == "latest") {
-                "https://github.com/Alzimer Ahmed/TypeCraft-OCR-Plugin/releases/latest/download/ocr_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/latest/download/ocr_plugin.apk"
             } else {
-                "https://github.com/Alzimer Ahmed/TypeCraft-OCR-Plugin/releases/download/$tag/ocr_plugin.apk"
+                "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/download/$tag/ocr_plugin.apk"
             }
         ).distinct()
 

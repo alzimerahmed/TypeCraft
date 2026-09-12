@@ -693,8 +693,8 @@
     <string name="prefs_keypress_vibration_amplitude_settings">Força da vibração ao pressionar tecla</string>
     <string name="user_dict_clear_all_confirmation">Tem a certeza de que pretende limpar todas as palavras deste dicionário?</string>
     <string name="theme_name_mint_and_pink">Menta e Rosa</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed Claro</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed Escuro</string>
+    <string name="theme_name_typecraft_light">TypeCraft Claro</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Escuro</string>
     <string name="about_sponsor_link">Patrocinar projeto</string>
     <string name="about_sponsor_link_description">Apoiar o desenvolvimento do TypeCraft</string>
     <string name="sponsor_dialog_title">Patrocinar este projeto</string>

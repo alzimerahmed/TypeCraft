@@ -25,7 +25,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
     <uses-feature android:name="android.hardware.camera.any" android:required="false" />
 
     <queries>
-        <package android:name="com.Alzimer Ahmed.TypeCraft.voice.offline" />
+        <package android:name="com.alzimerahmed84.typecraft.voice.offline" />
         <intent>
             <action android:name="android.intent.action.SENDTO" />
             <data android:scheme="sms" />

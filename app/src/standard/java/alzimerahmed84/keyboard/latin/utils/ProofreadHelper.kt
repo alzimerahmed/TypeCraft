@@ -379,7 +379,7 @@ object ProofreadHelper {
                 // Check the token of the *active* provider, not just the Gemini key.
                 // ProofreadService.getApiKey() reads only KEY_API_KEY ("gemini_api_key"),
                 // which made translation short-circuit for OPENAI/GROQ providers
-                // (https://github.com/Alzimer Ahmed/TypeCraft/issues/459).
+                // (https://github.com/alzimerahmed84/TypeCraft/issues/459).
                 val hasAiConfigured = when (service.getProvider()) {
                     ProofreadService.AIProvider.GEMINI -> !service.getApiKey().isNullOrBlank()
                     ProofreadService.AIProvider.GROQ -> !service.getGroqToken().isNullOrBlank()

@@ -203,7 +203,7 @@ object DictionaryInfoUtils {
         val targetFile = File(cacheDir, "${dictionaryFileName.substringBefore("_")}.dict")
         try {
             FileUtils.copyStreamToNewFile(
-                context.assets.open(ASSETS_DICTIONARY_FOLDER + File.separator + dictionaryFileName),
+                context.assets.open(ASSETS_DICTIONARY_FOLDER + "/" + dictionaryFileName),
                 targetFile
             )
             val type = dictionaryFileName.substringBefore("_")

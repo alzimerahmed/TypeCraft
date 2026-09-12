@@ -1,10 +1,10 @@
-package com.Alzimer Ahmed.TypeCraft.voice;
+package com.alzimerahmed84.typecraft.voice;
 
-import com.Alzimer Ahmed.TypeCraft.voice.IVoiceCallback;
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceEngineInfo;
-import com.Alzimer Ahmed.TypeCraft.voice.ModelState;
-import com.Alzimer Ahmed.TypeCraft.voice.ModelImportRequest;
-import com.Alzimer Ahmed.TypeCraft.voice.VoiceSessionConfig;
+import com.alzimerahmed84.typecraft.voice.IVoiceCallback;
+import com.alzimerahmed84.typecraft.voice.VoiceEngineInfo;
+import com.alzimerahmed84.typecraft.voice.ModelState;
+import com.alzimerahmed84.typecraft.voice.ModelImportRequest;
+import com.alzimerahmed84.typecraft.voice.VoiceSessionConfig;
 import android.os.ParcelFileDescriptor;
 
 interface IVoiceEngine {

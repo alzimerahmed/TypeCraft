@@ -20,7 +20,7 @@ object SoundPackUrls {
     private const val TAG = "SoundPackUrls"
     const val SYSTEM_DEFAULT_ID = "system"
 
-    const val DEFAULT_INDEX_URL = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/index.json"
+    const val DEFAULT_INDEX_URL = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/index.json"
 
     // Default fallback remote catalog if offline or index cannot be reached
     val FALLBACK_CATALOG = listOf(
@@ -30,7 +30,7 @@ object SoundPackUrls {
             summary = "Deep lubricated switch clack.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/thock.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/thock.zip",
             sizeBytes = 29856
         ),
         RemoteSoundPack(
@@ -39,7 +39,7 @@ object SoundPackUrls {
             summary = "High-pitched sharp click.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/clicky.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/clicky.zip",
             sizeBytes = 30437
         ),
         RemoteSoundPack(
@@ -48,7 +48,7 @@ object SoundPackUrls {
             summary = "Snappy tactile bump and pop.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/tactile.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/tactile.zip",
             sizeBytes = 30394
         ),
         RemoteSoundPack(
@@ -57,7 +57,7 @@ object SoundPackUrls {
             summary = "Retro mechanical spring click.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/mechanical.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/mechanical.zip",
             sizeBytes = 31909
         ),
         RemoteSoundPack(
@@ -66,7 +66,7 @@ object SoundPackUrls {
             summary = "Vintage carriage and chime.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/typewriter.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/typewriter.zip",
             sizeBytes = 30870
         ),
         RemoteSoundPack(
@@ -75,7 +75,7 @@ object SoundPackUrls {
             summary = "Soft dampened linear tap.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/creamy.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/creamy.zip",
             sizeBytes = 27676
         ),
         RemoteSoundPack(
@@ -84,7 +84,7 @@ object SoundPackUrls {
             summary = "Retro square-wave arcade blips.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/chiptune.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/chiptune.zip",
             sizeBytes = 31549
         ),
         RemoteSoundPack(
@@ -93,7 +93,7 @@ object SoundPackUrls {
             summary = "Polished mineral tap.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/glass.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/glass.zip",
             sizeBytes = 28859
         ),
         RemoteSoundPack(
@@ -102,7 +102,7 @@ object SoundPackUrls {
             summary = "Soft liquid droplet burst.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/bubble.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/bubble.zip",
             sizeBytes = 28296
         ),
         RemoteSoundPack(
@@ -111,7 +111,7 @@ object SoundPackUrls {
             summary = "Acoustic wooden mallet tap.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/woodblock.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/woodblock.zip",
             sizeBytes = 30088
         ),
         RemoteSoundPack(
@@ -120,7 +120,7 @@ object SoundPackUrls {
             summary = "Warm harmonic key strike.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/piano.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/piano.zip",
             sizeBytes = 30014
         ),
         RemoteSoundPack(
@@ -129,7 +129,7 @@ object SoundPackUrls {
             summary = "Plucked nylon string tone.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/acoustic-pluck.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/acoustic-pluck.zip",
             sizeBytes = 31686
         ),
         RemoteSoundPack(
@@ -138,7 +138,7 @@ object SoundPackUrls {
             summary = "High-tension rim and drum hit.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/folk-drum.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/folk-drum.zip",
             sizeBytes = 29959
         ),
         RemoteSoundPack(
@@ -147,7 +147,7 @@ object SoundPackUrls {
             summary = "Deep pitch-bending drum tap.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/resonant-drum.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/resonant-drum.zip",
             sizeBytes = 29543
         ),
         RemoteSoundPack(
@@ -156,7 +156,7 @@ object SoundPackUrls {
             summary = "Plucked metal tines.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/kalimba.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/kalimba.zip",
             sizeBytes = 30265
         ),
         RemoteSoundPack(
@@ -165,7 +165,7 @@ object SoundPackUrls {
             summary = "Short finger-plucked string.",
             author = "TypeCraft Sound Lab",
             versionName = "1.0.0",
-            downloadUrl = "https://raw.githubusercontent.com/Alzimer Ahmed/TypeCraft-SoundPacks/main/dist/pizzicato.zip",
+            downloadUrl = "https://raw.githubusercontent.com/alzimerahmed84/TypeCraft-SoundPacks/main/dist/pizzicato.zip",
             sizeBytes = 30498
         )
     )

@@ -627,8 +627,8 @@
     <string name="theme_name_sand">Άμμος</string>
     <string name="theme_name_violette">Βιολετί</string>
     <string name="theme_name_user">Καθορισμένο από τον χρήστη</string>
-    <string name="theme_name_typecraft_light">Alzimer Ahmed Ανοιχτό</string>
-    <string name="theme_name_typecraft_dark">Alzimer Ahmed Σκούρο</string>
+    <string name="theme_name_typecraft_light">TypeCraft Ανοιχτό</string>
+    <string name="theme_name_typecraft_dark">TypeCraft Σκούρο</string>
     <string name="auto_user_color">Αυτόματη επιλογή χρώματος</string>
     <string name="main_colors">Εμφάνιση μόνο κύριων χρωμάτων</string>
     <string name="more_colors">Εμφάνιση περισσότερων χρωμάτων</string>
