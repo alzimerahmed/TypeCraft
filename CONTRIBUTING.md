@@ -89,3 +89,6 @@ Updating translations in a PR will not be accepted, as it may cause conflicts wi
 
 # Dictionaries
 No new dictionaries will be added to this app. Please submit dictionaries and the wordlist to the [dictionaries repository](https://codeberg.org/alzimerahmed84/aosp-dictionaries)
+
+# Translating New String Keys
+Strings added directly in this repository (e.g. the `setup_*` wizard keys, clipboard, handwriting and touchpad strings added in 2026-09) may not yet be synced to Weblate. Until they are, pull requests that translate **only these new keys** into `values-<locale>/strings.xml` are welcome — they do not conflict with Weblate-managed strings. Roughly 75 locales currently fall back to English for these keys; see `app/src/main/res/values/strings.xml` for the canonical key list.

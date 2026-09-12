@@ -103,7 +103,6 @@
     <ID>CyclomaticComplexMethod:ClipboardHistoryManager.kt$ClipboardHistoryManager$private fun fetchPrimaryClip()</ID>
     <ID>CyclomaticComplexMethod:ClipboardHistoryManager.kt$ClipboardHistoryManager$private fun getScreenshotSuggestionView(parent: ViewGroup?): View?</ID>
     <ID>CyclomaticComplexMethod:ClipboardHistoryManager.kt$ClipboardHistoryManager$private fun updateLatestScreenshotCache(onComplete: (() -&gt; Unit)? = null)</ID>
-    <ID>CyclomaticComplexMethod:ClipboardHistoryView.kt$ClipboardHistoryView$@SuppressLint("ClickableViewAccessibility") private fun initialize()</ID>
     <ID>CyclomaticComplexMethod:ClipboardHistoryView.kt$ClipboardHistoryView$override fun onCodeInput(primaryCode: Int, x: Int, y: Int, isKeyRepeat: Boolean)</ID>
     <ID>CyclomaticComplexMethod:ClipboardHistoryView.kt$ClipboardHistoryView$private fun applyClipboardToolbarKeyLayoutParams()</ID>
     <ID>CyclomaticComplexMethod:ColorThemePickerDialog.kt$@Composable fun ColorThemePickerDialog( onDismissRequest: () -&gt; Unit, setting: Setting, isNight: Boolean, default: String )</ID>
@@ -282,7 +281,6 @@
     <ID>EmptyCatchBlock:LatinIME.kt$LatinIME${}</ID>
     <ID>EmptyCatchBlock:LoadGestureLibPreference.kt${ }</ID>
     <ID>EmptyCatchBlock:LoadHandwritingPluginPreference.kt${ }</ID>
-    <ID>EmptyFunctionBlock:ClipboardHistoryView.kt$ClipboardHistoryView.&lt;no name provided&gt;${}</ID>
     <ID>EmptyFunctionBlock:DictionaryFacilitatorImpl.kt$DictionaryFacilitatorImpl${ }</ID>
     <ID>EmptyFunctionBlock:EmojiPageKeyboardView.kt$EmojiPageKeyboardView.Companion.&lt;no name provided&gt;${}</ID>
     <ID>EmptyFunctionBlock:EmojiPalettesView.kt$EmojiPalettesView.&lt;no name provided&gt;${}</ID>
@@ -1764,6 +1762,41 @@
     <ID>MagicNumber:TextKeyData.kt$KeyData$32</ID>
     <ID>MagicNumber:TextKeyData.kt$KeyData$4</ID>
     <ID>MagicNumber:TextKeyData.kt$KeyData.Companion$9</ID>
+    <ID>MagicNumber:Theme.kt$0xFF002021</ID>
+    <ID>MagicNumber:Theme.kt$0xFF003062</ID>
+    <ID>MagicNumber:Theme.kt$0xFF003739</ID>
+    <ID>MagicNumber:Theme.kt$0xFF00489B</ID>
+    <ID>MagicNumber:Theme.kt$0xFF004F52</ID>
+    <ID>MagicNumber:Theme.kt$0xFF00696D</ID>
+    <ID>MagicNumber:Theme.kt$0xFF041E49</ID>
+    <ID>MagicNumber:Theme.kt$0xFF111418</ID>
+    <ID>MagicNumber:Theme.kt$0xFF131C2B</ID>
+    <ID>MagicNumber:Theme.kt$0xFF191C20</ID>
+    <ID>MagicNumber:Theme.kt$0xFF1A73E8</ID>
+    <ID>MagicNumber:Theme.kt$0xFF283141</ID>
+    <ID>MagicNumber:Theme.kt$0xFF2E3036</ID>
+    <ID>MagicNumber:Theme.kt$0xFF3E4758</ID>
+    <ID>MagicNumber:Theme.kt$0xFF410002</ID>
+    <ID>MagicNumber:Theme.kt$0xFF44474E</ID>
+    <ID>MagicNumber:Theme.kt$0xFF565F71</ID>
+    <ID>MagicNumber:Theme.kt$0xFF690005</ID>
+    <ID>MagicNumber:Theme.kt$0xFF74777F</ID>
+    <ID>MagicNumber:Theme.kt$0xFF80D4D9</ID>
+    <ID>MagicNumber:Theme.kt$0xFF8E9099</ID>
+    <ID>MagicNumber:Theme.kt$0xFF93000A</ID>
+    <ID>MagicNumber:Theme.kt$0xFF9CF1F5</ID>
+    <ID>MagicNumber:Theme.kt$0xFFA8C8FF</ID>
+    <ID>MagicNumber:Theme.kt$0xFFBA1A1A</ID>
+    <ID>MagicNumber:Theme.kt$0xFFBEC6DC</ID>
+    <ID>MagicNumber:Theme.kt$0xFFC4C6D0</ID>
+    <ID>MagicNumber:Theme.kt$0xFFD3E3FD</ID>
+    <ID>MagicNumber:Theme.kt$0xFFDAE2F9</ID>
+    <ID>MagicNumber:Theme.kt$0xFFE0E2EC</ID>
+    <ID>MagicNumber:Theme.kt$0xFFE2E2E9</ID>
+    <ID>MagicNumber:Theme.kt$0xFFF0F0F7</ID>
+    <ID>MagicNumber:Theme.kt$0xFFF8F9FF</ID>
+    <ID>MagicNumber:Theme.kt$0xFFFFB4AB</ID>
+    <ID>MagicNumber:Theme.kt$0xFFFFDAD6</ID>
     <ID>MagicNumber:TimerHandler.kt$TimerHandler$300L</ID>
     <ID>MagicNumber:ToolbarKeysCustomizer.kt$0.5f</ID>
     <ID>MagicNumber:ToolbarScreen.kt$0.8f</ID>
@@ -3691,15 +3724,11 @@
     <ID>MaxLineLength:VoiceSettingsScreen.kt$val</ID>
     <ID>MaxLineLength:VoiceSettingsScreen.kt$val installedWhisperPref = remember(prefs) { prefs.getString("installed_model_${VoiceConstants.ENGINE_WHISPER}", null) }</ID>
     <ID>MaxLineLength:VoiceSettingsScreen.kt$val name = loc.getDisplayName(sysLocale).replaceFirstChar { if (it.isLowerCase()) it.titlecase(sysLocale) else it.toString() }</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$"Adjust the height of the keyboard. Recommended: 77% for more square keys, 100% for taller keys."</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$"Suggest recently taken screenshots in the suggestion strip. Note: This permission also allows saving screenshots to the clipboard."</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$"offline" -&gt; "Configure on-device GGUF AI models for local proofreading and translation without internet."</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Box</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Column</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Icon(painterResource(R.drawable.ic_setup_check), null, Modifier.align(Alignment.CenterEnd).padding(end = 16.dp), tint = MaterialTheme.colorScheme.primary)</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Icon(painterResource(R.drawable.ic_setup_check), null, Modifier.align(Alignment.TopEnd).padding(top = 16.dp, end = 16.dp), tint = MaterialTheme.colorScheme.primary)</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Icon(painterResource(R.drawable.ic_setup_check), null, Modifier.padding(end = 8.dp), tint = MaterialTheme.colorScheme.primary)</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$Text("Permission required. Tap here to grant.", color = MaterialTheme.colorScheme.primary)</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$Text(instruction, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$TextInputPreference</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$alzimerahmed84.keyboard.latin.utils.ProofreadService.AIProvider.GEMINI -&gt; service.hasApiKey()</ID>
@@ -3710,11 +3739,8 @@
     <ID>MaxLineLength:WelcomeWizard.kt$ctx.getString(R.string.ai_provider_gemini) to alzimerahmed84.keyboard.latin.utils.ProofreadService.AIProvider.GEMINI.name</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$ctx.getString(R.string.ai_provider_huggingface) to alzimerahmed84.keyboard.latin.utils.ProofreadService.AIProvider.GROQ.name</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$ctx.getString(R.string.ai_provider_openai) to alzimerahmed84.keyboard.latin.utils.ProofreadService.AIProvider.OPENAI.name</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$description = if (modelPath != null) service.getModelName() else "Optional — select local GGUF model file"</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$else -&gt; "Configure cloud AI services (Groq, Gemini, or OpenAI compatible) for smart proofreading and rewriting."</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$mutableStateOf(ctx.prefs().getBoolean(Settings.PREF_GESTURE_INPUT, alzimerahmed84.keyboard.latin.settings.Defaults.PREF_GESTURE_INPUT))</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$onClick = { modelLauncher.launch(arrayOf("application/octet-stream", "*/*")) }</ID>
-    <ID>MaxLineLength:WelcomeWizard.kt$summary = if (hasPlugin) "Plugin active (version ${pluginVersion ?: "1.0"})" else "Required for on-device GGUF inference — tap to download or load"</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$val</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$val emojiLibInstalled = java.io.File(alzimerahmed84.keyboard.latin.utils.DictionaryInfoUtils.getCacheDirectoryForLocale(locale, ctx), "emoji_${locale.language}.dict").exists()</ID>
     <ID>MaxLineLength:WelcomeWizard.kt$val gestureLibInstalled = java.io.File(ctx.filesDir, "libjni_latinime.so").exists() || JniUtils.sHaveNativeGestureLib</ID>
@@ -4813,7 +4839,6 @@
     <ID>UnnecessarySafeCall:ClipboardDao.kt$ClipboardDao$Settings.getValues()?.mClipboardHistoryRetentionTime</ID>
     <ID>UnnecessarySafeCall:ClipboardHistoryEntry.kt$ClipboardHistoryEntry$Settings.getInstance()?.readClipboardHistoryPinnedFirst()</ID>
     <ID>UnnecessarySafeCall:ClipboardHistoryEntry.kt$ClipboardHistoryEntry$Settings.getValues()?.mClipboardHistoryPinnedFirst</ID>
-    <ID>UnnecessarySafeCall:ClipboardHistoryView.kt$ClipboardHistoryView$params.mTypeface?.let { tf -&gt; searchBar.typeface = tf emptyViewText.typeface = tf }</ID>
     <ID>UnnecessarySafeCall:DictionaryFacilitatorImpl.kt$DictionaryFacilitatorImpl$info.mSourceDict?.mDictType</ID>
     <ID>UnnecessarySafeCall:DictionaryFacilitatorImpl.kt$DictionaryFacilitatorImpl$it.mSourceDict?.mDictType</ID>
     <ID>UnnecessarySafeCall:EmojiPageKeyboardView.kt$EmojiPageKeyboardView$KeyboardSwitcher.getInstance()?.floatingKeyboardManager</ID>
@@ -4901,7 +4926,6 @@
     <ID>UnusedPrivateMember:WelcomeWizard.kt$@Preview( device = "spec:orientation=landscape,width=400dp,height=780dp" ) @Composable private fun WidePreview()</ID>
     <ID>UnusedPrivateProperty:BinaryDictionaryUtils.kt$BinaryDictionaryUtils$private const val TAG = "BinaryDictionaryUtils"</ID>
     <ID>UnusedPrivateProperty:ClipboardHistoryView.kt$ClipboardHistoryView$private lateinit var listContainer: View</ID>
-    <ID>UnusedPrivateProperty:ClipboardHistoryView.kt$ClipboardHistoryView$private lateinit var placeholderView: TextView</ID>
     <ID>UnusedPrivateProperty:DictionaryFacilitatorImpl.kt$DictionaryFacilitatorImpl$/** the only dictionary group, or the dictionaryGroup confidence &gt;= DictionaryGroup.MAX_CONFIDENCE if all others have 0 */ private val clearlyPreferredDictionaryGroup: DictionaryGroup? get() { if (dictionaryGroups.size == 1) return dictionaryGroups.first() // confidence not used if we only have a single group val preferred = currentlyPreferredDictionaryGroup if (preferred.confidence &lt; DictionaryGroup.MAX_CONFIDENCE) return null if (dictionaryGroups.any { it.confidence &gt; 0 &amp;&amp; it !== preferred }) return null return preferred }</ID>
     <ID>UnusedPrivateProperty:DrawingPreviewPlacerView.kt$DrawingPreviewPlacerView$defStyleAttr: Int = 0</ID>
     <ID>UnusedPrivateProperty:FeedbackManager.kt$FeedbackManager$val result = _messages.trySend(text)</ID>
@@ -4976,7 +5000,6 @@
     <ID>UseOrEmpty:ClipboardHistoryManager.kt$ClipboardHistoryManager$it.getString(nameIndex) ?: ""</ID>
     <ID>UseOrEmpty:ClipboardHistoryManager.kt$ClipboardHistoryManager$it.getString(relIndex) ?: ""</ID>
     <ID>UseOrEmpty:ClipboardHistoryManager.kt$ClipboardHistoryManager$prefs.getStringSet("deleted_screenshot_uris", emptySet()) ?: emptySet()</ID>
-    <ID>UseOrEmpty:ClipboardHistoryView.kt$ClipboardHistoryView.&lt;no name provided&gt;$s?.toString() ?: ""</ID>
     <ID>UseOrEmpty:CombinerChain.kt$CombinerChain$previousEvents ?: emptyList()</ID>
     <ID>UseOrEmpty:CustomAIKeysScreen.kt$prefs.getString("pref_custom_ai_tag_$index", "") ?: ""</ID>
     <ID>UseOrEmpty:CustomAIKeysScreen.kt$prefs.getString(Settings.PREF_TOOLBAR_KEYS, defaultToolbarPref) ?: ""</ID>
@@ -5069,7 +5092,6 @@
     <ID>UtilityClassWithPublicConstructor:AndroidSpellCheckerSessionFactory.kt$AndroidSpellCheckerSessionFactory</ID>
     <ID>VarCouldBeVal:ClipboardHistoryManager.kt$ClipboardHistoryManager$var hasText = clipData.description?.hasMimeType("text/*") == true || clipData.description?.hasMimeType("text/plain") == true || clipData.description?.hasMimeType("text/html") == true</ID>
     <ID>VarCouldBeVal:ClipboardHistoryView.kt$ClipboardHistoryView$private lateinit var listContainer: View</ID>
-    <ID>VarCouldBeVal:ClipboardHistoryView.kt$ClipboardHistoryView$private lateinit var placeholderView: TextView</ID>
     <ID>VarCouldBeVal:ClipboardHistoryView.kt$ClipboardHistoryView$private var searchQuery = StringBuilder()</ID>
     <ID>VarCouldBeVal:CustomAIKeysScreen.kt$var currentPrompt by remember { mutableStateOf(prefs.getString(prefKey, "") ?: "") }</ID>
     <ID>VarCouldBeVal:DictionaryUtils.kt$var connection = url.openConnection() as java.net.HttpURLConnection</ID>
