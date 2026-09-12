@@ -16,8 +16,9 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(keystorePropertiesFile.inputStream())
 }
 
-// androidx.graphics:graphics-path 1.1.0 requires minSdk 23; the offline flavor supports 21
-configurations.all {
+// androidx.graphics:graphics-path 1.1.0 requires minSdk 23; the offline flavor supports 21,
+// so pin it to 1.0.1 (minSdk 21) for offline variants only — standard flavors keep 1.1.0
+configurations.matching { it.name.startsWith("offline") }.all {
     resolutionStrategy.force("androidx.graphics:graphics-path:1.0.1")
 }
 

@@ -82,7 +82,7 @@ docs/superpowers/
 # AI agent config (personal, not shared)
 .pi/
 
-# Devin prompt system & per-project knowledge (private, never push)
+# Devin prompt system & per-project knowledge (private, never pushed)
 .devin/
 .switchboard/
 docs/
