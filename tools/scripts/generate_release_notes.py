@@ -7,11 +7,14 @@ def main():
     project_root = os.path.dirname(os.path.dirname(script_dir))
     
     # 1. Try to get version from tag name (if running in GitHub Actions)
+    #    Supports 'v' tags (v4.2.2) and 'beta-' tags (beta-v4.3.0-beta1 / beta-4.3.0)
     ref_name = os.environ.get('GITHUB_REF_NAME')
     version_name = None
-    if ref_name and ref_name.startswith('v'):
-        version_name = ref_name[1:]
-        print(f"Detected version name from GITHUB_REF_NAME: {version_name}")
+    if ref_name:
+        tag = re.sub(r'^(?:beta-)?v?', '', ref_name)
+        if re.match(r'^\d', tag):
+            version_name = tag
+            print(f"Detected version name from GITHUB_REF_NAME: {version_name}")
         
     # 2. Fall back to build.gradle.kts if not running in action or tag not matching
     if not version_name:
@@ -28,8 +31,8 @@ def main():
         print("Error: Could not determine version name")
         return
 
-    # 3. Locate the existing release notes file
-    releasenote_dir = os.path.join(project_root, 'docs', 'releasenote')
+    # 3. Locate the existing release notes file (kept in tools/releasenote, which is tracked)
+    releasenote_dir = os.path.join(project_root, 'tools', 'releasenote')
     source_path = os.path.join(releasenote_dir, f'release_notes_v{version_name}.md')
     temp_path = os.path.join(releasenote_dir, 'release_notes_temp.md')
 
