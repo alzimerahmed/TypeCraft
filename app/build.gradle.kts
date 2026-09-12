@@ -7,6 +7,13 @@ plugins {
     kotlin("plugin.serialization") version "2.2.21"
     kotlin("plugin.compose") version "2.2.21"
     kotlin("plugin.parcelize")
+    id("io.gitlab.arturbosch.detekt")
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    parallel = true
+    baseline = file("detekt-baseline.xml")
 }
 
 // Load keystore properties
@@ -211,6 +218,7 @@ android {
     namespace = "alzimerahmed84.keyboard.latin"
     lint {
         abortOnError = true
+        baseline = file("lint-baseline.xml")
         // Upstream TypeCraft translations reference strings not in TypeCraft's base strings.xml;
         // these orphaned strings are harmlessly stripped by R8 during minification.
         disable += "ExtraTranslation"

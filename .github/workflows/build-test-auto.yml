@@ -10,7 +10,9 @@ on:
 #      - 'app/**'
   pull_request:
     paths:
-      - 'app/src/main/java**'
+      - 'app/**'
+      - 'build.gradle.kts'
+      - 'settings.gradle'
   workflow_dispatch:
 
 jobs:
@@ -33,7 +35,23 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew compileOfflineRunTestsKotlin
+        run: ./gradlew assembleDebug
+
+      - name: Unit tests (all flavors)
+        run: ./gradlew testStandardDebugUnitTest testStandardfullDebugUnitTest testOfflineDebugUnitTest
+
+      - name: Static analysis (detekt, baseline-gated)
+        run: ./gradlew detekt
+
+      - name: Android Lint (baseline-gated)
+        run: ./gradlew lintStandardDebug
+
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: 'app/build/reports/tests'
+        if: ${{ failure() }}
 
       - name: Archive reports for failed job
         uses: actions/upload-artifact@v4
