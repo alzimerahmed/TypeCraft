@@ -875,4 +875,42 @@ Nouveau dictionnaire:
     <string name="custom_ai_keys_prompt_label">Invite personnalisée pour la touche %1$d</string>
     <string name="custom_ai_keys_tag_label">Étiquette / Libellé (par ex. \'Français\', \'Grammaire\', \'Réécrire\')</string>
     <string name="custom_ai_keys_selected_functions">Fonctions des mots-clés sélectionnés :</string>
+    <!-- Assistant de configuration (Phase 4) -->
+    <string name="setup_step_previous">Précédent</string>
+    <string name="setup_next_action">Suivant</string>
+    <string name="setup_step_languages_title">Choix des langues et de la saisie</string>
+    <string name="setup_step_languages_instruction">Configurez vos langues de saisie.</string>
+    <string name="setup_languages_section">Langues de saisie</string>
+    <string name="setup_languages_enabled">Langues activées :</string>
+    <string name="setup_languages_choose">Choisir les langues</string>
+    <string name="setup_step_libraries_title">Bibliothèques</string>
+    <string name="setup_step_libraries_instruction">Téléchargez les bibliothèques d\'émojis et de gestes pour améliorer la saisie et les suggestions.</string>
+    <string name="setup_emoji_dictionary">Dictionnaire d\'émojis</string>
+    <string name="setup_gesture_library">Bibliothèque de saisie gestuelle</string>
+    <string name="setup_gesture_enable">Activer la saisie gestuelle</string>
+    <string name="setup_gesture_enable_desc">Glissez sur les touches pour écrire des mots</string>
+    <string name="setup_step_ai_title">Intégration de l\'IA</string>
+    <string name="setup_step_ai_instruction">Configurez des services d\'IA en ligne (Groq, Gemini ou compatibles OpenAI) pour la correction et la réécriture intelligentes.</string>
+    <string name="setup_step_ai_offline_title">Intégration de l\'IA hors ligne</string>
+    <string name="setup_step_ai_offline_instruction">Configurez des modèles d\'IA GGUF sur l\'appareil pour la correction et la traduction sans internet.</string>
+    <string name="setup_offline_ai_plugin">Module d\'IA hors ligne</string>
+    <string name="setup_offline_ai_plugin_active">"Module actif (version %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">Requis pour l\'inférence GGUF sur l\'appareil — touchez pour télécharger ou charger</string>
+    <string name="setup_gguf_model">"Modèle GGUF (.gguf)"</string>
+    <string name="setup_gguf_model_desc">Facultatif — sélectionner un fichier de modèle GGUF local</string>
+    <string name="setup_remove_model">Retirer le modèle</string>
+    <string name="setup_remove_model_desc">Décharger le modèle et effacer la sélection</string>
+    <string name="setup_offline_lite_note">Édition Offline Lite active.\nAucune IA en arrière-plan ni trafic réseau.</string>
+    <string name="setup_step_floating_title">Clavier flottant</string>
+    <string name="setup_step_floating_instruction">"Activez le clavier flottant en accordant l\'autorisation « Afficher par-dessus les autres applications »."</string>
+    <string name="setup_overlay_permission_required">Autorisation requise. Touchez pour l\'accorder.</string>
+    <string name="setup_overlay_permission_granted">Autorisation accordée.</string>
+    <string name="setup_step_screenshots_title">Suggestions de captures d\'écran</string>
+    <string name="setup_step_screenshots_instruction">Suggère les captures d\'écran récentes dans la barre de suggestions. Remarque : cette autorisation permet aussi d\'enregistrer des captures dans le presse-papiers.</string>
+    <string name="setup_step_height_title">Hauteur du clavier</string>
+    <string name="setup_step_height_instruction" formatted="false">Ajustez la hauteur du clavier. Recommandé : 77% pour des touches plus carrées, 100% pour des touches plus hautes.</string>
+    <string name="clipboard_cd_back">Retour</string>
+    <string name="clipboard_cd_empty">Aucun élément dans le presse-papiers</string>
+    <string name="handwriting_cd_clear">Effacer</string>
+    <string name="touchpad_cd_close">Fermer le mode pavé tactile</string>
 </resources>

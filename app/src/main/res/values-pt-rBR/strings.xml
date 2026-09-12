@@ -493,4 +493,42 @@
     <string name="timestamp_description">­Você pode adicionar a tecla de carimbo de data/hora usando um layout personalizado com a tecla ‘timestamp’ ou o código de tecla -10043.</string>
     <string name="prefs_bottom_row_scale">Escala da linha inferior</string>
     <string name="layout_functional_keys_khipro" tools:keep="@string/layout_functional_keys">Teclas funcionais (Khipro)</string>
+    <!-- Assistente de configuração (Fase 4) -->
+    <string name="setup_step_previous">Voltar</string>
+    <string name="setup_next_action">Avançar</string>
+    <string name="setup_step_languages_title">Seleção de idiomas e entrada</string>
+    <string name="setup_step_languages_instruction">Configure seus idiomas de digitação.</string>
+    <string name="setup_languages_section">Idiomas de digitação</string>
+    <string name="setup_languages_enabled">Idiomas ativados:</string>
+    <string name="setup_languages_choose">Escolher idiomas</string>
+    <string name="setup_step_libraries_title">Bibliotecas</string>
+    <string name="setup_step_libraries_instruction">Baixe as bibliotecas de emojis e gestos para melhorar a digitação e as sugestões.</string>
+    <string name="setup_emoji_dictionary">Dicionário de emojis</string>
+    <string name="setup_gesture_library">Biblioteca de digitação por gestos</string>
+    <string name="setup_gesture_enable">Ativar digitação por gestos</string>
+    <string name="setup_gesture_enable_desc">Deslize sobre as teclas para digitar palavras</string>
+    <string name="setup_step_ai_title">Integração de IA</string>
+    <string name="setup_step_ai_instruction">Configure serviços de IA em nuvem (Groq, Gemini ou compatíveis com OpenAI) para correção e reescrita inteligentes.</string>
+    <string name="setup_step_ai_offline_title">Integração de IA off-line</string>
+    <string name="setup_step_ai_offline_instruction">Configure modelos de IA GGUF no dispositivo para correção e tradução sem internet.</string>
+    <string name="setup_offline_ai_plugin">Plug-in de IA off-line</string>
+    <string name="setup_offline_ai_plugin_active">"Plug-in ativo (versão %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">Necessário para inferência GGUF no dispositivo — toque para baixar ou carregar</string>
+    <string name="setup_gguf_model">"Modelo GGUF (.gguf)"</string>
+    <string name="setup_gguf_model_desc">Opcional — selecione um arquivo de modelo GGUF local</string>
+    <string name="setup_remove_model">Remover modelo</string>
+    <string name="setup_remove_model_desc">Descarrega o modelo e limpa a seleção</string>
+    <string name="setup_offline_lite_note">Edição Offline Lite ativa.\nSem IA em segundo plano nem tráfego de rede.</string>
+    <string name="setup_step_floating_title">Teclado flutuante</string>
+    <string name="setup_step_floating_instruction">"Ative o teclado flutuante concedendo a permissão „Sobrepor a outros apps“."</string>
+    <string name="setup_overlay_permission_required">Permissão necessária. Toque para conceder.</string>
+    <string name="setup_overlay_permission_granted">Permissão concedida.</string>
+    <string name="setup_step_screenshots_title">Sugestões de capturas de tela</string>
+    <string name="setup_step_screenshots_instruction">Sugere capturas de tela recentes na barra de sugestões. Observação: esta permissão também permite salvar capturas na área de transferência.</string>
+    <string name="setup_step_height_title">Altura do teclado</string>
+    <string name="setup_step_height_instruction" formatted="false">Ajuste a altura do teclado. Recomendado: 77% para teclas mais quadradas, 100% para teclas mais altas.</string>
+    <string name="clipboard_cd_back">Voltar</string>
+    <string name="clipboard_cd_empty">Nenhum item na área de transferência</string>
+    <string name="handwriting_cd_clear">Limpar</string>
+    <string name="touchpad_cd_close">Fechar o modo touchpad</string>
 </resources>

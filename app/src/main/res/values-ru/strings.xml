@@ -870,4 +870,42 @@
     <string name="custom_ai_keys_prompt_label">Пользовательский промпт для клавиши %1$d</string>
     <string name="custom_ai_keys_tag_label">Тег / метка (например, \'Французский\', \'Грамматика\', \'Переписать\')</string>
     <string name="custom_ai_keys_selected_functions">Функции выбранных ключевых слов:</string>
+    <!-- Мастер настройки (Фаза 4) -->
+    <string name="setup_step_previous">Назад</string>
+    <string name="setup_next_action">Далее</string>
+    <string name="setup_step_languages_title">Выбор языков и ввода</string>
+    <string name="setup_step_languages_instruction">Настройте языки ввода.</string>
+    <string name="setup_languages_section">Языки ввода</string>
+    <string name="setup_languages_enabled">Включённые языки:</string>
+    <string name="setup_languages_choose">Выбрать языки</string>
+    <string name="setup_step_libraries_title">Библиотеки</string>
+    <string name="setup_step_libraries_instruction">Скачайте библиотеки эмодзи и жестов, чтобы улучшить набор и подсказки.</string>
+    <string name="setup_emoji_dictionary">Словарь эмодзи</string>
+    <string name="setup_gesture_library">Библиотека набора жестами</string>
+    <string name="setup_gesture_enable">Включить набор жестами</string>
+    <string name="setup_gesture_enable_desc">Проводите пальцем по клавишам, чтобы вводить слова</string>
+    <string name="setup_step_ai_title">Интеграция ИИ</string>
+    <string name="setup_step_ai_instruction">Настройте облачные ИИ-сервисы (Groq, Gemini или совместимые с OpenAI) для умной корректуры и переформулирования.</string>
+    <string name="setup_step_ai_offline_title">Автономная интеграция ИИ</string>
+    <string name="setup_step_ai_offline_instruction">Настройте локальные GGUF-модели ИИ для корректуры и перевода без интернета.</string>
+    <string name="setup_offline_ai_plugin">Плагин автономного ИИ</string>
+    <string name="setup_offline_ai_plugin_active">"Плагин активен (версия %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">Требуется для GGUF-вывода на устройстве — нажмите, чтобы скачать или загрузить</string>
+    <string name="setup_gguf_model">"Модель GGUF (.gguf)"</string>
+    <string name="setup_gguf_model_desc">Необязательно — выберите локальный файл модели GGUF</string>
+    <string name="setup_remove_model">Удалить модель</string>
+    <string name="setup_remove_model_desc">Выгрузить модель и сбросить выбор</string>
+    <string name="setup_offline_lite_note">Активна редакция Offline Lite.\nБез фоновой ИИ-активности и сетевого трафика.</string>
+    <string name="setup_step_floating_title">Плавающая клавиатура</string>
+    <string name="setup_step_floating_instruction">"Включите плавающую клавиатуру, выдав разрешение «Поверх других окон»."</string>
+    <string name="setup_overlay_permission_required">Требуется разрешение. Нажмите, чтобы выдать.</string>
+    <string name="setup_overlay_permission_granted">Разрешение выдано.</string>
+    <string name="setup_step_screenshots_title">Подсказки из скриншотов</string>
+    <string name="setup_step_screenshots_instruction">Предлагает недавние скриншоты в строке подсказок. Примечание: это разрешение также позволяет сохранять скриншоты в буфер обмена.</string>
+    <string name="setup_step_height_title">Высота клавиатуры</string>
+    <string name="setup_step_height_instruction" formatted="false">Настройте высоту клавиатуры. Рекомендуется: 77% для более квадратных клавиш, 100% для более высоких.</string>
+    <string name="clipboard_cd_back">Назад</string>
+    <string name="clipboard_cd_empty">Нет элементов в буфере обмена</string>
+    <string name="handwriting_cd_clear">Очистить</string>
+    <string name="touchpad_cd_close">Закрыть режим тачпада</string>
 </resources>

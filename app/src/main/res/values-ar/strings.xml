@@ -877,4 +877,42 @@
     <string name="custom_ai_keys_prompt_label">المطالبة المخصصة للمفتاح %1$d</string>
     <string name="custom_ai_keys_tag_label">علامة / تسمية (مثال: \'فرنسية\'، \'قواعد\'، \'إعادة كتابة\')</string>
     <string name="custom_ai_keys_selected_functions">وظائف الكلمات المفتاحية المحددة:</string>
+    <!-- معالج الإعداد (المرحلة 4) -->
+    <string name="setup_step_previous">السابق</string>
+    <string name="setup_next_action">التالي</string>
+    <string name="setup_step_languages_title">اختيار اللغات والإدخال</string>
+    <string name="setup_step_languages_instruction">اضبط لغات الكتابة لديك.</string>
+    <string name="setup_languages_section">لغات الكتابة</string>
+    <string name="setup_languages_enabled">اللغات المفعّلة:</string>
+    <string name="setup_languages_choose">اختيار اللغات</string>
+    <string name="setup_step_libraries_title">المكتبات</string>
+    <string name="setup_step_libraries_instruction">نزّل مكتبات الإيموجي والإيماءات لتحسين الكتابة والاقتراحات.</string>
+    <string name="setup_emoji_dictionary">قاموس الإيموجي</string>
+    <string name="setup_gesture_library">مكتبة الكتابة بالإيماءات</string>
+    <string name="setup_gesture_enable">تفعيل الكتابة بالإيماءات</string>
+    <string name="setup_gesture_enable_desc">مرّر على المفاتيح لكتابة الكلمات</string>
+    <string name="setup_step_ai_title">تكامل الذكاء الاصطناعي</string>
+    <string name="setup_step_ai_instruction">اضبط خدمات الذكاء الاصطناعي السحابية (Groq أو Gemini أو المتوافقة مع OpenAI) للتدقيق وإعادة الصياغة الذكية.</string>
+    <string name="setup_step_ai_offline_title">تكامل الذكاء الاصطناعي دون اتصال</string>
+    <string name="setup_step_ai_offline_instruction">اضبط نماذج GGUF المحلية للتدقيق والترجمة دون إنترنت.</string>
+    <string name="setup_offline_ai_plugin">إضافة الذكاء الاصطناعي دون اتصال</string>
+    <string name="setup_offline_ai_plugin_active">"الإضافة مفعّلة (الإصدار %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">مطلوب للاستدلال المحلي بنموذج GGUF — انقر للتنزيل أو التحميل</string>
+    <string name="setup_gguf_model">"نموذج GGUF‏ (.gguf)"</string>
+    <string name="setup_gguf_model_desc">اختياري — حدد ملف نموذج GGUF محلي</string>
+    <string name="setup_remove_model">إزالة النموذج</string>
+    <string name="setup_remove_model_desc">إلغاء تحميل النموذج ومسح التحديد</string>
+    <string name="setup_offline_lite_note">إصدار Offline Lite مفعّل.\nلا ذكاء اصطناعي في الخلفية ولا أي نشاط شبكي.</string>
+    <string name="setup_step_floating_title">لوحة المفاتيح العائمة</string>
+    <string name="setup_step_floating_instruction">"فعّل لوحة المفاتيح العائمة بمنح إذن «الظهور فوق التطبيقات الأخرى»."</string>
+    <string name="setup_overlay_permission_required">الإذن مطلوب. انقر للمنح.</string>
+    <string name="setup_overlay_permission_granted">تم منح الإذن.</string>
+    <string name="setup_step_screenshots_title">اقتراحات لقطات الشاشة</string>
+    <string name="setup_step_screenshots_instruction">يقترح لقطات الشاشة الحديثة في شريط الاقتراحات. ملاحظة: يسمح هذا الإذن أيضًا بحفظ لقطات الشاشة في الحافظة.</string>
+    <string name="setup_step_height_title">ارتفاع لوحة المفاتيح</string>
+    <string name="setup_step_height_instruction" formatted="false">اضبط ارتفاع لوحة المفاتيح. يُنصح بـ 77% لمفاتيح أكثر تربيعًا و100% لمفاتيح أعلى.</string>
+    <string name="clipboard_cd_back">رجوع</string>
+    <string name="clipboard_cd_empty">لا عناصر في الحافظة</string>
+    <string name="handwriting_cd_clear">مسح</string>
+    <string name="touchpad_cd_close">إغلاق وضع لوحة اللمس</string>
 </resources>

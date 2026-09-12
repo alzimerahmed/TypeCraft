@@ -823,4 +823,42 @@
     <string name="custom_ai_keys_prompt_label">Benutzerdefinierter Prompt für Taste %1$d</string>
     <string name="custom_ai_keys_tag_label">Tag / Bezeichnung (z. B. \'Französisch\', \'Grammatik\', \'Umschreiben\')</string>
     <string name="custom_ai_keys_selected_functions">Ausgewählte Schlüsselwort-Funktionen:</string>
+    <!-- Einrichtungsassistent (Phase 4) -->
+    <string name="setup_step_previous">Zurück</string>
+    <string name="setup_next_action">Weiter</string>
+    <string name="setup_step_languages_title">Sprach- &amp; Eingabeauswahl</string>
+    <string name="setup_step_languages_instruction">Richte deine Tipp-Sprachen ein.</string>
+    <string name="setup_languages_section">Tipp-Sprachen</string>
+    <string name="setup_languages_enabled">Aktivierte Sprachen:</string>
+    <string name="setup_languages_choose">Sprachen auswählen</string>
+    <string name="setup_step_libraries_title">Bibliotheken</string>
+    <string name="setup_step_libraries_instruction">Lade Emoji- und Gesten-Bibliotheken herunter, um Tipp-Ergebnisse und Vorschläge zu verbessern.</string>
+    <string name="setup_emoji_dictionary">Emoji-Wörterbuch</string>
+    <string name="setup_gesture_library">Gesten-Tipp-Bibliothek</string>
+    <string name="setup_gesture_enable">Gesten-Tipp aktivieren</string>
+    <string name="setup_gesture_enable_desc">Über die Tasten wischen, um Wörter zu schreiben</string>
+    <string name="setup_step_ai_title">KI-Integration</string>
+    <string name="setup_step_ai_instruction">Richte Cloud-KI-Dienste (Groq, Gemini oder OpenAI-kompatibel) für intelligente Korrektur und Umformulierung ein.</string>
+    <string name="setup_step_ai_offline_title">Offline-KI-Integration</string>
+    <string name="setup_step_ai_offline_instruction">Richte lokale GGUF-KI-Modelle für Korrektur und Übersetzung ohne Internet ein.</string>
+    <string name="setup_offline_ai_plugin">Offline-KI-Plugin</string>
+    <string name="setup_offline_ai_plugin_active">"Plugin aktiv (Version %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">Erforderlich für GGUF-Inferenz auf dem Gerät — zum Herunterladen oder Laden tippen</string>
+    <string name="setup_gguf_model">"GGUF-Modell (.gguf)"</string>
+    <string name="setup_gguf_model_desc">Optional — lokale GGUF-Modelldatei auswählen</string>
+    <string name="setup_remove_model">Modell entfernen</string>
+    <string name="setup_remove_model_desc">Modell entladen und Auswahl löschen</string>
+    <string name="setup_offline_lite_note">Offline-Lite-Edition aktiv.\nKeine KI im Hintergrund, kein Netzwerkverkehr.</string>
+    <string name="setup_step_floating_title">Schwebende Tastatur</string>
+    <string name="setup_step_floating_instruction">"Aktiviere die schwebende Tastatur, indem du die Berechtigung „Über anderen Apps anzeigen“ erteilst."</string>
+    <string name="setup_overlay_permission_required">Berechtigung erforderlich. Zum Erteilen tippen.</string>
+    <string name="setup_overlay_permission_granted">Berechtigung erteilt.</string>
+    <string name="setup_step_screenshots_title">Screenshot-Vorschläge</string>
+    <string name="setup_step_screenshots_instruction">Schlage kürzlich erstellte Screenshots im Vorschlagsstreifen vor. Hinweis: Diese Berechtigung erlaubt auch das Speichern von Screenshots in der Zwischenablage.</string>
+    <string name="setup_step_height_title">Tastaturhöhe</string>
+    <string name="setup_step_height_instruction" formatted="false">Passe die Höhe der Tastatur an. Empfohlen: 77% für eckigere Tasten, 100% für höhere Tasten.</string>
+    <string name="clipboard_cd_back">Zurück</string>
+    <string name="clipboard_cd_empty">Keine Zwischenablage-Einträge</string>
+    <string name="handwriting_cd_clear">Löschen</string>
+    <string name="touchpad_cd_close">Touchpad-Modus schließen</string>
 </resources>

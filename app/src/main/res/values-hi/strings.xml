@@ -103,4 +103,42 @@
     <string name="label_search_key">"सर्च"</string>
     <string name="label_pause_key">"रोकें"</string>
     <string name="label_wait_key">"प्रतीक्षा करें"</string>
+    <!-- सेटअप विज़ार्ड (चरण 4) -->
+    <string name="setup_step_previous">पीछे</string>
+    <string name="setup_next_action">आगे</string>
+    <string name="setup_step_languages_title">भाषा और इनपुट चयन</string>
+    <string name="setup_step_languages_instruction">अपनी टाइपिंग भाषाएँ सेट करें।</string>
+    <string name="setup_languages_section">टाइपिंग भाषाएँ</string>
+    <string name="setup_languages_enabled">सक्रिय भाषाएँ:</string>
+    <string name="setup_languages_choose">भाषाएँ चुनें</string>
+    <string name="setup_step_libraries_title">लाइब्रेरी</string>
+    <string name="setup_step_libraries_instruction">टाइपिंग और सुझाव बेहतर बनाने के लिए इमोजी और जेस्चर लाइब्रेरी डाउनलोड करें।</string>
+    <string name="setup_emoji_dictionary">इमोजी डिक्शनरी</string>
+    <string name="setup_gesture_library">जेस्चर टाइपिंग लाइब्रेरी</string>
+    <string name="setup_gesture_enable">जेस्चर टाइपिंग चालू करें</string>
+    <string name="setup_gesture_enable_desc">शब्द लिखने के लिए कुंजियों पर स्लाइड करें</string>
+    <string name="setup_step_ai_title">AI एकीकरण</string>
+    <string name="setup_step_ai_instruction">स्मार्ट प्रूफ़रीडिंग और रीराइटिंग के लिए क्लाउड AI सेवाएँ (Groq, Gemini या OpenAI-संगत) सेट करें।</string>
+    <string name="setup_step_ai_offline_title">ऑफ़लाइन AI एकीकरण</string>
+    <string name="setup_step_ai_offline_instruction">बिना इंटरनेट प्रूफ़रीडिंग और अनुवाद के लिए डिवाइस पर लोकल GGUF AI मॉडल सेट करें।</string>
+    <string name="setup_offline_ai_plugin">ऑफ़लाइन AI प्लगइन</string>
+    <string name="setup_offline_ai_plugin_active">"प्लगइन सक्रिय (संस्करण %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">डिवाइस पर GGUF इन्फ़रेंस के लिए आवश्यक — डाउनलोड या लोड करने के लिए टैप करें</string>
+    <string name="setup_gguf_model">"GGUF मॉडल (.gguf)"</string>
+    <string name="setup_gguf_model_desc">वैकल्पिक — लोकल GGUF मॉडल फ़ाइल चुनें</string>
+    <string name="setup_remove_model">मॉडल हटाएँ</string>
+    <string name="setup_remove_model_desc">मॉडल अनलोड करें और चयन साफ़ करें</string>
+    <string name="setup_offline_lite_note">Offline Lite संस्करण सक्रिय।\nकोई बैकग्राउंड AI या नेटवर्क उपयोग नहीं।</string>
+    <string name="setup_step_floating_title">फ़्लोटिंग कीबोर्ड</string>
+    <string name="setup_step_floating_instruction">"‘दूसरे ऐप्स के ऊपर दिखाएँ’ अनुमति देकर फ़्लोटिंग कीबोर्ड चालू करें।"</string>
+    <string name="setup_overlay_permission_required">अनुमति आवश्यक है। देने के लिए टैप करें।</string>
+    <string name="setup_overlay_permission_granted">अनुमति दी गई।</string>
+    <string name="setup_step_screenshots_title">स्क्रीनशॉट सुझाव</string>
+    <string name="setup_step_screenshots_instruction">हाल की स्क्रीनशॉट को सुझाव पट्टी में दिखाता है। ध्यान दें: यह अनुमति स्क्रीनशॉट को क्लिपबोर्ड में सहेजने की भी अनुमति देती है।</string>
+    <string name="setup_step_height_title">कीबोर्ड ऊँचाई</string>
+    <string name="setup_step_height_instruction" formatted="false">कीबोर्ड की ऊँचाई समायोजित करें। अनुशंसित: अधिक वर्गाकार कुंजियों के लिए 77%, लंबी कुंजियों के लिए 100%।</string>
+    <string name="clipboard_cd_back">वापस</string>
+    <string name="clipboard_cd_empty">क्लिपबोर्ड में कोई आइटम नहीं</string>
+    <string name="handwriting_cd_clear">साफ़ करें</string>
+    <string name="touchpad_cd_close">टचपैड मोड बंद करें</string>
 </resources>

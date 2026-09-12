@@ -484,4 +484,42 @@
     <string name="gesture_data_reminder_message">¡Hola!\n Usaste la recopilación de datos de gestos anteriormente, pero hace bastante que no añades nuevos datos. ¿Te gustaría colaborar de nuevo?</string>
     <string name="gesture_data_take_me_there">Ir allí</string>
     <string name="gesture_data_links">Información sobre la recopilación de datos de gestos en:</string>
+    <!-- Asistente de configuración (Fase 4) -->
+    <string name="setup_step_previous">Atrás</string>
+    <string name="setup_next_action">Siguiente</string>
+    <string name="setup_step_languages_title">Selección de idioma y entrada</string>
+    <string name="setup_step_languages_instruction">Configura tus idiomas de escritura.</string>
+    <string name="setup_languages_section">Idiomas de escritura</string>
+    <string name="setup_languages_enabled">Idiomas activados:</string>
+    <string name="setup_languages_choose">Elegir idiomas</string>
+    <string name="setup_step_libraries_title">Bibliotecas</string>
+    <string name="setup_step_libraries_instruction">Descarga las bibliotecas de emojis y gestos para mejorar la escritura y las sugerencias.</string>
+    <string name="setup_emoji_dictionary">Diccionario de emojis</string>
+    <string name="setup_gesture_library">Biblioteca de escritura por gestos</string>
+    <string name="setup_gesture_enable">Activar escritura por gestos</string>
+    <string name="setup_gesture_enable_desc">Desliza sobre las teclas para escribir palabras</string>
+    <string name="setup_step_ai_title">Integración de IA</string>
+    <string name="setup_step_ai_instruction">Configura servicios de IA en la nube (Groq, Gemini o compatibles con OpenAI) para corrección y reescritura inteligentes.</string>
+    <string name="setup_step_ai_offline_title">Integración de IA sin conexión</string>
+    <string name="setup_step_ai_offline_instruction">Configura modelos de IA GGUF en el dispositivo para corregir y traducir sin internet.</string>
+    <string name="setup_offline_ai_plugin">Complemento de IA sin conexión</string>
+    <string name="setup_offline_ai_plugin_active">"Complemento activo (versión %s)"</string>
+    <string name="setup_offline_ai_plugin_missing">Necesario para la inferencia GGUF en el dispositivo: toca para descargar o cargar</string>
+    <string name="setup_gguf_model">"Modelo GGUF (.gguf)"</string>
+    <string name="setup_gguf_model_desc">Opcional: selecciona un archivo de modelo GGUF local</string>
+    <string name="setup_remove_model">Quitar modelo</string>
+    <string name="setup_remove_model_desc">Descarga el modelo y borra la selección</string>
+    <string name="setup_offline_lite_note">Edición Offline Lite activa.\nSin IA en segundo plano ni uso de red.</string>
+    <string name="setup_step_floating_title">Teclado flotante</string>
+    <string name="setup_step_floating_instruction">"Activa el teclado flotante concediendo el permiso „Mostrar sobre otras apps“."</string>
+    <string name="setup_overlay_permission_required">Falta el permiso. Toca para concederlo.</string>
+    <string name="setup_overlay_permission_granted">Permiso concedido.</string>
+    <string name="setup_step_screenshots_title">Sugerencias de capturas</string>
+    <string name="setup_step_screenshots_instruction">Sugiere capturas recientes en la franja de sugerencias. Nota: este permiso también permite guardar capturas en el portapapeles.</string>
+    <string name="setup_step_height_title">Altura del teclado</string>
+    <string name="setup_step_height_instruction" formatted="false">Ajusta la altura del teclado. Recomendado: 77% para teclas más cuadradas, 100% para teclas más altas.</string>
+    <string name="clipboard_cd_back">Atrás</string>
+    <string name="clipboard_cd_empty">Sin elementos en el portapapeles</string>
+    <string name="handwriting_cd_clear">Borrar</string>
+    <string name="touchpad_cd_close">Cerrar el modo panel táctil</string>
 </resources>
