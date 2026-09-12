@@ -4,6 +4,19 @@ TypeCraft project is based on Gradle and Android Gradle Plugin. To get started, 
 Of course you can also use any other compatible IDE, or work with text editor and command line.
 Once everything is up correctly, you're ready to go!
 
+### Windows: path with spaces breaks the native build
+
+`ndk-build` cannot handle spaces in the project path. If your checkout lives in a folder with spaces (e.g. `TypeCraft - Keyboard app`), map it to a space-free drive letter and build from there:
+
+```
+subst X: "C:\path to\your checkout"
+cd /d X:\
+gradlew assembleDebug
+```
+
+Note: `subst` mappings do not survive reboots — re-run the command after restarting. Unit tests can be run per flavor with `gradlew testStandardDebugUnitTest testStandardfullDebugUnitTest testOfflineDebugUnitTest` (the bare `testDebugUnitTest` task is ambiguous because of the product flavors).
+
+
 If you have difficulties implementing some functionality, you're welcome to ask for help. No one will write the code for you, but often other contributors can give you very useful hints.
 
 # About the Code
