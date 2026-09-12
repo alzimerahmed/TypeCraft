@@ -106,7 +106,8 @@ object JniUtils {
             sHaveGestureLib -> JNI_LIB_NAME
             else -> "none"
         }
-        Log.i("startup", "JniUtils static init loaded $tier in ${(System.nanoTime() - initStartNs) / NS_PER_MS} ms")
+        val initMs = (System.nanoTime() - initStartNs) / NS_PER_MS
+        Log.i("startup", "JniUtils static init loaded $tier in %.2f ms".format(initMs))
     }
 
     fun loadNativeLibrary() {
