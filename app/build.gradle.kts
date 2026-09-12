@@ -16,6 +16,11 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(keystorePropertiesFile.inputStream())
 }
 
+// androidx.graphics:graphics-path 1.1.0 requires minSdk 23; the offline flavor supports 21
+configurations.all {
+    resolutionStrategy.force("androidx.graphics:graphics-path:1.0.1")
+}
+
 android {
     compileSdk = 36
 
@@ -155,7 +160,7 @@ android {
             path = File("src/main/jni/Android.mk")
         }
     }
-    ndkVersion = "28.0.13004108"
+    ndkVersion = "28.2.13676358"
 
     packaging {
         jniLibs {
