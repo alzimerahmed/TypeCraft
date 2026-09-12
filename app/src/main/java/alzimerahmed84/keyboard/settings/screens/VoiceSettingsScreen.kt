@@ -632,7 +632,7 @@ fun VoiceSettingsScreen(
                 isPluginConnected -> "Voice plugin is active (version ${pluginVersion ?: "v1.0.0"}).\n\nTypeCraft Voice Plugin handles high-performance on-device Whisper speech-to-text inference."
                 isPluginInstalled -> "Voice plugin is installed on this device, but currently disconnected.\n\nTap Connect to establish connection."
                 remoteVersion != null -> "Download the latest voice plugin (version $remoteVersion) to enable private, fast offline voice typing."
-                else -> "Offline voice input requires the TypeCraft Voice Plugin (com.alzimerahmed84.typecraft.voice.offline).\n\nDownload and install the voice plugin to enable private, fast offline voice typing."
+                else -> "Offline voice input requires the TypeCraft Voice Plugin (${VoiceConstants.VOICE_PLUGIN_PACKAGE}).\n\nDownload and install the voice plugin to enable private, fast offline voice typing."
             }
             Text(message)
         }

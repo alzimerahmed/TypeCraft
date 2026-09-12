@@ -132,8 +132,8 @@ class VoicePluginManager(private val context: Context) : IBinder.DeathRecipient 
             )
         } else {
             ComponentName(
-                "com.alzimerahmed84.typecraft.voice.offline",
-                "com.alzimerahmed84.typecraft.voice.offline.VoiceEngineService"
+                VoiceConstants.VOICE_PLUGIN_PACKAGE,
+                VoiceConstants.VOICE_PLUGIN_SERVICE
             )
         }
     }
