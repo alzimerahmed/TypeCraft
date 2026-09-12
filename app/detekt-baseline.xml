@@ -15,9 +15,6 @@
     <ID>ComplexCondition:DictionaryUtils.kt$(status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == 307 || status == 308) &amp;&amp; redirectCount &lt; 5</ID>
     <ID>ComplexCondition:EmojiPalettesView.kt$EmojiPalettesView.&lt;no name provided&gt;$p != KeyCode.SYMBOL &amp;&amp; p != KeyCode.ALPHA &amp;&amp; p != KeyCode.NUMPAD &amp;&amp; p != KeyCode.SYMBOL_ALPHA &amp;&amp; p != KeyCode.SHIFT &amp;&amp; p != KeyCode.EMOJI &amp;&amp; p != KeyCode.CLIPBOARD &amp;&amp; p != KeyCode.LANGUAGE_SWITCH &amp;&amp; p != KeyCode.CUSTOM1 &amp;&amp; p != KeyCode.CUSTOM2 &amp;&amp; p != KeyCode.CUSTOM3 &amp;&amp; p != KeyCode.CUSTOM4 &amp;&amp; p != KeyCode.CUSTOM5</ID>
     <ID>ComplexCondition:EmojiPalettesView.kt$EmojiPalettesView.&lt;no name provided&gt;$primaryCode == KeyCode.LANGUAGE_SWITCH || primaryCode == KeyCode.CUSTOM1 || primaryCode == KeyCode.CUSTOM2 || primaryCode == KeyCode.CUSTOM3 || primaryCode == KeyCode.CUSTOM4 || primaryCode == KeyCode.CUSTOM5</ID>
-    <ID>ComplexCondition:HandwritingLoader.kt$HandwritingLoader$(status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == java.net.HttpURLConnection.HTTP_SEE_OTHER) &amp;&amp; redirectCount &lt; 5</ID>
-    <ID>ComplexCondition:HandwritingLoader.kt$HandwritingLoader$f.isDirectory &amp;&amp; (f.name.startsWith("handwriting_") || f.name == "handwriting") &amp;&amp; f.name != targetName</ID>
-    <ID>ComplexCondition:HandwritingLoader.kt$HandwritingLoader.PluginClassLoader$name.startsWith("alzimerahmed84.keyboard.handwriting.plugin.") || name.startsWith("com.google.mlkit.") || name.startsWith("com.google.android.datatransport.") || name.startsWith("com.google.android.gms.") || name.startsWith("com.google.firebase.")</ID>
     <ID>ComplexCondition:HandwritingModelDownloadDialog.kt$ok &amp;&amp; (newStatus.isReady || newStatus.hasModel || newStatus.hasFst)</ID>
     <ID>ComplexCondition:HandwritingView.kt$HandwritingView$textBefore != null &amp;&amp; textBefore.isNotEmpty() &amp;&amp; textBefore != " " &amp;&amp; textBefore != "\n"</ID>
     <ID>ComplexCondition:HardwareKeyboardEventDecoder.kt$HardwareKeyboardEventDecoder$(keyEvent.isPrintingKey &amp;&amp; codePointAndFlags != Event.NOT_A_CODE_POINT) // can be NOT_A_CODE_POINT depending on meta state (e.g. ctrl+c) || KeyEvent.KEYCODE_SPACE == keyCode || KeyEvent.KEYCODE_ENTER == keyCode</ID>
@@ -54,11 +51,6 @@
     <ID>ComplexCondition:LatinIME.kt$LatinIME$kb != null &amp;&amp; kb.mId.isAlphabetShiftedManually &amp;&amp; ((oldSelEnd == newSelEnd &amp;&amp; oldSelStart != newSelStart) || (oldSelEnd != newSelEnd &amp;&amp; oldSelStart == newSelStart))</ID>
     <ID>ComplexCondition:MathEvaluator.kt$MathEvaluator$(!token.isRightAssociative &amp;&amp; token.precedence &lt;= top.precedence) || (token.isRightAssociative &amp;&amp; token.precedence &lt; top.precedence)</ID>
     <ID>ComplexCondition:MathEvaluator.kt$MathEvaluator$(prev.isDigit() || prev == ')' || prev == '%') &amp;&amp; c == '('</ID>
-    <ID>ComplexCondition:OcrPluginLoader.kt$OcrPluginLoader$(status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == java.net.HttpURLConnection.HTTP_SEE_OTHER) &amp;&amp; redirectCount &lt; 5</ID>
-    <ID>ComplexCondition:OcrPluginLoader.kt$OcrPluginLoader$f.isDirectory &amp;&amp; (f.name.startsWith("ocr_") || f.name == "ocr") &amp;&amp; f.name != targetName</ID>
-    <ID>ComplexCondition:OcrPluginLoader.kt$OcrPluginLoader.PluginClassLoader$name.startsWith("alzimerahmed84.keyboard.ocr.plugin.") || name.startsWith("com.google.mlkit.") || name.startsWith("com.google.android.datatransport.") || name.startsWith("com.google.android.gms.") || name.startsWith("com.google.firebase.")</ID>
-    <ID>ComplexCondition:OfflineAiLoader.kt$OfflineAiLoader$(status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == java.net.HttpURLConnection.HTTP_SEE_OTHER) &amp;&amp; redirectCount &lt; 5</ID>
-    <ID>ComplexCondition:OfflineAiLoader.kt$OfflineAiLoader$f.isDirectory &amp;&amp; (f.name.startsWith("offline_ai_") || f.name == "offline_ai") &amp;&amp; f.name != targetName</ID>
     <ID>ComplexCondition:PointerTracker.kt$PointerTracker$!sInGesture &amp;&amp; key != null &amp;&amp; Character.isLetter(key.code) &amp;&amp; mBatchInputArbiter.mayStartBatchInput(this)</ID>
     <ID>ComplexCondition:PointerTracker.kt$PointerTracker$code == KeyCode.LANGUAGE_SWITCH || (code == Constants.CODE_SPACE &amp;&amp; key.popupKeys == null &amp;&amp; sv.mSpaceForLangChange)</ID>
     <ID>ComplexCondition:PointerTracker.kt$PointerTracker$currentKey != null &amp;&amp; currentKey.isRepeatable() &amp;&amp; (currentKey.code == currentRepeatingKeyCode) &amp;&amp; !isInDraggingFinger</ID>
@@ -87,9 +79,6 @@
     <ID>ComplexCondition:TextKeyData.kt$KeyData$(params.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS || params.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS_SHIFTED) &amp;&amp; (groupId == GROUP_COMMA || groupId == GROUP_PERIOD)</ID>
     <ID>ComplexCondition:TextRange.kt$TextRange$mWordAtCursorStartIndex &lt; 0 || mCursorIndex &lt; mWordAtCursorStartIndex || mCursorIndex &gt; mWordAtCursorEndIndex || mWordAtCursorEndIndex &gt; mTextAtCursor.length</ID>
     <ID>ComplexCondition:ToolbarUtils.kt$RepeatableKeyTouchListener$x &lt; 0 || x &gt; v.width || y &lt; 0 || y &gt; v.height</ID>
-    <ID>ComplexCondition:TranslationLoader.kt$TranslationLoader$(status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == java.net.HttpURLConnection.HTTP_SEE_OTHER) &amp;&amp; redirectCount &lt; 5</ID>
-    <ID>ComplexCondition:TranslationLoader.kt$TranslationLoader$f.isDirectory &amp;&amp; (f.name.startsWith("translation_") || f.name == "translation") &amp;&amp; f.name != targetName</ID>
-    <ID>ComplexCondition:TranslationLoader.kt$TranslationLoader.PluginClassLoader$name.startsWith("alzimerahmed84.keyboard.translation.plugin.") || name.startsWith("com.google.mlkit.") || name.startsWith("com.google.android.datatransport.") || name.startsWith("com.google.android.gms.") || name.startsWith("com.google.firebase.")</ID>
     <ID>ComplexCondition:UpdatesScreen.kt$(conn.responseCode == HttpURLConnection.HTTP_MOVED_PERM || conn.responseCode == HttpURLConnection.HTTP_MOVED_TEMP || conn.responseCode == 307 || conn.responseCode == 308) &amp;&amp; redirectCount &lt; 5</ID>
     <ID>ComplexCondition:VoiceDownloadDispatcher.kt$VoiceDownloadDispatcher$(conn.responseCode == HttpURLConnection.HTTP_MOVED_PERM || conn.responseCode == HttpURLConnection.HTTP_MOVED_TEMP || conn.responseCode == 307 || conn.responseCode == 308) &amp;&amp; redirectCount &lt; 8</ID>
     <ID>ComplexCondition:VoiceSettingsScreen.kt$(conn.responseCode == HttpURLConnection.HTTP_MOVED_PERM || conn.responseCode == HttpURLConnection.HTTP_MOVED_TEMP || conn.responseCode == 307 || conn.responseCode == 308) &amp;&amp; redirectCount &lt; 5</ID>
@@ -139,7 +128,6 @@
     <ID>CyclomaticComplexMethod:FloatingKeyboardManager.kt$FloatingKeyboardManager$@SuppressLint("ClickableViewAccessibility") fun show()</ID>
     <ID>CyclomaticComplexMethod:FloatingKeyboardManager.kt$FloatingKeyboardManager$@SuppressLint("ClickableViewAccessibility") private fun createHeaderBar( height: Int, bgColor: Int, textColor: Int, density: Float, cornerRadius: Float, minWidth: Int, maxWidth: Int, minHeight: Int, maxHeight: Int ): FrameLayout</ID>
     <ID>CyclomaticComplexMethod:GestureTrailDrawingPoints.kt$GestureTrailDrawingPoints$private fun drawGestureTrailLocked( canvas: Canvas, paint: Paint, outBoundsRect: Rect, params: GestureTrailDrawingParams ): Boolean</ID>
-    <ID>CyclomaticComplexMethod:HandwritingLoader.kt$HandwritingLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
     <ID>CyclomaticComplexMethod:HandwritingModelDownloadDialog.kt$@Composable fun HandwritingModelDownloadDialog( onDismissRequest: () -&gt; Unit, onModelChanged: (() -&gt; Unit)? = null )</ID>
     <ID>CyclomaticComplexMethod:HandwritingModelImporter.kt$HandwritingModelImporter$fun importAutoDetectedUris(context: Context, uris: List&lt;Uri&gt;): Set&lt;String&gt;</ID>
     <ID>CyclomaticComplexMethod:HandwritingModelImporter.kt$HandwritingModelImporter$fun importForLanguageFromStream( context: Context, languageTag: String, inputStream: InputStream, filenameHint: String ): Boolean</ID>
@@ -205,7 +193,6 @@
     <ID>CyclomaticComplexMethod:MathEvaluator.kt$MathEvaluator$private fun shuntingYard(tokens: List&lt;Token&gt;): List&lt;Token&gt;</ID>
     <ID>CyclomaticComplexMethod:MathEvaluator.kt$MathEvaluator$private fun tokenize(expr: String): List&lt;Token&gt;</ID>
     <ID>CyclomaticComplexMethod:NgramContextUtils.kt$NgramContextUtils$fun getNgramContextFromNthPreviousWord( prev: CharSequence?, spacingAndPunctuations: SpacingAndPunctuations, n: Int ): NgramContext</ID>
-    <ID>CyclomaticComplexMethod:OcrPluginLoader.kt$OcrPluginLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
     <ID>CyclomaticComplexMethod:OcrResultView.kt$OcrResultView$fun setupToolbarStrip()</ID>
     <ID>CyclomaticComplexMethod:OcrTextFormatter.kt$OcrTextFormatter$fun formatLines( rawLines: List&lt;String&gt;, keepLineBreaks: Boolean, trimWhitespace: Boolean, casing: String, joinFormat: String, dehyphenate: Boolean, normalizePunctuation: Boolean, stripBullets: Boolean, removeNoise: Boolean ): List&lt;String&gt;</ID>
     <ID>CyclomaticComplexMethod:PersonalDictionariesScreen.kt$private fun parseAndInsert(context: android.content.Context, reader: BufferedReader): Int</ID>
@@ -262,7 +249,6 @@
     <ID>CyclomaticComplexMethod:ToolbarUtils.kt$fun getCodeForToolbarKey(key: ToolbarKey)</ID>
     <ID>CyclomaticComplexMethod:ToolbarUtils.kt$fun getCodeForToolbarKeyLongClick(key: ToolbarKey)</ID>
     <ID>CyclomaticComplexMethod:TouchpadView.kt$TouchpadView$@SuppressLint("ClickableViewAccessibility") private fun setupTouchSurface()</ID>
-    <ID>CyclomaticComplexMethod:TranslationLoader.kt$TranslationLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
     <ID>CyclomaticComplexMethod:TranslationModelDownloadDialog.kt$@Composable fun TranslationModelDownloadDialog( provider: ITranslationProvider, onDismissRequest: () -&gt; Unit )</ID>
     <ID>CyclomaticComplexMethod:TranslationModelImporter.kt$TranslationModelImporter$fun importFromStream(context: Context, inputStream: InputStream): String?</ID>
     <ID>CyclomaticComplexMethod:TranslationModelImporter.kt$TranslationModelImporter$fun migrateLegacyModels(context: Context)</ID>
@@ -653,7 +639,6 @@
     <ID>LongMethod:TextExpanderUtils.kt$TextExpanderUtils$fun expand(template: String, context: Context): String</ID>
     <ID>LongMethod:ToolbarScreen.kt$fun createToolbarSettings(context: Context): List&lt;Setting&gt;</ID>
     <ID>LongMethod:TouchpadView.kt$TouchpadView$@SuppressLint("ClickableViewAccessibility") private fun setupTouchSurface()</ID>
-    <ID>LongMethod:TranslationLoader.kt$TranslationLoader$fun importPlugin(context: Context, uri: Uri): Boolean</ID>
     <ID>LongMethod:TranslationModelDownloadDialog.kt$@Composable fun TranslationModelDownloadDialog( provider: ITranslationProvider, onDismissRequest: () -&gt; Unit )</ID>
     <ID>LongMethod:TranslationSettingsScreen.kt$@Composable fun TranslationSettingsScreen( onClickBack: () -&gt; Unit, )</ID>
     <ID>LongMethod:UpdatesScreen.kt$@Composable fun UpdatesScreen( onClickBack: () -&gt; Unit )</ID>
@@ -1037,7 +1022,6 @@
     <ID>MagicNumber:HandwritingCanvas.kt$HandwritingCanvas$700L</ID>
     <ID>MagicNumber:HandwritingCanvas.kt$HandwritingCanvas$8f</ID>
     <ID>MagicNumber:HandwritingCanvas.kt$HandwritingCanvas$90</ID>
-    <ID>MagicNumber:HandwritingLoader.kt$HandwritingLoader$5</ID>
     <ID>MagicNumber:HandwritingModelDownloadDialog.kt$3</ID>
     <ID>MagicNumber:HandwritingModelImporter.kt$HandwritingModelImporter$15000</ID>
     <ID>MagicNumber:HandwritingModelImporter.kt$HandwritingModelImporter$200</ID>
@@ -1502,10 +1486,8 @@
     <ID>MagicNumber:OcrCameraView.kt$OcrCameraView$300</ID>
     <ID>MagicNumber:OcrCameraView.kt$OcrCameraView$4</ID>
     <ID>MagicNumber:OcrCameraView.kt$OcrCameraView$800</ID>
-    <ID>MagicNumber:OcrPluginLoader.kt$OcrPluginLoader$5</ID>
     <ID>MagicNumber:OcrResultView.kt$OcrResultView$0.9f</ID>
     <ID>MagicNumber:OcrResultView.kt$OcrResultView$1.25f</ID>
-    <ID>MagicNumber:OfflineAiLoader.kt$OfflineAiLoader$5</ID>
     <ID>MagicNumber:PersonalDictionariesScreen.kt$250</ID>
     <ID>MagicNumber:PersonalDictionariesScreen.kt$5</ID>
     <ID>MagicNumber:PersonalDictionaryScreen.kt$0.3f</ID>
@@ -1749,7 +1731,6 @@
     <ID>MagicNumber:TouchpadView.kt$TouchpadView$6f</ID>
     <ID>MagicNumber:TouchpadView.kt$TouchpadView$70</ID>
     <ID>MagicNumber:TouchpadView.kt$TouchpadView.&lt;no name provided&gt;$150</ID>
-    <ID>MagicNumber:TranslationLoader.kt$TranslationLoader$5</ID>
     <ID>MagicNumber:TypefaceUtils.kt$TypefaceUtils$0x1000</ID>
     <ID>MagicNumber:TypefaceUtils.kt$TypefaceUtils$0x2000</ID>
     <ID>MagicNumber:TypefaceUtils.kt$TypefaceUtils$15</ID>
@@ -2177,13 +2158,7 @@
     <ID>MaxLineLength:GestureTypingScreen.kt$Setting</ID>
     <ID>MaxLineLength:GestureTypingScreen.kt$if</ID>
     <ID>MaxLineLength:GestureTypingScreen.kt$val gestureFloatingPreviewEnabled = prefs.getBoolean(Settings.PREF_GESTURE_FLOATING_PREVIEW_TEXT, Defaults.PREF_GESTURE_FLOATING_PREVIEW_TEXT)</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader$"https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/download/$tag/handwriting_plugin.apk"</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader$"https://github.com/alzimerahmed84/TypeCraft-Handwriting-Plugin/releases/latest/download/handwriting_plugin.apk"</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader$if</ID>
     <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader$private const val NATIVE_LOADER_DEX_BASE64 = "ZGV4CjAzNQAkiCvTdFX0r/3RrbselneGBCvx+cvJKtkwAwAAcAAAAHhWNBIAAAAAAAAAAJACAAAKAAAAcAAAAAUAAACYAAAAAgAAAKwAAAAAAAAAAAAAAAQAAADEAAAAAQAAAOQAAAAsAgAABAEAAEYBAABOAQAAhAEAAJgBAACsAQAAwAEAANMBAADWAQAA2gEAAOABAAABAAAAAgAAAAMAAAAEAAAABgAAAAYAAAAEAAAAAAAAAAcAAAAEAAAAQAEAAAAAAAAAAAAAAAABAAgAAAABAAAAAAAAAAMAAQAIAAAAAAAAAAEAAAABAAAAAAAAAAUAAAAAAAAAfgIAAAAAAAABAAEAAQAAADQBAAAEAAAAcBACAAAADgABAAEAAQAAADgBAAAEAAAAcRADAAAADgACAA4ABAEADjwAAAABAAAAAgAGPGluaXQ+ADRMaGVsaXVtMzE0L2tleWJvYXJkL2hhbmR3cml0aW5nL3BsdWdpbi9OYXRpdmVMb2FkZXI7ABJMamF2YS9sYW5nL09iamVjdDsAEkxqYXZhL2xhbmcvU3RyaW5nOwASTGphdmEvbGFuZy9TeXN0ZW07ABFOYXRpdmVMb2FkZXIuamF2YQABVgACVkwABGxvYWQAmwF+fkQ4eyJiYWNrZW5kIjoiZGV4IiwiY29tcGlsYXRpb24tbW9kZSI6ImRlYnVnIiwiaGFzLWNoZWNrc3VtcyI6ZmFsc2UsIm1pbi1hcGkiOjEsInNoYS0xIjoiNzUwYTIxYjRmNDI4MWIxZjQ1M2I2NDllMGI4NGYxYmE5YzA0ZjRmYyIsInZlcnNpb24iOiI5LjAuMy1kZXYifQAAAAIAAIGABIQCAQmcAgAAAAANAAAAAAAAAAEAAAAAAAAAAQAAAAoAAABwAAAAAgAAAAUAAACYAAAAAwAAAAIAAACsAAAABQAAAAQAAADEAAAABgAAAAEAAADkAAAAASAAAAIAAAAEAQAAAyAAAAIAAAA0AQAAARAAAAEAAABAAQAAAiAAAAoAAABGAQAAACAAAAEAAAB+AgAAAxAAAAEAAACMAgAAABAAAAEAAACQAgAA"</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader$while</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader.PluginContext$private</ID>
-    <ID>MaxLineLength:HandwritingLoader.kt$HandwritingLoader.PluginContext$val addAssetPathMethod = android.content.res.AssetManager::class.java.getDeclaredMethod("addAssetPath", String::class.java)</ID>
     <ID>MaxLineLength:HandwritingModelDownloadDialog.kt$Toast.makeText(context, "Download failed", Toast.LENGTH_SHORT).show()</ID>
     <ID>MaxLineLength:HandwritingModelDownloadDialog.kt$Toast.makeText(context, "Downloaded ${item.displayName}", Toast.LENGTH_SHORT).show()</ID>
     <ID>MaxLineLength:HandwritingModelDownloadDialog.kt$Toast.makeText(context, "Imported handwriting model for ${lang.displayName}", Toast.LENGTH_SHORT).show()</ID>
@@ -3117,14 +3092,11 @@
     <ID>MaxLineLength:NonDistinctMultitouchHelper.kt$NonDistinctMultitouchHelper$injectMotionEvent(MotionEvent.ACTION_UP, x.toFloat(), y.toFloat(), downTime, eventTime, mainTracker, keyDetector)</ID>
     <ID>MaxLineLength:OcrCameraView.kt$OcrCameraView$flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED or Intent.FLAG_ACTIVITY_CLEAR_TOP</ID>
     <ID>MaxLineLength:OcrPipeline.kt$OcrPipeline$val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as? android.content.ClipboardManager</ID>
-    <ID>MaxLineLength:OcrPluginLoader.kt$OcrPluginLoader$while</ID>
-    <ID>MaxLineLength:OcrPluginLoader.kt$OcrPluginLoader.PluginContext$val addAssetPathMethod = android.content.res.AssetManager::class.java.getDeclaredMethod("addAssetPath", String::class.java)</ID>
     <ID>MaxLineLength:OcrResultView.kt$OcrResultView$AudioAndHapticFeedbackManager.getInstance().performHapticAndAudioFeedback(KeyCode.NOT_SPECIFIED, it, HapticEvent.KEY_PRESS)</ID>
     <ID>MaxLineLength:OcrSettingsScreen.kt$Setting</ID>
     <ID>MaxLineLength:OcrSettingsScreen.kt$description = if (isCameraPermissionGranted) stringResource(R.string.ocr_camera_permission_granted) else stringResource(R.string.ocr_camera_permission_desc)</ID>
     <ID>MaxLineLength:OcrSettingsScreen.kt$setting = Setting(context, OcrPluginLoader.PREF_OCR_LINE_JOIN_FORMAT, R.string.ocr_line_join_title) {}</ID>
     <ID>MaxLineLength:OcrSettingsScreen.kt$summary = if (ocrInstalled) stringResource(R.string.libraries_status_active) else stringResource(R.string.libraries_status_not_installed)</ID>
-    <ID>MaxLineLength:OfflineAiLoader.kt$OfflineAiLoader$while</ID>
     <ID>MaxLineLength:OtpSuggestionManager.kt$OtpSuggestionManager$AudioAndHapticFeedbackManager.getInstance().performHapticAndAudioFeedback(KeyCode.NOT_SPECIFIED, it, HapticEvent.KEY_PRESS)</ID>
     <ID>MaxLineLength:OtpSuggestionManager.kt$OtpSuggestionManager$closeButton.setImageDrawable(latinIME.mKeyboardSwitcher.keyboard?.mIconsSet?.getIconDrawable(ToolbarKey.CLOSE_HISTORY.name.lowercase()))</ID>
     <ID>MaxLineLength:PersonalDictionariesScreen.kt$// todo: consider adding "add word" button like old settings (requires additional navigation parameter, should not be hard)</ID>
@@ -3147,6 +3119,7 @@
     <ID>MaxLineLength:PersonalDictionaryScreen.kt$this?.localizedDisplayName(context.resources) ?: context.resources.getString(R.string.user_dict_settings_all_languages)</ID>
     <ID>MaxLineLength:PersonalDictionaryScreen.kt$val cursor = context.contentResolver.query(UserDictionary.Words.CONTENT_URI, hasWordProjection, select, selectArgs, null)</ID>
     <ID>MaxLineLength:PersonalDictionaryScreen.kt$val details = if (it.shortcut == null) it.weight.toString() else "${it.weight} | ${it.shortcut}"</ID>
+    <ID>MaxLineLength:PluginCoreTest.kt$PluginCoreTest$assertTrue(urls[0].endsWith("/releases/latest/download/test_plugin-${PluginDownloads.getTargetAbi(spec.supportedAbis)}.apk"))</ID>
     <ID>MaxLineLength:PointerTracker.kt$PointerTracker$Log</ID>
     <ID>MaxLineLength:PointerTracker.kt$PointerTracker$Log.w(TAG, String.format(Locale.US, "[%d] onMoveEvent: detected sliding finger while multi touching", mPointerId))</ID>
     <ID>MaxLineLength:PointerTracker.kt$PointerTracker$code != KeyCode.FN_LOCK</ID>
@@ -3617,11 +3590,6 @@
     <ID>MaxLineLength:ToolbarUtils.kt$val string = prefs.getString(Settings.PREF_PINNED_TOOLBAR_KEYS, defaultPinnedToolbarPref) ?: defaultPinnedToolbarPref</ID>
     <ID>MaxLineLength:TouchpadView.kt$TouchpadView$Log.i("TouchpadViewRaw", "action=" + MotionEvent.actionToString(event.actionMasked) + ", pointers=" + pointerCount)</ID>
     <ID>MaxLineLength:TouchpadView.kt$TouchpadView$if</ID>
-    <ID>MaxLineLength:TranslationLoader.kt$TranslationLoader$"https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/download/$tag/translation_plugin.apk"</ID>
-    <ID>MaxLineLength:TranslationLoader.kt$TranslationLoader$"https://github.com/alzimerahmed84/TypeCraft-Translation-Plugin/releases/latest/download/translation_plugin.apk"</ID>
-    <ID>MaxLineLength:TranslationLoader.kt$TranslationLoader$if</ID>
-    <ID>MaxLineLength:TranslationLoader.kt$TranslationLoader$val addAssetPathMethod = android.content.res.AssetManager::class.java.getDeclaredMethod("addAssetPath", String::class.java)</ID>
-    <ID>MaxLineLength:TranslationLoader.kt$TranslationLoader$while</ID>
     <ID>MaxLineLength:TranslationModelDownloadDialog.kt$&lt;no name provided&gt;$Toast.makeText(context, "Download failed$err", Toast.LENGTH_SHORT).show()</ID>
     <ID>MaxLineLength:TranslationModelDownloadDialog.kt$&lt;no name provided&gt;$Toast.makeText(context, "Downloaded ${item.displayName}", Toast.LENGTH_SHORT).show()</ID>
     <ID>MaxLineLength:TranslationModelDownloadDialog.kt$&lt;no name provided&gt;$override</ID>
@@ -3746,9 +3714,6 @@
     <ID>NestedBlockDepth:EmojiAltPhysicalKeyDetector.kt$EmojiAltPhysicalKeyDetector.EmojiHotKeys$fun onKeyUp(keyEvent: KeyEvent)</ID>
     <ID>NestedBlockDepth:EmojiPalettesView.kt$EmojiPalettesView$fun updateColors()</ID>
     <ID>NestedBlockDepth:GestureTrailDrawingPoints.kt$GestureTrailDrawingPoints$private fun drawGestureTrailLocked( canvas: Canvas, paint: Paint, outBoundsRect: Rect, params: GestureTrailDrawingParams ): Boolean</ID>
-    <ID>NestedBlockDepth:HandwritingLoader.kt$HandwritingLoader$fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean</ID>
-    <ID>NestedBlockDepth:HandwritingLoader.kt$HandwritingLoader$fun importPlugin(context: Context, uri: Uri): Boolean</ID>
-    <ID>NestedBlockDepth:HandwritingLoader.kt$HandwritingLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
     <ID>NestedBlockDepth:HandwritingModelImporter.kt$HandwritingModelImporter$fun deleteModelForLanguage(context: Context, languageTag: String): Boolean</ID>
     <ID>NestedBlockDepth:HandwritingModelImporter.kt$HandwritingModelImporter$fun getComponentsStatus(context: Context, languageTag: String): ModelComponentsStatus</ID>
     <ID>NestedBlockDepth:HandwritingModelImporter.kt$HandwritingModelImporter$fun getFilename(context: Context, uri: Uri): String?</ID>
@@ -3776,12 +3741,6 @@
     <ID>NestedBlockDepth:NgramContext.kt$NgramContext$fun extractPrevWordsContext(): String</ID>
     <ID>NestedBlockDepth:NgramContext.kt$NgramContext$fun extractPrevWordsContextArray(): Array&lt;String&gt;</ID>
     <ID>NestedBlockDepth:NgramContextUtils.kt$NgramContextUtils$fun getNgramContextFromNthPreviousWord( prev: CharSequence?, spacingAndPunctuations: SpacingAndPunctuations, n: Int ): NgramContext</ID>
-    <ID>NestedBlockDepth:OcrPluginLoader.kt$OcrPluginLoader$fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean</ID>
-    <ID>NestedBlockDepth:OcrPluginLoader.kt$OcrPluginLoader$fun removePlugin(context: Context)</ID>
-    <ID>NestedBlockDepth:OcrPluginLoader.kt$OcrPluginLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
-    <ID>NestedBlockDepth:OfflineAiLoader.kt$OfflineAiLoader$fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean</ID>
-    <ID>NestedBlockDepth:OfflineAiLoader.kt$OfflineAiLoader$fun removePlugin(context: Context)</ID>
-    <ID>NestedBlockDepth:OfflineAiLoader.kt$OfflineAiLoader$private fun extractNativeLibs(apkFile: File, destDir: File)</ID>
     <ID>NestedBlockDepth:PersonalDictionariesScreen.kt$private fun parseAndInsert(context: android.content.Context, reader: BufferedReader): Int</ID>
     <ID>NestedBlockDepth:PersonalDictionariesScreen.kt$private suspend fun importGboardDictionary(context: android.content.Context, uri: android.net.Uri): Int</ID>
     <ID>NestedBlockDepth:PointerTracker.kt$PointerTracker$private fun onKeySwipe(code: Int, x: Int, y: Int, eventTime: Long)</ID>
@@ -3803,9 +3762,6 @@
     <ID>NestedBlockDepth:TextExpanderUtils.kt$TextExpanderUtils$fun applyModifiers(input: String, modifiersString: String): String</ID>
     <ID>NestedBlockDepth:TextExpanderUtils.kt$TextExpanderUtils$fun getExpandedWordForTyped(word: String?, textBeforeCursor: String?, context: Context): ExpandedResult?</ID>
     <ID>NestedBlockDepth:TextRange.kt$TextRange$fun getSuggestionSpansAtWord(): Array&lt;SuggestionSpan&gt;</ID>
-    <ID>NestedBlockDepth:TranslationLoader.kt$TranslationLoader$fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean</ID>
-    <ID>NestedBlockDepth:TranslationLoader.kt$TranslationLoader$fun importPlugin(context: Context, uri: Uri): Boolean</ID>
-    <ID>NestedBlockDepth:TranslationLoader.kt$TranslationLoader$private fun extractNativeLibs(apkFile: File, outputDir: File)</ID>
     <ID>NestedBlockDepth:TranslationModelImporter.kt$TranslationModelImporter$fun deleteModel(context: Context, langCode: String): Boolean</ID>
     <ID>NestedBlockDepth:TranslationModelImporter.kt$TranslationModelImporter$fun detectLanguageCode(context: Context, uri: Uri): String?</ID>
     <ID>NestedBlockDepth:TranslationModelImporter.kt$TranslationModelImporter$fun getFilename(context: Context, uri: Uri): String?</ID>
@@ -4088,6 +4044,12 @@
     <ID>PackageNaming:PersonalDictionariesScreen.kt$package alzimerahmed84.keyboard.settings.screens</ID>
     <ID>PackageNaming:PersonalDictionaryScreen.kt$package alzimerahmed84.keyboard.settings.screens</ID>
     <ID>PackageNaming:PersonalizationHelper.kt$package alzimerahmed84.keyboard.latin.personalization</ID>
+    <ID>PackageNaming:PluginClassLoader.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
+    <ID>PackageNaming:PluginContext.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
+    <ID>PackageNaming:PluginCoreTest.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
+    <ID>PackageNaming:PluginDownloads.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
+    <ID>PackageNaming:PluginFiles.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
+    <ID>PackageNaming:PluginSpec.kt$package alzimerahmed84.keyboard.latin.plugin</ID>
     <ID>PackageNaming:PluginWorkerFactory.kt$package alzimerahmed84.keyboard.latin.work</ID>
     <ID>PackageNaming:PointerTracker.kt$package alzimerahmed84.keyboard.keyboard</ID>
     <ID>PackageNaming:PointerTrackerQueue.kt$package alzimerahmed84.keyboard.keyboard.internal</ID>
@@ -4316,8 +4278,6 @@
     <ID>ReturnCount:GestureStrokeRecognitionPoints.kt$GestureStrokeRecognitionPoints$fun isStartOfAGesture(): Boolean</ID>
     <ID>ReturnCount:HandwritingLoader.kt$HandwritingLoader$fun findInstalledModelForLanguage(context: Context, languageTag: String): String?</ID>
     <ID>ReturnCount:HandwritingLoader.kt$HandwritingLoader$fun getRecognizer(context: Context): HandwritingRecognizer?</ID>
-    <ID>ReturnCount:HandwritingLoader.kt$HandwritingLoader$fun getTargetAbi(): String</ID>
-    <ID>ReturnCount:HandwritingLoader.kt$HandwritingLoader.PluginClassLoader$override fun loadClass(name: String, resolve: Boolean): Class&lt;*&gt;</ID>
     <ID>ReturnCount:HandwritingModelImporter.kt$HandwritingModelImporter$fun detectLanguageTag(filename: String): String?</ID>
     <ID>ReturnCount:HandwritingModelUrls.kt$HandwritingModelUrls$fun getDownloadUrls(languageTag: String): List&lt;String&gt;</ID>
     <ID>ReturnCount:HangulCombiner.kt$HangulCombiner$override fun processEvent(previousEvents: ArrayList&lt;Event&gt;?, event: Event): Event</ID>
@@ -4439,10 +4399,7 @@
     <ID>ReturnCount:NgramContextUtils.kt$NgramContextUtils$fun getNgramContextFromNthPreviousWord( prev: CharSequence?, spacingAndPunctuations: SpacingAndPunctuations, n: Int ): NgramContext</ID>
     <ID>ReturnCount:NonDistinctMultitouchHelper.kt$NonDistinctMultitouchHelper$fun processMotionEvent(me: MotionEvent, keyDetector: KeyDetector)</ID>
     <ID>ReturnCount:OcrPluginLoader.kt$OcrPluginLoader$fun getRecognizer(context: Context): ITextRecognizer?</ID>
-    <ID>ReturnCount:OcrPluginLoader.kt$OcrPluginLoader$fun getTargetAbi(): String</ID>
-    <ID>ReturnCount:OcrPluginLoader.kt$OcrPluginLoader.PluginClassLoader$override fun loadClass(name: String, resolve: Boolean): Class&lt;*&gt;</ID>
     <ID>ReturnCount:OfflineAiLoader.kt$OfflineAiLoader$fun getProvider(context: Context): IOfflineAiProvider?</ID>
-    <ID>ReturnCount:OfflineAiLoader.kt$OfflineAiLoader$fun getTargetAbi(): String</ID>
     <ID>ReturnCount:OtpNotificationListenerService.kt$OtpNotificationListenerService$override fun onNotificationPosted(sbn: StatusBarNotification?)</ID>
     <ID>ReturnCount:OtpSuggestionManager.kt$OtpSuggestionManager$fun getOtpSuggestionView(parent: ViewGroup?): View?</ID>
     <ID>ReturnCount:OtpSuggestionManager.kt$OtpSuggestionManager.Companion$fun extractOtp(body: String): String?</ID>
@@ -4548,9 +4505,6 @@
     <ID>ReturnCount:TimerHandler.kt$TimerHandler$override fun startTypingStateTimer(typedKey: Key)</ID>
     <ID>ReturnCount:ToolbarUtils.kt$RepeatableKeyTouchListener$@SuppressLint("ClickableViewAccessibility") override fun onTouch(v: View, event: MotionEvent): Boolean</ID>
     <ID>ReturnCount:TranslationLoader.kt$TranslationLoader$fun getProvider(context: Context): ITranslationProvider?</ID>
-    <ID>ReturnCount:TranslationLoader.kt$TranslationLoader$fun getTargetAbi(): String</ID>
-    <ID>ReturnCount:TranslationLoader.kt$TranslationLoader$fun importPlugin(context: Context, uri: Uri): Boolean</ID>
-    <ID>ReturnCount:TranslationLoader.kt$TranslationLoader.PluginClassLoader$override fun loadClass(name: String, resolve: Boolean): Class&lt;*&gt;</ID>
     <ID>ReturnCount:TranslationModelImporter.kt$TranslationModelImporter$fun detectLanguageCode(context: Context, uri: Uri): String?</ID>
     <ID>ReturnCount:UncachedInputMethodManagerUtils.kt$UncachedInputMethodManagerUtils$fun isThisImeCurrent(context: Context, imm: InputMethodManager): Boolean</ID>
     <ID>ReturnCount:UniqueKeysCache.kt$UniqueKeysCache.UniqueKeysCacheImpl$override fun getUniqueKey(key: Key): Key</ID>
@@ -4577,7 +4531,6 @@
     <ID>SwallowedException:DictionaryFacilitatorImpl.kt$DictionaryGroup$e: Exception</ID>
     <ID>SwallowedException:DictionaryPackInstallBroadcastReceiver.kt$DictionaryPackInstallBroadcastReceiver$e: PackageManager.NameNotFoundException</ID>
     <ID>SwallowedException:FileUtils.kt$FileUtils$e: IOException</ID>
-    <ID>SwallowedException:HandwritingLoader.kt$HandwritingLoader$e: Exception</ID>
     <ID>SwallowedException:ImeCompat.kt$ImeCompat$e: Throwable</ID>
     <ID>SwallowedException:JniUtils.kt$JniUtils$e: Exception</ID>
     <ID>SwallowedException:JsonUtils.kt$JsonUtils$e: IOException</ID>
@@ -4597,7 +4550,6 @@
     <ID>SwallowedException:SubtypeScreen.kt$t: Throwable</ID>
     <ID>SwallowedException:TextExpanderUtils.kt$TextExpanderUtils$e: Exception</ID>
     <ID>SwallowedException:TextExpanderUtils.kt$TextExpanderUtils$e: java.lang.Exception</ID>
-    <ID>SwallowedException:TranslationLoader.kt$TranslationLoader$e: Exception</ID>
     <ID>SwallowedException:UpdatesScreen.kt$e: Exception</ID>
     <ID>SwallowedException:UserBinaryDictionary.kt$UserBinaryDictionary$e: IllegalArgumentException</ID>
     <ID>ThrowingExceptionsWithoutMessageOrCause:DebugLogUtils.kt$DebugLogUtils$RuntimeException()</ID>
@@ -4631,7 +4583,6 @@
     <ID>TooGenericExceptionCaught:GestureLibraryDownloader.kt$GestureLibraryDownloader$e: Exception</ID>
     <ID>TooGenericExceptionCaught:HandwritingLoader.kt$HandwritingLoader$e: Exception</ID>
     <ID>TooGenericExceptionCaught:HandwritingLoader.kt$HandwritingLoader$e: Throwable</ID>
-    <ID>TooGenericExceptionCaught:HandwritingLoader.kt$HandwritingLoader.PluginContext$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:HandwritingModelImporter.kt$HandwritingModelImporter$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:HandwritingView.kt$HandwritingView$e: Exception</ID>
     <ID>TooGenericExceptionCaught:ImeCompat.kt$ImeCompat$e: Throwable</ID>
@@ -4657,9 +4608,7 @@
     <ID>TooGenericExceptionCaught:OcrCameraManager.kt$OcrCameraManager.&lt;no name provided&gt;$e: Exception</ID>
     <ID>TooGenericExceptionCaught:OcrCameraView.kt$OcrCameraView$e: Exception</ID>
     <ID>TooGenericExceptionCaught:OcrPipeline.kt$OcrPipeline$e: Throwable</ID>
-    <ID>TooGenericExceptionCaught:OcrPluginLoader.kt$OcrPluginLoader$e: Exception</ID>
     <ID>TooGenericExceptionCaught:OcrPluginLoader.kt$OcrPluginLoader$e: Throwable</ID>
-    <ID>TooGenericExceptionCaught:OcrPluginLoader.kt$OcrPluginLoader.PluginContext$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:OfflineAiLoader.kt$OfflineAiLoader$e: Exception</ID>
     <ID>TooGenericExceptionCaught:OfflineAiLoader.kt$OfflineAiLoader$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:OtpNotificationListenerService.kt$OtpNotificationListenerService$e: Exception</ID>
@@ -4676,7 +4625,6 @@
     <ID>TooGenericExceptionCaught:SubtypeScreen.kt$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:TextCorrectionScreen.kt$e: Exception</ID>
     <ID>TooGenericExceptionCaught:TextExpanderUtils.kt$TextExpanderUtils$e: Exception</ID>
-    <ID>TooGenericExceptionCaught:TranslationLoader.kt$TranslationLoader$e: Exception</ID>
     <ID>TooGenericExceptionCaught:TranslationLoader.kt$TranslationLoader$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:TranslationModelDownloadDialog.kt$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:TranslationModelImporter.kt$TranslationModelImporter$e: Throwable</ID>
@@ -4759,7 +4707,6 @@
     <ID>TooManyFunctions:MoreSuggestionsView.kt$MoreSuggestionsView : PopupKeysKeyboardView</ID>
     <ID>TooManyFunctions:OcrCameraView.kt$OcrCameraView : FrameLayout</ID>
     <ID>TooManyFunctions:OcrPluginLoader.kt$OcrPluginLoader</ID>
-    <ID>TooManyFunctions:OfflineAiLoader.kt$OfflineAiLoader</ID>
     <ID>TooManyFunctions:PointerTracker.kt$PointerTracker : ElementBatchInputArbiterListener</ID>
     <ID>TooManyFunctions:PointerTracker.kt$PointerTracker$Companion</ID>
     <ID>TooManyFunctions:PointerTrackerQueue.kt$PointerTrackerQueue</ID>
@@ -4797,7 +4744,6 @@
     <ID>TooManyFunctions:ToolbarUtils.kt$LongPressHintDrawable : Drawable</ID>
     <ID>TooManyFunctions:ToolbarUtils.kt$alzimerahmed84.keyboard.latin.utils.ToolbarUtils.kt</ID>
     <ID>TooManyFunctions:TouchpadView.kt$TouchpadView$TouchpadListener</ID>
-    <ID>TooManyFunctions:TranslationLoader.kt$TranslationLoader</ID>
     <ID>TooManyFunctions:VoiceInputManager.kt$VoiceInputManager</ID>
     <ID>TooManyFunctions:VoicePluginManager.kt$VoicePluginManager : DeathRecipient</ID>
     <ID>TooManyFunctions:WordComposer.kt$WordComposer</ID>

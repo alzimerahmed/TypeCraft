@@ -3,16 +3,17 @@ package alzimerahmed84.keyboard.latin.ocr
 
 import android.content.Context
 import android.net.Uri
-import dalvik.system.DexClassLoader
+import alzimerahmed84.keyboard.latin.plugin.PluginClassLoader
+import alzimerahmed84.keyboard.latin.plugin.PluginContext
+import alzimerahmed84.keyboard.latin.plugin.PluginDownloads
+import alzimerahmed84.keyboard.latin.plugin.PluginFiles
+import alzimerahmed84.keyboard.latin.plugin.PluginSpec
 import alzimerahmed84.keyboard.latin.utils.Log
 import alzimerahmed84.keyboard.latin.utils.prefs
 import java.io.File
 
 object OcrPluginLoader {
     private const val CURRENT_INTERFACE_VERSION = 1
-    private const val PLUGIN_FILENAME = "ocr_plugin.apk"
-    private const val PLUGIN_CLASS_NAME = "alzimerahmed84.keyboard.ocr.plugin.TextRecognizerImpl"
-    private const val PREF_HAS_PLUGIN = "pref_ocr_has_plugin"
     const val PREF_OCR_SCRIPT = "pref_ocr_script"
     const val DEFAULT_OCR_SCRIPT = "latin"
     const val PREF_OCR_KEEP_LINE_BREAKS = "pref_ocr_keep_line_breaks"
@@ -27,7 +28,17 @@ object OcrPluginLoader {
     const val PREF_OCR_AUTO_INSERT = "pref_ocr_auto_insert"
     const val PREF_OCR_SUGGEST_SCREENSHOT_TEXT = "pref_ocr_suggest_screenshot_text"
     const val PREF_OCR_PERSIST_FLASH = "pref_ocr_persist_flash"
-    private const val TAG = "OcrPluginLoader"
+
+    private val SPEC = PluginSpec(
+        id = "ocr",
+        repoName = "TypeCraft-OCR-Plugin",
+        baseApkName = "ocr_plugin",
+        pluginClassName = "alzimerahmed84.keyboard.ocr.plugin.TextRecognizerImpl",
+        interfaceVersion = CURRENT_INTERFACE_VERSION,
+        prefHasPlugin = "pref_ocr_has_plugin",
+        tag = "OcrPluginLoader"
+    )
+    private val TAG = SPEC.tag
 
     private var activeRecognizer: ITextRecognizer? = null
     private var cachedClassLoader: PluginClassLoader? = null
@@ -44,141 +55,12 @@ object OcrPluginLoader {
         cachedApkModified = 0L
     }
 
-    fun getTargetAbi(): String {
-        for (abi in android.os.Build.SUPPORTED_ABIS) {
-            when (abi) {
-                "arm64-v8a" -> return "arm64-v8a"
-                "armeabi-v7a" -> return "armeabi-v7a"
-                "x86_64" -> return "x86_64"
-                "x86" -> return "x86"
-            }
-        }
-        return "arm64-v8a"
-    }
+    fun getTargetAbi(): String = PluginDownloads.getTargetAbi(SPEC.supportedAbis)
 
-    fun getPluginDownloadUrl(tag: String? = null): String {
-        val abi = getTargetAbi()
-        val filename = "ocr_plugin-$abi.apk"
-        return if (tag == null || tag == "latest") {
-            "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/latest/download/$filename"
-        } else {
-            "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/download/$tag/$filename"
-        }
-    }
+    fun getPluginDownloadUrl(tag: String? = null): String = PluginDownloads.getPluginDownloadUrl(SPEC, tag)
 
-    fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean {
-        val urlsToTry = listOf(
-            getPluginDownloadUrl(tag),
-            if (tag == null || tag == "latest") {
-                "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/latest/download/ocr_plugin.apk"
-            } else {
-                "https://github.com/alzimerahmed84/TypeCraft-OCR-Plugin/releases/download/$tag/ocr_plugin.apk"
-            }
-        ).distinct()
-
-        for (urlStr in urlsToTry) {
-            try {
-                val url = java.net.URL(urlStr)
-                val conn = url.openConnection() as java.net.HttpURLConnection
-                conn.instanceFollowRedirects = true
-                conn.setRequestProperty("User-Agent", "TypeCraftL")
-                conn.connect()
-
-                var redirectConn = conn
-                var status = redirectConn.responseCode
-                var redirectCount = 0
-                while ((status == java.net.HttpURLConnection.HTTP_MOVED_TEMP || status == java.net.HttpURLConnection.HTTP_MOVED_PERM || status == java.net.HttpURLConnection.HTTP_SEE_OTHER) && redirectCount < 5) {
-                    val newUrl = redirectConn.getHeaderField("Location")
-                    redirectConn.disconnect()
-                    val nextUrl = java.net.URL(newUrl)
-                    redirectConn = nextUrl.openConnection() as java.net.HttpURLConnection
-                    redirectConn.setRequestProperty("User-Agent", "TypeCraftL")
-                    redirectConn.connect()
-                    status = redirectConn.responseCode
-                    redirectCount++
-                }
-
-                if (status == java.net.HttpURLConnection.HTTP_OK) {
-                    redirectConn.inputStream.use { input ->
-                        java.io.FileOutputStream(tempFile).use { output ->
-                            input.copyTo(output)
-                        }
-                    }
-                    redirectConn.disconnect()
-                    return true
-                }
-                redirectConn.disconnect()
-            } catch (e: Exception) {
-                Log.w(TAG, "Failed to download from $urlStr", e)
-            }
-        }
-        return false
-    }
-
-    private fun getNativeLibDir(context: Context, apkFile: File): File {
-        val baseDir = File(context.filesDir, "plugin_libs")
-        if (!baseDir.exists()) baseDir.mkdirs()
-        val targetName = "ocr_${apkFile.lastModified()}"
-        val targetDir = File(baseDir, targetName)
-        baseDir.listFiles()?.forEach { f ->
-            if (f.isDirectory && (f.name.startsWith("ocr_") || f.name == "ocr") && f.name != targetName) {
-                try {
-                    f.deleteRecursively()
-                } catch (_: Exception) {}
-            }
-        }
-        return targetDir
-    }
-
-    private fun extractNativeLibs(apkFile: File, outputDir: File) {
-        if (!outputDir.exists()) outputDir.mkdirs()
-        try {
-            java.util.zip.ZipFile(apkFile).use { zip ->
-                val abis = android.os.Build.SUPPORTED_ABIS
-                var targetAbi: String? = null
-                for (abi in abis) {
-                    if (zip.entries().asSequence().any { it.name.startsWith("lib/$abi/") && it.name.endsWith(".so") }) {
-                        targetAbi = abi
-                        break
-                    }
-                }
-                if (targetAbi != null) {
-                    val prefix = "lib/$targetAbi/"
-                    for (entry in zip.entries().asSequence()) {
-                        if (entry.name.startsWith(prefix) && entry.name.endsWith(".so")) {
-                            val fileName = entry.name.substring(prefix.length)
-                            val outFile = File(outputDir, fileName)
-                            if (!outFile.exists() || outFile.length() != entry.size) {
-                                zip.getInputStream(entry).use { input ->
-                                    outFile.outputStream().use { output ->
-                                        input.copyTo(output)
-                                    }
-                                }
-                                outFile.setReadable(true, false)
-                                outFile.setExecutable(true, false)
-                            }
-                        }
-                    }
-                }
-            }
-        } catch (e: Throwable) {
-            Log.e(TAG, "Failed to extract native libraries", e)
-        }
-    }
-
-    private fun ensureWorkManagerInitialized(context: Context) {
-        try {
-            androidx.work.WorkManager.getInstance(context)
-        } catch (_: IllegalStateException) {
-            try {
-                androidx.work.WorkManager.initialize(
-                    context.applicationContext,
-                    (context.applicationContext as? androidx.work.Configuration.Provider)?.workManagerConfiguration
-                        ?: androidx.work.Configuration.Builder().build()
-                )
-            } catch (_: Throwable) {}
-        }
-    }
+    fun downloadPluginApk(context: Context, tag: String? = null, tempFile: File): Boolean =
+        PluginDownloads.downloadPluginApk(SPEC, tag, tempFile)
 
     fun getRecognizer(context: Context): ITextRecognizer? {
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.O) return null
@@ -190,9 +72,9 @@ object OcrPluginLoader {
             prefs.edit().putString(PREF_OCR_SCRIPT, DEFAULT_OCR_SCRIPT).apply()
         }
 
-        val apkFile = File(context.filesDir, PLUGIN_FILENAME)
+        val apkFile = PluginFiles.apkFile(context, SPEC)
         if (!apkFile.exists()) {
-            context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, false).apply()
+            context.prefs().edit().putBoolean(SPEC.prefHasPlugin, false).apply()
             return null
         }
         apkFile.setReadOnly()
@@ -202,10 +84,10 @@ object OcrPluginLoader {
 
     private fun loadRecognizerInternal(context: Context, apkFile: File): ITextRecognizer? {
         return try {
-            ensureWorkManagerInitialized(context)
+            PluginFiles.ensureWorkManagerInitialized(context)
             val apkLastModified = apkFile.lastModified()
-            val nativeLibDir = getNativeLibDir(context, apkFile)
-            extractNativeLibs(apkFile, nativeLibDir)
+            val nativeLibDir = PluginFiles.getNativeLibDir(context, SPEC, apkFile)
+            PluginFiles.extractNativeLibs(apkFile, nativeLibDir, android.os.Build.SUPPORTED_ABIS.toList(), TAG)
 
             val cachedLoader = cachedClassLoader
             val classLoader = if (cachedLoader != null && cachedApkModified == apkLastModified) {
@@ -215,14 +97,15 @@ object OcrPluginLoader {
                     apkFile.absolutePath,
                     context.codeCacheDir.absolutePath,
                     nativeLibDir.absolutePath,
-                    context.classLoader
+                    context.classLoader,
+                    listOf(SPEC.pluginPackagePrefix) + SPEC.classLoaderPrefixes
                 ).also {
                     cachedClassLoader = it
                     cachedApkModified = apkLastModified
                 }
             }
 
-            val clazz = classLoader.loadClass(PLUGIN_CLASS_NAME)
+            val clazz = classLoader.loadClass(SPEC.pluginClassName)
             val recognizer = clazz.getDeclaredConstructor().newInstance() as ITextRecognizer
 
             if (recognizer.getInterfaceVersion() > CURRENT_INTERFACE_VERSION) {
@@ -230,7 +113,7 @@ object OcrPluginLoader {
                 return null
             }
 
-            val pluginContext = PluginContext(context.applicationContext, apkFile.absolutePath, classLoader)
+            val pluginContext = PluginContext(context.applicationContext, apkFile.absolutePath, classLoader, TAG)
             recognizer.init(pluginContext)
 
             if (recognizer.isAvailable()) {
@@ -248,22 +131,12 @@ object OcrPluginLoader {
     }
 
     fun hasPlugin(context: Context): Boolean {
-        val has = context.prefs().getBoolean(PREF_HAS_PLUGIN, false)
+        val has = context.prefs().getBoolean(SPEC.prefHasPlugin, false)
         if (!has) return false
-        val apkFile = File(context.filesDir, PLUGIN_FILENAME)
-        return apkFile.exists() && apkFile.length() > 0
+        return PluginFiles.hasPluginApk(context, SPEC)
     }
 
-    fun getPluginVersion(context: Context): String? {
-        val apkFile = File(context.filesDir, PLUGIN_FILENAME)
-        if (!apkFile.exists()) return null
-        return try {
-            val info = context.packageManager.getPackageArchiveInfo(apkFile.absolutePath, 0)
-            info?.versionName
-        } catch (_: Exception) {
-            null
-        }
-    }
+    fun getPluginVersion(context: Context): String? = PluginFiles.getPluginVersion(context, SPEC)
 
     fun getActiveScriptName(context: Context): String? {
         val recognizer = getRecognizer(context)
@@ -272,11 +145,9 @@ object OcrPluginLoader {
 
     fun importPlugin(context: Context, uri: Uri): Boolean {
         return try {
-            try {
-                context.codeCacheDir.deleteRecursively()
-            } catch (_: Exception) {}
+            PluginFiles.clearCodeCache(context)
 
-            val targetFile = File(context.filesDir, PLUGIN_FILENAME)
+            val targetFile = PluginFiles.apkFile(context, SPEC)
             if (targetFile.exists()) targetFile.delete()
 
             context.contentResolver.openInputStream(uri)?.use { input ->
@@ -291,11 +162,11 @@ object OcrPluginLoader {
             val recognizer = loadRecognizerInternal(context, targetFile)
             val success = recognizer != null
             if (success) {
-                context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, true).apply()
+                context.prefs().edit().putBoolean(SPEC.prefHasPlugin, true).apply()
                 Log.i(TAG, "OCR plugin imported and verified successfully")
             } else {
                 targetFile.delete()
-                context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, false).apply()
+                context.prefs().edit().putBoolean(SPEC.prefHasPlugin, false).apply()
                 Log.w(TAG, "OCR plugin verification failed")
             }
             success
@@ -307,11 +178,9 @@ object OcrPluginLoader {
 
     fun importPluginFromTempFile(context: Context, tempFile: File): Boolean {
         return try {
-            try {
-                context.codeCacheDir.deleteRecursively()
-            } catch (_: Exception) {}
+            PluginFiles.clearCodeCache(context)
 
-            val targetFile = File(context.filesDir, PLUGIN_FILENAME)
+            val targetFile = PluginFiles.apkFile(context, SPEC)
             if (targetFile.exists()) targetFile.delete()
 
             tempFile.copyTo(targetFile, overwrite = true)
@@ -323,11 +192,11 @@ object OcrPluginLoader {
             val recognizer = loadRecognizerInternal(context, targetFile)
             val success = recognizer != null
             if (success) {
-                context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, true).apply()
+                context.prefs().edit().putBoolean(SPEC.prefHasPlugin, true).apply()
                 Log.i(TAG, "OCR plugin imported from temp file successfully")
             } else {
                 targetFile.delete()
-                context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, false).apply()
+                context.prefs().edit().putBoolean(SPEC.prefHasPlugin, false).apply()
                 Log.w(TAG, "OCR plugin temp file verification failed")
             }
             success
@@ -340,85 +209,13 @@ object OcrPluginLoader {
     fun removePlugin(context: Context) {
         try {
             invalidateClassLoader()
-            val apkFile = File(context.filesDir, PLUGIN_FILENAME)
-            if (apkFile.exists()) apkFile.delete()
-            val baseDir = File(context.filesDir, "plugin_libs")
-            baseDir.listFiles()?.forEach { f ->
-                if (f.isDirectory && (f.name.startsWith("ocr_") || f.name == "ocr")) {
-                    try { f.deleteRecursively() } catch (_: Exception) {}
-                }
-            }
-        } catch (_: Exception) {}
-        context.prefs().edit().putBoolean(PREF_HAS_PLUGIN, false).apply()
+            PluginFiles.deletePluginArtifacts(context, SPEC)
+        } catch (_: Exception) {
+        }
+        context.prefs().edit().putBoolean(SPEC.prefHasPlugin, false).apply()
     }
 
     fun release() {
         resetRecognizer()
-    }
-
-    private class PluginContext(
-        base: Context,
-        private val apkPath: String,
-        private val pluginClassLoader: ClassLoader
-    ) : android.content.ContextWrapper(base), androidx.work.Configuration.Provider {
-        private val pluginResources: android.content.res.Resources by lazy {
-            try {
-                val assetManager = android.content.res.AssetManager::class.java.getDeclaredConstructor().newInstance()
-                val addAssetPathMethod = android.content.res.AssetManager::class.java.getDeclaredMethod("addAssetPath", String::class.java)
-                addAssetPathMethod.invoke(assetManager, apkPath)
-                android.content.res.Resources(assetManager, base.resources.displayMetrics, base.resources.configuration)
-            } catch (e: Throwable) {
-                Log.e(TAG, "Failed to create plugin resources", e)
-                base.resources
-            }
-        }
-
-        override fun getResources(): android.content.res.Resources = pluginResources
-
-        override fun getAssets(): android.content.res.AssetManager = pluginResources.assets
-
-        override fun getClassLoader(): ClassLoader = pluginClassLoader
-
-        override fun getApplicationContext(): Context = this
-
-        override val workManagerConfiguration: androidx.work.Configuration
-            get() = (baseContext.applicationContext as? androidx.work.Configuration.Provider)?.workManagerConfiguration
-                ?: androidx.work.Configuration.Builder().build()
-    }
-
-    private class PluginClassLoader(
-        dexPath: String,
-        optimizedDirectory: String?,
-        private val librarySearchPath: String?,
-        parent: ClassLoader
-    ) : DexClassLoader(dexPath, optimizedDirectory, librarySearchPath, parent) {
-        override fun findLibrary(name: String): String? {
-            if (librarySearchPath != null) {
-                val filename = System.mapLibraryName(name)
-                val file = java.io.File(librarySearchPath, filename)
-                if (file.exists()) {
-                    return file.absolutePath
-                }
-            }
-            return super.findLibrary(name)
-        }
-
-        override fun loadClass(name: String, resolve: Boolean): Class<*> {
-            if (name.startsWith("alzimerahmed84.keyboard.ocr.plugin.") ||
-                name.startsWith("com.google.mlkit.") ||
-                name.startsWith("com.google.android.datatransport.") ||
-                name.startsWith("com.google.android.gms.") ||
-                name.startsWith("com.google.firebase.")
-            ) {
-                val loaded = findLoadedClass(name)
-                if (loaded != null) return loaded
-                try {
-                    return findClass(name)
-                } catch (_: ClassNotFoundException) {
-                    // fallback to parent
-                }
-            }
-            return super.loadClass(name, resolve)
-        }
     }
 }
