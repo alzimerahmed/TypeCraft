@@ -11,7 +11,7 @@
     android:paddingHorizontal="16dp"
     android:paddingVertical="8dp"
     android:drawablePadding="12dp"
-    android:drawableStart="@mipmap/ic_launcher_round"
+    android:drawableStart="@mipmap/ic_launcher"
     android:background="@drawable/toast_background"
     android:textColor="@android:color/white"
     android:textAppearance="?android:textAppearanceMedium"
