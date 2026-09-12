@@ -174,7 +174,7 @@ fun WelcomeWizard(
                 ) {
                     if (onBack != null) {
                         androidx.compose.material3.FilledTonalButton(onClick = onBack) {
-                            Text("Previous")
+                            Text(stringResource(R.string.setup_step_previous))
                         }
                     } else {
                         Spacer(Modifier.weight(0.1f)) // Placeholder to maintain spacing
@@ -240,14 +240,14 @@ fun WelcomeWizard(
 
                     Step(
                         3,
-                        "Language & Input Selection",
-                        "Configure your typing languages.",
-                        "Next",
+                        stringResource(R.string.setup_step_languages_title),
+                        stringResource(R.string.setup_step_languages_instruction),
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }
                     ) {
-                        WithSmallTitle("Typing Languages") {
+                        WithSmallTitle(stringResource(R.string.setup_languages_section)) {
                             Column(
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -255,7 +255,7 @@ fun WelcomeWizard(
                                     .padding(16.dp)
                             ) {
                                 Text(
-                                    "Enabled Languages:",
+                                    stringResource(R.string.setup_languages_enabled),
                                     style = MaterialTheme.typography.titleMedium,
                                     color = MaterialTheme.colorScheme.onSurface
                                 )
@@ -283,7 +283,7 @@ fun WelcomeWizard(
                                     onClick = { showDialog = true },
                                     modifier = Modifier.fillMaxWidth()
                                 ) {
-                                    Text("Choose Languages")
+                                    Text(stringResource(R.string.setup_languages_choose))
                                 }
                             }
                         }
@@ -314,9 +314,9 @@ fun WelcomeWizard(
                 } else if (step == 4) {
                     Step(
                         4,
-                        "Libraries",
-                        "Download emoji and gesture libraries to improve typing and suggestions.",
-                        "Next",
+                        stringResource(R.string.setup_step_libraries_title),
+                        stringResource(R.string.setup_step_libraries_instruction),
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }
@@ -328,7 +328,7 @@ fun WelcomeWizard(
 
                         Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)) {
                             LoadEmojiLibPreference(
-                                title = "Emoji Dictionary",
+                                title = stringResource(R.string.setup_emoji_dictionary),
                                 onSuccess = { refreshTrigger++ }
                             )
                             if (emojiLibInstalled) {
@@ -338,7 +338,7 @@ fun WelcomeWizard(
                         Spacer(Modifier.height(8.dp))
                         Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)) {
                             LoadGestureLibPreference(
-                                title = "Gesture Typing Library",
+                                title = stringResource(R.string.setup_gesture_library),
                                 restartOnSuccess = false,
                                 onSuccess = { 
                                     requiresRestart = true
@@ -363,12 +363,12 @@ fun WelcomeWizard(
                         ) {
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(
-                                    text = "Enable Gesture Typing",
+                                    text = stringResource(R.string.setup_gesture_enable),
                                     style = MaterialTheme.typography.titleMedium,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
                                 Text(
-                                    text = "Slide across keys to type words",
+                                    text = stringResource(R.string.setup_gesture_enable_desc),
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
                                 )
@@ -383,20 +383,20 @@ fun WelcomeWizard(
                         }
                     }
                 } else if (step == 5) {
-                    val stepTitle = when (BuildConfig.FLAVOR) {
-                        "offline" -> "Offline AI Integration"
-                        else -> "AI Integration"
-                    }
-                    val stepInstruction = when (BuildConfig.FLAVOR) {
-                        "offline" -> "Configure on-device GGUF AI models for local proofreading and translation without internet."
-                        else -> "Configure cloud AI services (Groq, Gemini, or OpenAI compatible) for smart proofreading and rewriting."
-                    }
+                    val stepTitle = stringResource(
+                        if (BuildConfig.FLAVOR == "offline") R.string.setup_step_ai_offline_title
+                        else R.string.setup_step_ai_title
+                    )
+                    val stepInstruction = stringResource(
+                        if (BuildConfig.FLAVOR == "offline") R.string.setup_step_ai_offline_instruction
+                        else R.string.setup_step_ai_instruction
+                    )
 
                     Step(
                         5,
                         stepTitle,
                         stepInstruction,
-                        "Next",
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }
@@ -480,8 +480,13 @@ fun WelcomeWizard(
                             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                                 Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)) {
                                     alzimerahmed84.keyboard.settings.preferences.LoadOfflineAiPluginPreference(
-                                        title = "Offline AI Plugin",
-                                        summary = if (hasPlugin) "Plugin active (version ${pluginVersion ?: "1.0"})" else "Required for on-device GGUF inference — tap to download or load",
+                                        title = stringResource(R.string.setup_offline_ai_plugin),
+                                        summary = if (hasPlugin)
+                                            stringResource(
+                                                R.string.setup_offline_ai_plugin_active,
+                                                pluginVersion ?: "1.0"
+                                            )
+                                        else stringResource(R.string.setup_offline_ai_plugin_missing),
                                         icon = R.drawable.ic_proofread,
                                         onSuccess = { refreshTrigger++ }
                                     )
@@ -493,15 +498,16 @@ fun WelcomeWizard(
                                 Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)) {
                                     Column {
                                         Preference(
-                                            name = "GGUF Model (.gguf)",
-                                            description = if (modelPath != null) service.getModelName() else "Optional — select local GGUF model file",
+                                            name = stringResource(R.string.setup_gguf_model),
+                                            description = if (modelPath != null) service.getModelName()
+                                                else stringResource(R.string.setup_gguf_model_desc),
                                             onClick = { modelLauncher.launch(arrayOf("application/octet-stream", "*/*")) },
                                             icon = R.drawable.ic_settings_advanced
                                         )
                                         if (modelPath != null) {
                                             Preference(
-                                                name = "Remove Model",
-                                                description = "Unload model and clear selection",
+                                                name = stringResource(R.string.setup_remove_model),
+                                                description = stringResource(R.string.setup_remove_model_desc),
                                                 onClick = {
                                                     service.unloadModel()
                                                     service.setModelPath(null)
@@ -531,7 +537,7 @@ fun WelcomeWizard(
                                         modifier = Modifier.padding(end = 12.dp)
                                     )
                                     Text(
-                                        "Offline Lite edition active.\nZero background AI or network footprint.",
+                                        stringResource(R.string.setup_offline_lite_note),
                                         style = MaterialTheme.typography.bodyMedium,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
@@ -542,9 +548,9 @@ fun WelcomeWizard(
                 } else if (step == 6) {
                     Step(
                         6,
-                        "Floating Keyboard",
-                        "Enable floating keyboard by granting the 'Display over other apps' permission.",
-                        "Next",
+                        stringResource(R.string.setup_step_floating_title),
+                        stringResource(R.string.setup_step_floating_instruction),
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }
@@ -559,11 +565,17 @@ fun WelcomeWizard(
                             }
                         }.padding(16.dp)) {
                             if (!canDrawOverlays) {
-                                Text("Permission required. Tap here to grant.", color = MaterialTheme.colorScheme.primary)
+                                Text(
+                                    stringResource(R.string.setup_overlay_permission_required),
+                                    color = MaterialTheme.colorScheme.primary
+                                )
                             } else {
                                 Row(verticalAlignment = Alignment.CenterVertically) {
                                     Icon(painterResource(R.drawable.ic_setup_check), null, Modifier.padding(end = 8.dp), tint = MaterialTheme.colorScheme.primary)
-                                    Text("Permission granted.", color = MaterialTheme.colorScheme.onSurface)
+                                    Text(
+                                        stringResource(R.string.setup_overlay_permission_granted),
+                                        color = MaterialTheme.colorScheme.onSurface
+                                    )
                                 }
                             }
                         }
@@ -571,9 +583,9 @@ fun WelcomeWizard(
                 } else if (step == 7) {
                     Step(
                         7,
-                        "Screenshot Suggestions",
-                        "Suggest recently taken screenshots in the suggestion strip. Note: This permission also allows saving screenshots to the clipboard.",
-                        "Next",
+                        stringResource(R.string.setup_step_screenshots_title),
+                        stringResource(R.string.setup_step_screenshots_instruction),
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }
@@ -609,9 +621,9 @@ fun WelcomeWizard(
                 } else if (step == 8) {
                     Step(
                         8,
-                        "Keyboard Height",
-                        "Adjust the height of the keyboard. Recommended: 77% for more square keys, 100% for taller keys.",
-                        "Next",
+                        stringResource(R.string.setup_step_height_title),
+                        stringResource(R.string.setup_step_height_instruction),
+                        stringResource(R.string.setup_next_action),
                         painterResource(R.drawable.sym_keyboard_language_switch),
                         { step++ },
                         { step-- }

@@ -59,7 +59,6 @@ class ClipboardHistoryView @JvmOverloads constructor(
     private val keyBackgroundId: Int
 
     private lateinit var clipboardRecyclerView: ClipboardHistoryRecyclerView
-    private lateinit var placeholderView: TextView
     private val toolbarKeys = mutableListOf<ImageButton>()
     private lateinit var clipboardAdapter: ClipboardAdapter
 
@@ -91,10 +90,6 @@ class ClipboardHistoryView @JvmOverloads constructor(
         setMeasuredDimension(width, height)
     }
 
-    private lateinit var searchBar: android.widget.EditText
-    private lateinit var clearSearch: android.widget.ImageButton
-    private lateinit var backSearch: android.widget.ImageButton
-    private lateinit var searchOverlay: android.view.View
     private lateinit var emptyViewIcon: android.widget.ImageView
     private lateinit var emptyViewText: android.widget.TextView
     private lateinit var emptyViewContainer: View
@@ -107,26 +102,6 @@ class ClipboardHistoryView @JvmOverloads constructor(
     private var editorInfo: EditorInfo? = null
     // We already have keyboardActionListener property
 
-    private val searchWatcher = object : android.text.TextWatcher {
-        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-        override fun afterTextChanged(s: android.text.Editable?) {
-            val query = s?.toString() ?: ""
-            clearSearch.visibility = if (query.isNotEmpty()) View.VISIBLE else View.GONE
-            clipboardAdapter.filter(query)
-            // Empty view logic likely needs adjustment for "search mode" vs "list mode"? 
-            // Actually, if we filter, the list updates. 
-            // In Search Mode, do we see the list? 
-            // "Type query -> Hit Enter -> View returns to filtered list"
-            // So while typing, maybe we DON'T see list?
-            // "redirected to keyboard key page ... indicator showing we are typing"
-            // Let's assume while typing, we just see the input. 
-            // BUT live filtering is nice. I will keep list visible if overlay allows (it sits on top?).
-            // If overlay covers everything, then we don't see it.
-            // Let's follow "redirected to keyboard key page" -> Overlay covers list.
-        }
-    }
-
     @SuppressLint("ClickableViewAccessibility")
     private fun initialize() { // needs to be delayed for access to ClipboardStrip, which is not a child of this view
         if (this::clipboardAdapter.isInitialized) return
@@ -136,40 +111,11 @@ class ClipboardHistoryView @JvmOverloads constructor(
             pinnedIconResId = pinIconId
         }
         
-        // Search & Empty View init
-        searchOverlay = findViewById(R.id.clipboard_search_overlay)
-        searchBar = findViewById(R.id.clipboard_search_bar)
-        clearSearch = findViewById(R.id.clipboard_clear_search)
-        backSearch = findViewById(R.id.clipboard_search_back)
+        // Empty View init
         emptyViewContainer = findViewById(R.id.clipboard_empty_view)
         emptyViewIcon = findViewById(R.id.clipboard_empty_icon)
         emptyViewText = findViewById(R.id.clipboard_empty_text)
-        
-        // Locate the list container if possible, or just the RecyclerView
-        // Our XML has FrameLayout around list/empty. 
-        // We might want to toggle visibility of that FrameLayout vs Overlay?
-        // Let's assume RecyclerView is enough if Overlay is "match_parent" and on top.
 
-        searchBar.addTextChangedListener(searchWatcher)
-        clearSearch.setOnClickListener { searchBar.setText("") }
-        backSearch.setOnClickListener { stopSearchMode() }
-        
-        // Make sure Enter key submits search
-        searchBar.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE) {
-                stopSearchMode()
-                return@setOnEditorActionListener true
-            }
-            false
-        }
-        
-        // Coloring
-        colors.setBackground(searchOverlay, ColorType.MAIN_BACKGROUND) // Overlay background
-        searchBar.setTextColor(colors.get(ColorType.KEY_TEXT))
-        val hintColor = colors.get(ColorType.KEY_TEXT)
-        searchBar.setHintTextColor((hintColor and 0x00FFFFFF) or 0x80000000.toInt()) // semi-transparent
-        colors.setColor(clearSearch, ColorType.KEY_ICON)
-        colors.setColor(backSearch, ColorType.KEY_ICON)
         // Tint empty icon
         val iconColor = colors.get(ColorType.KEY_ICON)
         emptyViewIcon.setColorFilter(iconColor)
@@ -275,6 +221,7 @@ class ClipboardHistoryView @JvmOverloads constructor(
                  LinearLayout.LayoutParams.MATCH_PARENT
              )
              setImageResource(R.drawable.ic_close)
+             contentDescription = context.getString(R.string.clipboard_cd_back)
              setBackgroundResource(R.drawable.toolbar_key_background)
              setColorFilter(Settings.getValues().mColors.get(ColorType.KEY_ICON))
              Settings.getValues().mColors.setColor(background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
@@ -825,8 +772,6 @@ class ClipboardHistoryView @JvmOverloads constructor(
         
         // Clear search on start
         searchQuery.clear() // Explicitly clear query builder
-        searchBar.setText("")
-        searchBar.clearFocus() // ensure focus is lost
         clipboardAdapter.filter("")
         updateEmptyView(false)
         stopSearchMode()
@@ -838,12 +783,8 @@ class ClipboardHistoryView @JvmOverloads constructor(
         setupClipKey(params)
         setupBottomRowKeyboard(editorInfo, keyboardActionListener)
 
-        // Typeface for search and empty text
-        params.mTypeface?.let { tf ->
-            searchBar.typeface = tf
-            emptyViewText.typeface = tf
-        }
-        searchBar.setTextColor(params.mTextColor)
+        // Typeface for empty text
+        emptyViewText.typeface = params.mTypeface
 
         val keyboardWidth = ResourceUtils.getKeyboardWidth(context, settings.current)
         val keyboardAttr = context.obtainStyledAttributes(

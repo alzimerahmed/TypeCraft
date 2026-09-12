@@ -1104,6 +1104,80 @@ language, hence "No language". -->
     <string name="setup_step3_action">Configure the keyboard</string>
     <!-- The label of the button that finishes the setup wizard. -->
     <string name="setup_finish_action">Finished</string>
+    <!-- Label of the back button in the setup wizard. -->
+    <string name="setup_step_previous">Previous</string>
+    <!-- Generic label of the next button in the setup wizard. -->
+    <string name="setup_next_action">Next</string>
+    <!-- Title of the language selection step in the setup wizard. -->
+    <string name="setup_step_languages_title">Language &amp; Input Selection</string>
+    <!-- Instruction of the language selection step in the setup wizard. -->
+    <string name="setup_step_languages_instruction">Configure your typing languages.</string>
+    <!-- Section header for typing languages in the setup wizard. -->
+    <string name="setup_languages_section">Typing Languages</string>
+    <!-- Label above the list of enabled languages in the setup wizard. -->
+    <string name="setup_languages_enabled">Enabled Languages:</string>
+    <!-- Button that opens the language picker in the setup wizard. -->
+    <string name="setup_languages_choose">Choose Languages</string>
+    <!-- Title of the libraries step in the setup wizard. -->
+    <string name="setup_step_libraries_title">Libraries</string>
+    <!-- Instruction of the libraries step in the setup wizard. -->
+    <string name="setup_step_libraries_instruction">Download emoji and gesture libraries to improve typing and suggestions.</string>
+    <!-- Title of the emoji dictionary download item in the setup wizard. -->
+    <string name="setup_emoji_dictionary">Emoji Dictionary</string>
+    <!-- Title of the gesture typing library download item in the setup wizard. -->
+    <string name="setup_gesture_library">Gesture Typing Library</string>
+    <!-- Title of the gesture typing toggle in the setup wizard. -->
+    <string name="setup_gesture_enable">Enable Gesture Typing</string>
+    <!-- Description of the gesture typing toggle in the setup wizard. -->
+    <string name="setup_gesture_enable_desc">Slide across keys to type words</string>
+    <!-- Title of the AI integration step in the setup wizard (cloud flavors). -->
+    <string name="setup_step_ai_title">AI Integration</string>
+    <!-- Instruction of the AI integration step in the setup wizard (cloud flavors). -->
+    <string name="setup_step_ai_instruction">Configure cloud AI services (Groq, Gemini, or OpenAI compatible) for smart proofreading and rewriting.</string>
+    <!-- Title of the AI integration step in the setup wizard (offline flavor). -->
+    <string name="setup_step_ai_offline_title">Offline AI Integration</string>
+    <!-- Instruction of the AI integration step in the setup wizard (offline flavor). -->
+    <string name="setup_step_ai_offline_instruction">Configure on-device GGUF AI models for local proofreading and translation without internet.</string>
+    <!-- Title of the offline AI plugin download item in the setup wizard. -->
+    <string name="setup_offline_ai_plugin">Offline AI Plugin</string>
+    <!-- Summary when the offline AI plugin is active. %s is the plugin version. -->
+    <string name="setup_offline_ai_plugin_active">"Plugin active (version %s)"</string>
+    <!-- Summary when the offline AI plugin is missing. -->
+    <string name="setup_offline_ai_plugin_missing">Required for on-device GGUF inference — tap to download or load</string>
+    <!-- Title of the GGUF model selection item in the setup wizard. -->
+    <string name="setup_gguf_model">"GGUF Model (.gguf)"</string>
+    <!-- Description of the GGUF model selection item in the setup wizard. -->
+    <string name="setup_gguf_model_desc">Optional — select local GGUF model file</string>
+    <!-- Title of the remove-model item in the setup wizard. -->
+    <string name="setup_remove_model">Remove Model</string>
+    <!-- Description of the remove-model item in the setup wizard. -->
+    <string name="setup_remove_model_desc">Unload model and clear selection</string>
+    <!-- Note shown in the setup wizard for the offline lite edition. -->
+    <string name="setup_offline_lite_note">Offline Lite edition active.\nZero background AI or network footprint.</string>
+    <!-- Title of the floating keyboard permission step in the setup wizard. -->
+    <string name="setup_step_floating_title">Floating Keyboard</string>
+    <!-- Instruction of the floating keyboard permission step in the setup wizard. -->
+    <string name="setup_step_floating_instruction">"Enable floating keyboard by granting the 'Display over other apps' permission."</string>
+    <!-- Message shown when the overlay permission is not yet granted. -->
+    <string name="setup_overlay_permission_required">Permission required. Tap here to grant.</string>
+    <!-- Message shown when the overlay permission has been granted. -->
+    <string name="setup_overlay_permission_granted">Permission granted.</string>
+    <!-- Title of the screenshot suggestions permission step in the setup wizard. -->
+    <string name="setup_step_screenshots_title">Screenshot Suggestions</string>
+    <!-- Instruction of the screenshot suggestions permission step in the setup wizard. -->
+    <string name="setup_step_screenshots_instruction">Suggest recently taken screenshots in the suggestion strip. Note: This permission also allows saving screenshots to the clipboard.</string>
+    <!-- Title of the keyboard height step in the setup wizard. -->
+    <string name="setup_step_height_title">Keyboard Height</string>
+    <!-- Instruction of the keyboard height step in the setup wizard. -->
+    <string name="setup_step_height_instruction" formatted="false">Adjust the height of the keyboard. Recommended: 77% for more square keys, 100% for taller keys.</string>
+    <!-- Content description of the clipboard search back button. -->
+    <string name="clipboard_cd_back">Back</string>
+    <!-- Content description of the empty clipboard history icon. -->
+    <string name="clipboard_cd_empty">No clipboard items</string>
+    <!-- Content description of the clear button in the handwriting input view. -->
+    <string name="handwriting_cd_clear">Clear</string>
+    <!-- Content description of the button that closes touchpad mode. -->
+    <string name="touchpad_cd_close">Close touchpad mode</string>
     <!-- Option to show setup wizard icon. Legacy setting only displayed for Android 9 and older. -->
     <string name="show_setup_wizard_icon">Show app icon</string>
     <!-- Description for the option to show setup wizard application icon of this IME in the launcher. -->
